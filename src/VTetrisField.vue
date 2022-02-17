@@ -49,7 +49,7 @@ function drawField(ctx: CanvasRenderingContext2D, page: Page) {
   const height = props.height - 1
   for (var i = 0; i < 20; i++) {
     for (var j = 0; j < 10; j++) {
-      let idx = props.mirror ? j : 9 - j
+      let idx = props.mirror ? 9 - j : j
       var piece = field.at(idx, i)
       if (piece != "_") {
         ctx.fillStyle = get_color()[piece][0]

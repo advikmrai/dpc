@@ -4,19 +4,38 @@ title: DPC
 
 ## Extra O
 
-<TDPC v-for="i in extra_O" v-bind="i" />
+### O -> J
+
+<TDPC v-bind="extra_O.O2J" />
+
+### J -> O
+
+<TDPC v-bind="extra_O.J2O" />
+
 
 ## Extra T
 
-<TDPC v-for="i in extra_T" v-bind="i" />
+<TDPC v-bind="extra_T.ALL" />
 
 ## Extra S
 
-<TDPC v-for="i in extra_S" v-bind="i" />
+### S -> O
+
+<TDPC v-bind="extra_S.S2O" />
+
+### O -> S
+
+<TDPC v-bind="extra_S.O2S" />
 
 ## Extra Z
 
-<TDPC v-for="i in extra_Z" v-bind="i" />
+### Z -> O
+
+<TDPC v-bind="extra_Z.Z2O" />
+
+### O -> Z
+
+<TDPC v-bind="extra_Z.O2Z" />
 
 ## Credits
 

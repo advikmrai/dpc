@@ -39,7 +39,7 @@ title: DPC
 
 ## Credits
 
-Content of this pages comes from:
+Content of this page comes from:
 
 - https://github.com/flaribbit/v-tetris-field
 - http://tetris.johnbeak.cz/dpc/builds.php

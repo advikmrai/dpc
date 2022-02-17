@@ -18,6 +18,14 @@ title: DPC
 
 <TDPC v-for="i in extra_Z" v-bind="i" />
 
+## Credits
+
+Content of this pages comes from:
+
+- https://github.com/flaribbit/v-tetris-field
+- http://tetris.johnbeak.cz/dpc/builds.php
+- https://four.lol/perfect-clears/dpc
+
 <!-- end -->
 
 <script setup>

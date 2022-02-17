@@ -1,7 +1,7 @@
 <template>
   <TFumenList
     :fumen="merge_pages([props.build_fumen, props.field_fumen])"
-    :height="6"
+    :height="7"
     :cell_size="18"
     :mirror="props.mirror"
   />

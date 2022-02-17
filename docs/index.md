@@ -37,6 +37,19 @@ title: DPC
 
 <TDPC v-bind="extra_Z.O2Z" />
 
+## Extra I
+
+### I -> L -> O
+<TDPC v-bind="extra_I.I2L2O" />
+
+### O -> L
+<TDPC v-bind="extra_I.O2L" />
+
+### L -> I 
+<TDPC v-bind="extra_I.L2I" />
+
+## Extra L
+
 ## Credits
 
 Content of this page comes from:
@@ -49,16 +62,52 @@ Content of this page comes from:
 
 <script setup>
 import TDPC from "../src/TDPC.vue";
-import { extra_O, extra_T, extra_S, extra_Z } from "../src/data";
+import { extra_O, extra_T, extra_S, extra_Z, extra_I } from "../src/data";
 </script>
 
 <style>
 .container {
-  max-width: 50em !important;
+  max-width: 90vw !important;
 }
-@media (max-width: 420px) {
+.vt-field {
+  background-color: #f3f3ed;
+  border-radius: 4px;
+}
+@media (min-width: 320px) {
   .fumen-item {
     width: calc(50% - 4px);
+  }
+  .fumen-item .vt-field {
+    width: 100%;
+  }
+}
+@media (min-width: 425px) {
+  .fumen-item {
+    width: calc(33% - 8px);
+  }
+  .fumen-item .vt-field {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .fumen-item {
+    width: calc(25% - 16px);
+  }
+  .fumen-item .vt-field {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .fumen-item {
+    width: calc(20% - 32px);
+  }
+  .fumen-item .vt-field {
+    width: 100%;
+  }
+}
+@media (min-width: 2560px) {
+  .fumen-item {
+    width: calc(14% - 32px);
   }
   .fumen-item .vt-field {
     width: 100%;

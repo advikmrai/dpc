@@ -48,7 +48,27 @@ title: DPC
 ### L -> I 
 <TDPC v-bind="extra_I.L2I" />
 
+## Extra J
+
+### OJ and ZS
+<TDPC v-bind="extra_J.OJZS" />
+
+### OJ and SZ
+<TDPC v-bind="extra_J.OJSZ" />
+
+### JO
+<TDPC v-bind="extra_J.JO" />
+
 ## Extra L
+
+### OL and SZ
+<TDPC v-bind="extra_L.OLSZ" />
+
+### OL and ZS
+<TDPC v-bind="extra_L.OLZS" />
+
+### LO
+<TDPC v-bind="extra_L.LO" />
 
 ## Credits
 
@@ -62,7 +82,7 @@ Content of this page comes from:
 
 <script setup>
 import TDPC from "../src/TDPC.vue";
-import { extra_O, extra_T, extra_S, extra_Z, extra_I } from "../src/data";
+import { extra_O, extra_T, extra_S, extra_Z, extra_I, extra_J, extra_L } from "../src/data";
 </script>
 
 <style>

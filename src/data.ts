@@ -85,12 +85,33 @@ const extra_I = {
   },
 }
 
-const extra_L = {
-
-}
-
 const extra_J = {
-  
+  "OJZS": {
+    build_fumen: "v115@8gwhg0Fehlwhi0R4CeglwhRpR4BtAeg0glwhRpCeBt?i0JeAgWaAFLDmClcJSAVDEHBEooRBKoAVBa3LMCs/AAA",
+    field_fumen: "v115@QhB8FeE8CeE8JeAgH",
+    solutions_fumen: "v115@9gQ4Bti0zhR4Btwwg0ilB8Q4RpxwglE8RpwwE8JeAg?WUA3/XHBgngHBg3CwBgGWWCznNPC9gRpQ4i0zhRpR4wwg0i?lB8BtQ4xwglE8BtwwE8JeAAPUA25HOBgngHBg3CwBAXWWCP?dNPC9gzhhlh0R4BtRpwwglg0R4B8Btxwglg0E8RpwwE8JeA?APUA1CAEBgngHBg3CwBAuLuCqyCMC9gi0wwzhR4Btg0xwRp?R4B8BtwwglRpE8ilE8JeAAPUAV7nABgngHBg3CwBAyaFDze?NPC9gQ4BtRpwwzhR4BtxwilB8Q4g0RpwwglE8i0E8JeAAPU?A0FAEBgngHBg3CwBA/DxCzHDMC9gRpilwwh0R4RpBtxwg0R?4B8zhwwg0E8glBtE8JeAAPUAU4f2AgngHBg3CwBgtjPC0HL?WC9gi0wwRpzhBtxwRpilB8BtwwR4glE8g0R4E8JeAAPUATE?wKBgngHBg3CwBgsjWCvu3LC9gi0R4wwzhBtR4xwilB8BtRp?wwglE8g0RpE8JeAAPUAyFIOBgngHBg3CwBgmjWCUt3LC9gB?tRphlh0R4zhwwglg0R4B8Btxwglg0E8RpwwE8JeAAPUAy5/?DBgngHBg3CwBA+jPCMergC9gRpBtR4zhRpwwi0ilB8xwR4g?0glE8wwBtE8JeAAPUAS4P9AgngHBg3CwBAOUPCPtbMC9gi0?wwR4zhBtxwRpilB8BtwwRpglE8g0R4E8JeAAPUAxCAEBgng?HBg3CwBgmjWCUt3LC9gBtRpwwilR4zhi0R4B8Btxwglg0E8?RpwwE8JeAAPUAx5/DBgngHBg3CwBgs3LC0XMgC",
+    mirror: false,
+  },
+  "OJSZ": {
+    build_fumen: "v115@0gg0GewhAeg0Eehlwhh0Q4BtCeglwhRpR4BtAeg0gl?whRpAeQ4Cei0JeAgWaAFLDmClcJSAVDEHBEooRBKoAVBPtb?MCs/AAA",
+    field_fumen: "v115@IhA8GeA8AeA8EeE8AeA8CeC8JeAgH",
+    solutions_fumen: "v115@9gh0whRpilR4g0A8whRpglwwR4A8g0A8whBtxwE8wh?A8BtwwC8JeAgWUAY7fRBgngHBg3CwBAXOMCTn/VC9gh0Btz?hR4g0A8wwBthlR4A8g0A8xwRpglE8wwA8RpglC8JeAAPUAX?EIOBgngHBg3CwBgGExCz33LC9gh0whBtilR4g0A8whRpglw?wR4A8g0A8whRpxwE8whA8BtwwC8JeAAPUAX4f2AgngHBg3C?wBgGOMCz/TFD",
+    mirror: false,
+  },
+  "JO": {
+    build_fumen: "v115@AhhlAeAtBewhQ4CeglBtRpwhR4Aeg0glAtg0RpwhAe?Q4Ael0whJeAgWaAFLDmClcJSAVDEHBEooRBKoAVBKuytC6C?BAA",
+    field_fumen: "v115@UhB8AeA8BeA8AeA8AeG8JeAgH",
+    solutions_fumen: "v115@9gwhilR4Ati0whglwwR4BtRpg0whxwB8AtA8RpA8wh?A8wwG8JeAgWUAX7fRBgngHBg3CwBgW9wCat/VC9gzhR4Ati?0wwhlR4BtRpg0xwglB8AtA8RpA8wwA8glG8JeAAPUA18f2A?gngHBg3CwBgGWWCat3LC9gwhwwh0R4AtglRpwhxwR4BtglR?pwhwwg0B8AtA8hlA8whA8g0G8JeAAPUA08nABgngHBg3CwB?g9LgCaNmPC9gzhR4AtglRph0wwR4BtglRpg0xwB8AtA8hlA?8g0A8wwG8JeAAPUAU7XHBgngHBg3CwBAu/VCvHMMC9gzhR4?BtRph0wwR4ilRpg0xwB8glA8BtA8g0A8wwG8JeAAPUAz8nA?BgngHBg3CwBAuHgCzibMC9gwhwwh0R4BtRpwhxwR4ilRpwh?wwg0B8glA8BtA8whA8g0G8JeAAPUASEwKBgngHBg3CwBgty?tCsuzPC",
+    mirror: false,
+  },
 }
+
+const extra_L = {
+  "OLSZ": mirror_DPC(extra_J.OJZS),
+  "OLZS": mirror_DPC(extra_J.OJSZ),
+  "LO": mirror_DPC(extra_J.JO),
+}
+
+
 
 export { DPC, extra_O, extra_T, extra_S, extra_Z, extra_J, extra_L, extra_I, mirror_name }

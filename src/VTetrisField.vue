@@ -1,7 +1,7 @@
 <template>
   <div class="field-div">
     <canvas class="vt-field" ref="canvas" />
-    <button type="button" class="copy-btn" @click="to_tech">Copy</button>
+    <button type="button" class="copy-btn" @click="to_tech" title="copy as techmino field" >{{ button_name }}</button>
   </div>
 </template>
 
@@ -34,6 +34,8 @@ const mirrored_colors = {
   "_": ["#686868", "#949494"],
 }
 
+const button_name = ref('Copy')
+
 function get_color() {
   return props.mirror ? mirrored_colors : colors
 }
@@ -42,6 +44,10 @@ async function to_tech() {
   const res = await to_techmino_field((props.page as Page).field)
   console.log("export field:", res)
   navigator.clipboard.writeText(res)
+  button_name.value = "Done"
+  setTimeout(() => {
+    button_name.value = "Copy"
+  }, 1000)
 }
 
 const props = defineProps({
@@ -113,13 +119,17 @@ watch(props, () => {
   position: absolute;
   top: 0px;
   z-index: 99;
-  right: 0px;
+  right: 4px;
   border-radius: 0px 0px 4px 4px;
   font-size: 12px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
   border: 0 solid;
   cursor: pointer;
+}
+.copy-btn:hover {
+  background-color: rgb(163, 163, 172);
+  
 }
 .field-div {
   isolation: isolate;

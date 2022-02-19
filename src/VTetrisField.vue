@@ -1,10 +1,14 @@
 <template>
-  <canvas class="vt-field" ref="canvas" />
+  <div class="field-div">
+    <canvas class="vt-field" ref="canvas" />
+    <button type="button" class="copy-btn" @click="to_tech">Copy</button>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { ref, watch, onMounted, PropType } from "vue"
 import type { Page } from "tetris-fumen"
+import { to_techmino_field } from "./fumen"
 // color constants
 const colors = {
   "T": ["#b451ac", "#e56add"],
@@ -30,8 +34,14 @@ const mirrored_colors = {
   "_": ["#686868", "#949494"],
 }
 
-function get_color()  {
+function get_color() {
   return props.mirror ? mirrored_colors : colors
+}
+
+async function to_tech() {
+  const res = await to_techmino_field((props.page as Page).field)
+  console.log("export field:", res)
+  navigator.clipboard.writeText(res)
 }
 
 const props = defineProps({
@@ -94,5 +104,25 @@ watch(props, () => {
 <style>
 .vt-field {
   image-rendering: pixelated;
+}
+.copy-btn {
+  padding: 1.6px 8px;
+  color: black;
+  background-color: rgb(218, 218, 231);
+  border-color: #f3f3ed;
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+  right: 0px;
+  border-radius: 0px 0px 4px 4px;
+  font-size: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  border: 0 solid;
+  cursor: pointer;
+}
+.field-div {
+  isolation: isolate;
+  position: relative;
 }
 </style>

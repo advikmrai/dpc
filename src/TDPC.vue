@@ -5,7 +5,7 @@
     :cell_size="18"
     :mirror="props.mirror"
   />
-  <TFumenList :fumen="props.solutions_fumen" :height="5" :cell_size="18" :mirror="props.mirror" />
+  <TFumenList :fumen="props.solutions_fumen" :height="6" :cell_size="18" :mirror="props.mirror" />
 </template>
 <script setup lang="ts">
 import TFumenList from "./TFumenList.vue"

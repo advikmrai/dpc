@@ -153,8 +153,10 @@
     "@docsearch/css" "3.0.0-alpha.50"
     algoliasearch "^4.0.0"
 
-"@mgtd/pcf-wasm@file:../pcf/pkg":
-  version "0.1.0"
+"@mgtd/pcf-wasm@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@mgtd/pcf-wasm/-/pcf-wasm-0.1.1.tgz#185ada835a2566e5487023cd42523f4b5f37207b"
+  integrity sha512-cWpMEooliBEgra8OMmTGeDjj1E/NSiIGCqgYIie7kfTag0gDKT5cL2OygJFnEcR/oZtR3gjBNiPjn0q53iKUUQ==
 
 "@swc/core-android-arm-eabi@1.2.149":
   version "1.2.149"
@@ -623,7 +625,7 @@ vite-plugin-wasm@^0.0.2:
   resolved "https://registry.yarnpkg.com/vite-plugin-wasm/-/vite-plugin-wasm-0.0.2.tgz#36279c667f1c1cc406c34428e58e57853a43e57a"
   integrity sha512-tZmwp8Mj7RhicenZeDYw9VXbuT+9u85FFiBIvNbdbhiF1cDJqdV44P1ia8a1nGCbN+Dz4Aq+t6fun1eUs3EJ6Q==
 
-vite@^2.6.13, vite@^2.8.1:
+vite@^2.8.1:
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/vite/-/vite-2.8.3.tgz#bb9b7f1f1446d2e538e81026f48d2fe9f1926963"
   integrity sha512-967klrEiG7HEsN7fQYYVETs5495Iu6GpI7YyxoO5yVTJCRxjV8HhWgNWKgrbazjoOB9DQuztL53/nUoNqHNsWg==
@@ -635,10 +637,22 @@ vite@^2.6.13, vite@^2.8.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitepress@^0.22.2:
-  version "0.22.2"
-  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-0.22.2.tgz#3c99d3553a3187b95cbc6d6d9d78dcabca2626de"
-  integrity sha512-L6ykQzBXKzLTSU3zZbILeF1TONO6juV/RrL0DsA9OayomVQjEOoFY7cVdKOpIBb3T5Jy/GAAVxcvWtU/XJ5k4g==
+vite@^2.8.6:
+  version "2.8.6"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.8.6.tgz#32d50e23c99ca31b26b8ccdc78b1d72d4d7323d3"
+  integrity sha512-e4H0QpludOVKkmOsRyqQ7LTcMUDF3mcgyNU4lmi0B5JUbe0ZxeBBl8VoZ8Y6Rfn9eFKYtdXNPcYK97ZwH+K2ug==
+  dependencies:
+    esbuild "^0.14.14"
+    postcss "^8.4.6"
+    resolve "^1.22.0"
+    rollup "^2.59.0"
+  optionalDependencies:
+    fsevents "~2.3.2"
+
+vitepress@^0.22.3:
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-0.22.3.tgz#5d29741497fa4dd4d08e65d529310cf92897b52f"
+  integrity sha512-Yfvu/rent2vp/TXIDZMutS6ft2TJPn4xngS48PYFWDEbuFI2ccUAXM481lF1qVVnCKxfh4g8e/KPvevSJdg1Bw==
   dependencies:
     "@docsearch/css" "^3.0.0-alpha.41"
     "@docsearch/js" "^3.0.0-alpha.41"

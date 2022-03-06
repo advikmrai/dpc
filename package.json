@@ -1,10 +1,10 @@
 {
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs"
+    "build": "vitepress build docs "
   },
   "dependencies": {
-    "@mgtd/pcf-wasm": "file:/home/mgt/project/pcf/pkg",
+    "@mgtd/pcf-wasm": "0.1.1",
     "@types/pako": "^1.0.3",
     "pako": "^2.0.4",
     "tetris-fumen": "^1.1.1",
@@ -13,10 +13,8 @@
   "devDependencies": {
     "@types/node": "^17.0.0",
     "@vitejs/plugin-vue": "^1.9.4",
-    "vite": "^2.6.13",
-    "vite-plugin-top-level-await": "^0.0.3",
-    "vite-plugin-wasm": "^0.0.2",
-    "vitepress": "^0.22.2"
+    "vite": "^2.8.6",
+    "vitepress": "^0.22.3"
   },
   "name": "v-tetris-field",
   "description": "A vue3 component which draws tetris game field from fumen code.",

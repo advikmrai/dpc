@@ -83,6 +83,9 @@ Content of this page comes from:
 <script setup>
 import TDPC from "../src/TDPC.vue";
 import { extra_O, extra_T, extra_S, extra_Z, extra_I, extra_J, extra_L } from "../src/data";
+
+import { get_pc } from "@mgtd/pcf-wasm/index.js";
+console.log(get_pc(BigInt("0b1100001111111000111111110011111110001111"), "JISZ"));
 </script>
 
 <style>

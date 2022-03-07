@@ -5,5 +5,9 @@ export default defineConfig({
   description: 'Practical DPC solutions',
   themeConfig: {
     repo: 'Enter-tainer/dpc',
-  }
+    nav: [
+      { text: 'DPC', link: '/'},
+      { text: 'PCF', link: '/pcf.html', activeMatch: '^/$|^/pcf/' },
+    ],
+  },
 })

@@ -83,61 +83,17 @@ Content of this page comes from:
 <script setup>
 import TDPC from "../src/TDPC.vue";
 import { extra_O, extra_T, extra_S, extra_Z, extra_I, extra_J, extra_L } from "../src/data";
-import { onMounted } from "vue";
-onMounted(async () => {
-  let pcf = await import("@mgtd/pcf-wasm/pcf_wasm.js");
-  await pcf.default();
-  let get_pc = pcf.get_pc
-  console.log(get_pc(BigInt("0b1100001111111000111111110011111110001111"), "JISZ"));  
-})
 </script>
 
 <style>
 .container {
   max-width: 90vw !important;
 }
-.vt-field {
-  background-color: #f3f3ed;
-  border-radius: 4px;
+.fumen-item {
+  width: 160px;
 }
-@media (min-width: 320px) {
-  .fumen-item {
-    width: calc(50% - 4px);
-  }
-  .fumen-item .vt-field {
-    width: 100%;
-  }
+.fumen-item .vt-field {
+  width: 100%;
 }
-@media (min-width: 425px) {
-  .fumen-item {
-    width: calc(33% - 8px);
-  }
-  .fumen-item .vt-field {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .fumen-item {
-    width: calc(25% - 16px);
-  }
-  .fumen-item .vt-field {
-    width: 100%;
-  }
-}
-@media (min-width: 1440px) {
-  .fumen-item {
-    width: calc(20% - 32px);
-  }
-  .fumen-item .vt-field {
-    width: 100%;
-  }
-}
-@media (min-width: 2560px) {
-  .fumen-item {
-    width: calc(14% - 32px);
-  }
-  .fumen-item .vt-field {
-    width: 100%;
-  }
-}
+
 </style>

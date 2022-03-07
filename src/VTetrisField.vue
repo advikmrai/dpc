@@ -1,13 +1,19 @@
 <template>
   <div class="field-div">
-    <canvas class="vt-field" ref="canvas" />
-    <button type="button" class="copy-btn" @click="to_tech" title="copy as techmino field" >{{ button_name }}</button>
+    <canvas class="vt-field" ref="canvas" @click="edit_field" />
+    <button
+      v-if="display_copy"
+      type="button"
+      class="copy-btn"
+      @click="to_tech"
+      title="copy as techmino field"
+    >{{ button_name }}</button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onMounted, PropType } from "vue"
-import type { Page } from "tetris-fumen"
+import { ref, watch, onMounted, PropType, triggerRef, computed } from "vue"
+import type { Field, Page } from "tetris-fumen"
 import { to_techmino_field } from "./fumen"
 // color constants
 const colors = {
@@ -55,7 +61,15 @@ const props = defineProps({
   height: { type: Number, default: 20 },
   cell_size: { type: Number, default: 20 },
   mirror: { type: Boolean, default: false },
+  allow_edit: { type: Boolean, default: false },
+  display_copy: {type: Boolean, default: true}
 })
+
+const emit = defineEmits<{
+  (e: 'field_change', field: bigint): void
+}>()
+
+let page = ref<Page>(Object.assign(Object.create(Object.getPrototypeOf(props.page)), props.page) as Page)
 // variables
 var ctx: CanvasRenderingContext2D | null = null
 const canvas = ref<HTMLCanvasElement>()
@@ -91,19 +105,61 @@ function drawField(ctx: CanvasRenderingContext2D, page: Page) {
     // }
   }
 }
+const binary_field = computed(() => {
+  let res = BigInt(0)
+  for (var i = 0; i < 20; i++) {
+    for (var j = 0; j < 10; j++) {
+      var piece = page.value.field.at(j, i)
+      const shift_amount = BigInt(i * 10 + j)
+      if (piece != "_") {
+        // console.log(i, j, shift_amount)
+        res += (BigInt(1) << shift_amount)
+      }
+    }
+  }
+  // console.log(res.toString(2))
+  return res
+})
+
+function edit_field(p: any) {
+  if (!props.allow_edit) {
+    return
+  }
+  if (!canvas.value) {
+    return
+  }
+  const real_cell_size = canvas.value.offsetHeight / props.height
+  const realX = Math.floor(p.offsetX / real_cell_size)
+  const realY = props.height - 1 - Math.floor(p.offsetY / real_cell_size)
+  const current = page.value.field.at(realX, realY)
+  const new_page: Page = Object.assign(Object.create(Object.getPrototypeOf(page.value)), page.value)
+  let new_field = new_page.field.copy()
+  if (current === '_') {
+    new_field.set(realX, realY, "X")
+  } else {
+    new_field.set(realX, realY, "_")
+  }
+  new_page.field = new_field
+  page.value = new_page
+  emit('field_change', binary_field.value)
+}
 onMounted(() => {
   if (!canvas.value) return
   canvas.value.width = 10 * props.cell_size
   canvas.value.height = props.height * props.cell_size
   ctx = canvas.value.getContext("2d")
   if (!ctx) return
-  drawField(ctx, props.page as Page)
+  drawField(ctx, page.value as Page)
+  emit('field_change', binary_field.value)
 })
 watch(props, () => {
+  page.value = props.page as Page
+})
+watch(page, () => {
   if (!ctx) return
   ctx.canvas.height = props.height * props.cell_size
   ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
-  drawField(ctx, props.page as Page)
+  drawField(ctx, page.value as Page)
 })
 </script>
 
@@ -129,10 +185,13 @@ watch(props, () => {
 }
 .copy-btn:hover {
   background-color: rgb(163, 163, 172);
-  
 }
 .field-div {
   isolation: isolate;
   position: relative;
+}
+.vt-field {
+  background-color: #f3f3ed;
+  border-radius: 4px;
 }
 </style>

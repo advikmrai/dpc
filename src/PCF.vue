@@ -41,7 +41,7 @@ function update_field(field: bigint) {
   binary_field.value = field
 }
 async function solve_pc() {
-  let res = (await get_pc())(binary_field.value, sequence.value)
+  let res = (await get_pc())(binary_field.value, sequence.value.toUpperCase())
   if (res == "v115@") {
     res = empty
   }

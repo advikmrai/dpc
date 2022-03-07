@@ -7,7 +7,7 @@ export default defineConfig({
     repo: 'Enter-tainer/dpc',
     nav: [
       { text: 'DPC', link: '/'},
-      { text: 'PCF', link: '/pcf.html', activeMatch: '^/$|^/pcf/' },
+      { text: 'PCF', link: '/pcf.html'},
     ],
   },
 })

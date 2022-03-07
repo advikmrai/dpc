@@ -107,9 +107,10 @@ function drawField(ctx: CanvasRenderingContext2D, page: Page) {
 }
 const binary_field = computed(() => {
   let res = BigInt(0)
+  const current_field = page.value.field
   for (var i = 0; i < 20; i++) {
     for (var j = 0; j < 10; j++) {
-      var piece = page.value.field.at(j, i)
+      var piece = current_field.at(j, i)
       const shift_amount = BigInt(i * 10 + j)
       if (piece != "_") {
         // console.log(i, j, shift_amount)

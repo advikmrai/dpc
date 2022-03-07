@@ -153,10 +153,10 @@
     "@docsearch/css" "3.0.0-alpha.50"
     algoliasearch "^4.0.0"
 
-"@mgtd/pcf-wasm@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@mgtd/pcf-wasm/-/pcf-wasm-0.1.1.tgz#185ada835a2566e5487023cd42523f4b5f37207b"
-  integrity sha512-cWpMEooliBEgra8OMmTGeDjj1E/NSiIGCqgYIie7kfTag0gDKT5cL2OygJFnEcR/oZtR3gjBNiPjn0q53iKUUQ==
+"@mgtd/pcf-wasm@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@mgtd/pcf-wasm/-/pcf-wasm-0.1.2.tgz#4b2657a2907e003c7e289268d5a3785b5dcf044b"
+  integrity sha512-xWfVbJgdUhp81M3PqRTMaevXITgFrJ+HcVm2jK5I7HPl4PW3Kw/T+Faveas3xgHNFIsY5aCHjUBR2UzrODVTdQ==
 
 "@types/node@^17.0.0":
   version "17.0.18"

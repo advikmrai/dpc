@@ -69,7 +69,7 @@ const emit = defineEmits<{
   (e: 'field_change', field: bigint): void
 }>()
 
-let page = ref<Page>(Object.assign(Object.create(Object.getPrototypeOf(props.page)), props.page) as Page)
+let page = ref<Page>(props.page as Page)
 // variables
 var ctx: CanvasRenderingContext2D | null = null
 const canvas = ref<HTMLCanvasElement>()
@@ -141,7 +141,9 @@ function edit_field(p: any) {
   }
   new_page.field = new_field
   page.value = new_page
-  emit('field_change', binary_field.value)
+  if (props.allow_edit) {
+    emit('field_change', binary_field.value)
+  }
 }
 onMounted(() => {
   if (!canvas.value) return
@@ -150,7 +152,9 @@ onMounted(() => {
   ctx = canvas.value.getContext("2d")
   if (!ctx) return
   drawField(ctx, page.value as Page)
-  emit('field_change', binary_field.value)
+  if (props.allow_edit) {
+    emit('field_change', binary_field.value)
+  }
 })
 watch(props, () => {
   page.value = props.page as Page

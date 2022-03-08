@@ -62,7 +62,7 @@ const props = defineProps({
   cell_size: { type: Number, default: 20 },
   mirror: { type: Boolean, default: false },
   allow_edit: { type: Boolean, default: false },
-  display_copy: {type: Boolean, default: true}
+  display_copy: { type: Boolean, default: true }
 })
 
 const emit = defineEmits<{
@@ -159,6 +159,9 @@ onMounted(() => {
 })
 watch(props, () => {
   page.value = props.page as Page
+  if (props.allow_edit) {
+    emit('field_change', binary_field.value)
+  }
 })
 watch(page, () => {
   if (!ctx) return
@@ -198,5 +201,6 @@ watch(page, () => {
 .vt-field {
   background-color: #f3f3ed;
   border-radius: 4px;
+  width: 100%;
 }
 </style>

@@ -62,7 +62,4 @@ async function solve_pc() {
 .fumen-item {
   width: 160px;
 }
-.fumen-item .vt-field {
-  width: 100%;
-}
 </style>

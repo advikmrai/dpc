@@ -92,8 +92,5 @@ import { extra_O, extra_T, extra_S, extra_Z, extra_I, extra_J, extra_L } from ".
 .fumen-item {
   width: 160px;
 }
-.fumen-item .vt-field {
-  width: 100%;
-}
 
 </style>

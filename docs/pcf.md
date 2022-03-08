@@ -1,6 +1,16 @@
 ---
 title: PC Finder
 ---
+
+## Solve Your Own
+
+<label>
+  Fumen:
+  <input v-model="fumen"/>
+</label>
+
+<PCF :initial_field_fumen="fumen"/>
+
 ## PCO
 <PCF/>
 
@@ -18,7 +28,8 @@ Content of this page comes from:
 <script setup>
 import TDPC from "../src/TDPC.vue";
 import PCF from "../src/PCF.vue"
-
+import { ref, watch, computed } from "vue"
+let fumen = ref()
 </script>
 <style>
 .container {

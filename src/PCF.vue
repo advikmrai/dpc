@@ -62,4 +62,7 @@ async function solve_pc() {
 .fumen-item {
   width: 160px;
 }
+input {
+  border: 1px solid #ccc;
+}
 </style>

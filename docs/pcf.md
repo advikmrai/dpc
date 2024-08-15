@@ -6,7 +6,7 @@ title: PC Finder
 
 <label>
   Fumen:
-  <input v-model="fumen"/>
+  <input v-model="fumen" style="border: 1px solid #ccc;">
 </label>
 
 <PCF :initial_field_fumen="fumen"/>

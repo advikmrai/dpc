@@ -1,7 +1,7 @@
 ---
 title: PC Finder
 ---
-
+# PC Finder 
 ## Solve Your Own
 
 <label>

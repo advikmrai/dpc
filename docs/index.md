@@ -4,73 +4,47 @@ title: DPC
 
 # DPC
 
+<div class="setups-container">
+
 ## Extra O
 
-### O -> J
-
-<TDPC v-bind="extra_O.O2J" />
-
-### J -> O
-
-<TDPC v-bind="extra_O.J2O" />
+<TDPC name="O -> J" v-bind="extra_O.O2J" />
+<TDPC name="J -> O" v-bind="extra_O.J2O" />
 
 
 ## Extra T
 
-<TDPC v-bind="extra_T.ALL" />
+<TDPC name="Extra T" v-bind="extra_T.ALL" />
 
 ## Extra S
 
-### S -> O
-
-<TDPC v-bind="extra_S.S2O" />
-
-### O -> S
-
-<TDPC v-bind="extra_S.O2S" />
+<TDPC name="S -> O" v-bind="extra_S.S2O" />
+<TDPC name="O -> S" v-bind="extra_S.O2S" />
 
 ## Extra Z
 
-### Z -> O
-
-<TDPC v-bind="extra_Z.Z2O" />
-
-### O -> Z
-
-<TDPC v-bind="extra_Z.O2Z" />
+<TDPC name="Z -> O" v-bind="extra_Z.Z2O" />
+<TDPC name="O -> Z" v-bind="extra_Z.O2Z" />
 
 ## Extra I
 
-### I -> L -> O
-<TDPC v-bind="extra_I.I2L2O" />
-
-### O -> L
-<TDPC v-bind="extra_I.O2L" />
-
-### L -> I 
-<TDPC v-bind="extra_I.L2I" />
+<TDPC name="I -> L -> O" v-bind="extra_I.I2L2O" />
+<TDPC name="O -> L" v-bind="extra_I.O2L" />
+<TDPC name="L -> I" v-bind="extra_I.L2I" />
 
 ## Extra J
 
-### OJ and ZS
-<TDPC v-bind="extra_J.OJZS" />
-
-### OJ and SZ
-<TDPC v-bind="extra_J.OJSZ" />
-
-### JO
-<TDPC v-bind="extra_J.JO" />
+<TDPC name="OJ and ZS" v-bind="extra_J.OJZS" />
+<TDPC name="OJ and SZ" v-bind="extra_J.OJSZ" />
+<TDPC name="JO" v-bind="extra_J.JO" />
 
 ## Extra L
 
-### OL and SZ
-<TDPC v-bind="extra_L.OLSZ" />
+<TDPC name="OL and SZ" v-bind="extra_L.OLSZ" />
+<TDPC name="OL and ZS" v-bind="extra_L.OLZS" />
+<TDPC name="LO" v-bind="extra_L.LO" />
 
-### OL and ZS
-<TDPC v-bind="extra_L.OLZS" />
-
-### LO
-<TDPC v-bind="extra_L.LO" />
+</div>
 
 ## Credits
 
@@ -94,5 +68,11 @@ import { extra_O, extra_T, extra_S, extra_Z, extra_I, extra_J, extra_L } from ".
 .fumen-item {
   width: 160px;
 }
-
+.setups-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.setups-container h2 {
+    width: 100%;
+}
 </style>

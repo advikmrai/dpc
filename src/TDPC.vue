@@ -6,7 +6,7 @@ import PCF from "../src/PCF.vue"
 
 const props = withDefaults(defineProps<{
   name: string,
-  blurb: string,
+  blurb?: string,
   build_fumen: string,
   field_fumen: string,
   solutions_fumen: string,

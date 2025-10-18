@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 export default defineConfig({
-  lang: 'zh-CN',
+  lang: 'en',
   title: 'DPC',
   description: 'Practical DPC solutions',
   themeConfig: {

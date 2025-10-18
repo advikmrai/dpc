@@ -10,15 +10,17 @@ title: DPC
 
 <TDPC name="KURUMA" v-bind="extra_O.O2J" />
 <TDPC name="TSD DPC" v-bind="extra_O.J2O" />
-<TDPC name="TKISHIFT" v-bind="extra_O.TKISHIFT" />
+<TDPC name="TKI SHIFTED" v-bind="extra_O.TKISHIFT" />
 <TDPC name="ALBY" v-bind="extra_O.ALBY" />
 <TDPC name="1-TILE FALLBACK" v-bind="extra_O.FALLBACK" />
 <TDPC name="TS&TET" v-bind="extra_O.TSTET" />
+<TDPC name="2L PC into 7th" v-bind="extra_O.TWOL" />
 
 ## Extra S
 
 <TDPC name="KURUMA" v-bind="extra_S.O2S" />
 <TDPC name="HOLD O" v-bind="extra_S.HOLDO" />
+<TDPC name="ELEPHANT SHIFTED" v-bind="extra_S.ELPTSHIFTED" />
 <TDPC name="LIME" v-bind="extra_S.S2O" />
 
 ## Extra I

@@ -52,6 +52,12 @@ const extra_O = {
     build_fumen: "v115@+gRpAeR4AtDeRpR4BtBeg0RpilAtCeg0RpglzhAeh0?JeAgH",
     field_fumen: "v115@ShB8AeC8DeF8BeA8JeAgH",
     solutions_fumen: "v115@9gwhRph0R4ilwhRpg0R4ywAtwhB8g0C8wwBtwhF8gl?AtA8JeAgWaA0/P9A0ngHBFbcRASEZ9AYIaHBQecRAylAAA9?gwhRph0R4ywwhRpg0R4hlwwAtwhB8g0C8glBtwhF8glAtA8?JeAAPaA08fRB5ngHBFbcRASEZ9ARLaHBQecRAylAAA9gzhB?thlRph0ywBtglRpg0B8wwC8glR4g0F8R4A8JeAAPaAT+P9A?xngHBFbcRAS0OOBSOaHBQecRAylAAA9gzhBthlR4h0ywBtg?lRpg0B8wwC8glRpg0F8R4A8JeAAPZAx/3UB1ngHBFbcRASk?22A0mv2AUo78AZAAAA"
+  }, 
+  "TWOL": {
+    blurb: "the best one BY FAR. you get TWO perfect clears, and really good TSS+ chance. if you can get the 2L PC with your queue, ALWAYS go for it",
+    build_fumen: "v115@rgR4GeR4HewwBtFeywBtEeRpg0zhglTpi0ilRpJeAg?H",
+    fiedl_fumen: "v115@/gB8GeB8HeC8FeE8OeAgH",
+    solutions_fumen: "v115@9gh0B8R4zhg0B8R4ywhlg0C8BtwwRpglE8BtRpglJe?AgWaAU7HOB4ngHBFbcRASEB6AVRaHBQecRAylAAA9gh0B8R?4Bthlg0B8R4RpBtglg0C8zhwwglE8RpywJeAAPaASEAEB1n?gHBFbcRAS0GEBTOaHBQecRAylAAA9gh0B8Btzhg0B8ywR4h?lg0C8wwR4RpglE8BtRpglJeAAPaAy8P9A5ngHBFbcRAS0+5?AXOaHBQecRAylAAA9gh0B8zhR4g0B8ywBthlg0C8wwRpBtg?lE8RpR4glJeAAPaAS7HOB0ngHBFbcRAS0+5AURaHBQecRAy?lAAA9gh0B8R4zhg0B8R4ywRpg0C8BtwwilE8BtglRpJeAAP?aAS7XHBwngHBFbcRAS0+5ATOaHBQecRAylAAA9gh0B8zhQ4?glg0B8ywBtR4g0C8wwRpBtQ4E8RpilJeAAPZAx//DB4ngHB?FbcRASU0RBwmv2AUo78AZAAAA9gh0B8R4ywAtg0B8R4Rpww?Btg0C8zhAtglE8RpilJeAAPZAx8P9A1ngHBFbcRASECLB4m?v2AUo78AZAAAA9gh0B8Btzhg0B8ywR4Rpg0C8wwR4ilE8Bt?glRpJeAAPYATluABFrnRASo78A4pvRBvfEEBwnAVB"
   }
 }
 
@@ -106,6 +112,12 @@ const extra_S = {
     build_fumen: "v115@6gg0CeRpDeg0BeglRpR4Aeh0AtAeglywT4Bthlwwzh?R4AtJeAgH",
     field_fumen: "v115@OhA8CeB8DeA8BeE8AeC8KeAgH",
     solutions_fumen: "v115@9gh0R4AtRphlwhg0R4BtRpA8glwhg0B8AtywA8glwh?E8wwC8whJeAgWaA48/DBxngHBFbcRASkd9AQOaHBQecRAyl?AAA9gzhAtRpi0ilBtRpA8Q4g0glB8AtywA8R4E8wwC8Q4Je?AAPaATBAEBzngHBFbcRAS0mRBTRaHBQecRAylAAA9gh0R4y?whlwhg0R4RpwwAtA8glwhg0B8RpBtA8glwhE8AtC8whJeAA?PaAT4f2AwngHBFbcRAS0eHBRLaHBQecRAylAAA"
+  },
+  "ELPTSHIFTED": {
+    blurb: "discovered this, and was surprised it wasn't documented anywhere. great TSS+ chances, easy solves (easier than regular elephant imo)",
+    build_fumen: "v115@ChR4Bewhh0BtR4Cewhg0RpBtR4Aeglwhg0RpAeR4il?whJeAgH",
+    field_fumen: "v115@WhB8BeD8AeF8JeAgH",
+    solutions_fumen: "v115@9gilg0zhRpglR4i0BtRpR4ywB8BtD8wwF8JeAgWaAU?435AyngHBFbcRASEp2ASLaHBQecRAylAAA9gilRpzhAtglR?4Rpi0BtR4ywB8g0AtD8wwF8JeAAPaAzCgRB2ngHBFbcRAS0?+UBQUaHBQecRAylAAA9gh0AtRpilR4g0BtRpglzhg0AtywB?8R4D8wwF8JeAAPaAz5/DBzngHBFbcRAS0eHBYOaHBQecRAy?lAAA9gh0ywilR4g0RpwwAtglzhg0RpBtB8R4D8AtF8JeAAP?ZAxFAEBwngHBFbcRAS0gOB4mv2AUo78AZAAAA9gRpywg0zh?RpglwwAti0R4ilBtB8R4D8AtF8JeAAPZAREgRB1ngHBFbcR?AS0wHBwmv2AUo78AZAAAA9gg0R4ilBtRpi0glzhRpR4ywB8?BtD8wwF8JeAAPZAR4/DB4ngHBFbcRAS0f9A4mv2AUo78AZA?AAA9gh0Q4ywBtRpg0ilzhRpg0glR4wwB8BtD8Q4F8JeAAPZ?AR4nAByngHBFbcRAS0f9Awmv2AUo78AZAAAA9ggli0zhRpg?lywR4BtRphlwwR4B8BtD8g0F8JeAAPYAY1gHBFrnRASo78A?Yu2KBvfEEBwnAVB9gg0R4ywBtRpR4hlzhRpi0glwwB8BtD8?glF8JeAAPYAXVm9AFrnRASo78A4sYEBvfEEBwnAVB9gg0R4?ilBtRpi0wwzhRpR4ywB8BtD8glF8JeAAPYATlgOBFrnRASo?78AYbk2AvfEEBwnAVB"
   }
 }
 

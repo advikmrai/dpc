@@ -43,11 +43,19 @@ const showModal = ref(false);
 
 <style scoped>
 .setup-preview {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 10px;
     margin: 10px;
     cursor: pointer;
     display: inline-block;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.setup-preview:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .modal {
@@ -66,7 +74,9 @@ const showModal = ref(false);
     background-color: #fefefe;
     margin: 5% auto; /* Smaller margin */
     padding: 20px;
-    border: 1px solid #888;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     width: 90%;
     max-width: 800px; /* Larger max-width for content */
 }

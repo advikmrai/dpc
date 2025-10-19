@@ -20,8 +20,12 @@ title: DPC
 
 <TDPC name="KURUMA" v-bind="extra_S.O2S" />
 <TDPC name="HOLD O" v-bind="extra_S.HOLDO" />
+<TDPC name="SLED" v-bind="extra_S.SLED" />
 <TDPC name="ELEPHANT SHIFTED" v-bind="extra_S.ELPTSHIFTED" />
+<TDPC name="BUTTER" v-bind="extra_S.BUTTER" />
+<TDPC name="THE OTHER BUTTER" v-bind="extra_S.OTHERBUTTER" />
 <TDPC name="LIME" v-bind="extra_S.S2O" />
+<TDPC name="BROKEN SLED" v-bind="extra_S.XSLED" />
 
 ## Extra I
 
@@ -47,11 +51,10 @@ title: DPC
 
 ## Credits
 
-Content of this page comes from:
+Many thanks to Enter-tainer for the existence of their dpc site
 
+- https://github.com/Enter-tainer/dpc
 - https://github.com/flaribbit/v-tetris-field
-- http://tetris.johnbeak.cz/dpc/builds.php
-- https://four.lol/perfect-clears/dpc
 
 <!-- end -->
 

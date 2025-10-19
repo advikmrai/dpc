@@ -19,7 +19,7 @@ const extra_O = {
     build_fumen: "v115@1gAtGewhBtGewhAtCehli0whRpAeR4glRpg0whRpR4?AeglRpKeAgWaAFLDmClcJSAVDEHBEooRBPoAVBTH8LCqXBA?A",
     field_fumen: "v115@JhA8GeC8GeE8AeC8KeAgH",
     solutions_fumen: "v115@9gRphlywAtg0whRpA8glQ4wwBtg0whC8glR4Ath0wh?E8Q4C8whJeAgWUAYEoABgngHBg3CwBgtjPCaHExC9gRpBty?wR4whRpA8BtwwR4glwhC8i0ilwhE8g0C8whJeAAPUAYBIOB?gngHBg3CwBg9TPCTnjxC9gRphlBti0whRpA8glQ4Btwwg0w?hC8glR4ywwhE8Q4C8whJeAAPUA48nABgngHBg3CwBg99tCa?HUPC9gRpywzhglRpA8wwR4AtilC8R4Bti0E8AtC8g0JeAAP?UAW4nABgngHBg3CwBAfLuCMX9wC9gRpBtzhR4RpA8Btywhl?C8i0wwR4glE8g0C8glJeAAPUA1CwKBgngHBg3CwBAi/wCvH?MMC9gRpBtzhhlRpA8BtywR4C8i0wwR4glE8g0C8glJeAAPU?A1CwKBgngHBg3CwBgs/wCvX8LC9gRpBtR4zhRpA8Bth0wwh?lC8R4g0ywglE8g0C8glJeAAPUAT4f2AgngHBg3CwBACmPCv?HMMC",
-    blurb: "You can get a TetPC more than 4/5ths the time, which is some insane work.",
+    blurb: "you can get a tetPC more than 4/5ths the time, which is some insane work",
     mirror: false,
   },
   "J2O": {
@@ -30,7 +30,7 @@ const extra_O = {
     mirror: false,
   },
   "ALBY": {
-    blurb: "lil discovery, surprisingly has good TetPC.",
+    blurb: "lil discovery, surprisingly has decent TetPC.",
     build_fumen: "v115@pgRpHeRpHewhDeR4CewhilR4CeAtwhgli0RpAeBtwh?Ceg0RpAeAtKeAgH",
     field_fumen: "v115@9gB8HeB8HeA8DeB8CeA8CeC8AeA8KeAgH",
     solutions_fumen: "v115@9gB8RpywR4whB8RpglwwR4AtwhA8g0ilB8BtwhA8i0?C8AtA8whJeAgWaA3/f2AwngHBFbcRASUTOBYIaHBQecRAyl?AAA9gB8hlywR4whB8i0wwR4AtwhA8Rpglg0B8BtwhA8Rpgl?C8AtA8whJeAAPaA08fRB5ngHBFbcRASEZ9ARLaHBQecRAyl?AAA9gB8RpywR4whB8i0wwR4AtwhA8ilg0B8BtwhA8glRpC8?AtA8whJeAAPaAzFwKB4ngHBFbcRASEp2AQIaHBQecRAylAA?A9gB8R4BthlRpB8ywBtglRpA8zhB8i0A8R4wwC8glA8g0Je?AAPZAxCoAB0ngHBFbcRASkeOB0mv2AUo78AZAAAA9gB8ywR?4i0B8BtR4zhA8RpBtB8ilA8RpwwC8glA8g0JeAAPZAx/P9A?wngHBFbcRASUELB2mv2AUo78AZAAAA9gB8ywR4ilB8BtR4z?hA8RpBtB8i0A8RpwwC8glA8g0JeAAPZAR+3UByngHBFbcRA?SUsHBymv2AUo78AZAAAA9gB8g0Q4BtywwhB8g0R4BtRpwhA?8h0glQ4B8RpwhA8ilC8wwA8whJeAAPZAR4vKBzngHBFbcRA?S03AB2mv2AUo78AZAAAA9gB8glQ4BtywwhB8glR4BtRpwhA?8g0hlQ4B8RpwhA8i0C8wwA8whJeAAPYAZFzABFrnRASo78A?YO02AvfEEBwnAVB"
@@ -100,18 +100,18 @@ const extra_S = {
     ]),
     field_fumen: "v115@OhA8IeC8AeC8AeE8JeAgH",
     solutions_fumen: "v115@9gwhglQ4ywh0RpwhglR4wwAtg0A8RpwhhlQ4Btg0C8?whC8AtE8JeAgWUAYEoABgngHBg3CwBAnFgCqyTxC9gwhBty?wR4Rpwhg0BtwwR4A8Rpwhi0ilC8whC8glE8JeAAPUAYBIOB?gngHBg3CwBAi3LCPtjxC9gwhilR4h0RpwhglwwR4Atg0A8R?pwhywBtg0C8whC8AtE8JeAAPUA48nABgngHBg3CwBAn9wCv?vTWC9gg0zhywRpi0Q4BtwwA8RpilR4BtC8glC8Q4E8JeAAP?UAW4nABgngHBg3CwBAXMgCq+LMC9gBtzhR4Rph0ywR4A8Rp?g0BtwwilC8g0C8glE8JeAAPUA1CwKBgngHBg3CwBAiHgCzu?bMC9gh0zhR4RpBtywR4A8Rpg0BtwwilC8g0C8glE8JeAAPU?A1CwKBgngHBg3CwBAirgCzu3LC9gzhBtR4Rph0wwhlR4A8R?pg0ywglBtC8g0C8glE8JeAAPUAT4f2AgngHBg3CwBACmPCP?tbMC",
-    blurb: "You can get a TetPC more than 4/5ths the time, which is some insane work.",
+    blurb: "you can get a tetPC more than 4/5ths the time, which is some insane work",
     mirror: false,
   },
   "S2O": {
     build_fumen: "v115@2gRpEewhBeRpEewhCeR4Bthlwhg0AeT4Btglwhi0R4?CeglJeAgWaAFLDmClcJSAVDEHBEooRBToAVBqiLuCJHBAA",
     field_fumen: "v115@KhB8EeA8BeB8EeF8CeA8JeAgH",
     solutions_fumen: "v115@9gQ4hlzhywR4glB8Rpg0wwAtA8Q4glB8Rpg0BtF8h0?AtA8JeAgWaAU4XHB2ngHBFbcRASEp2AUOaHBQecRAylAAA9?gRpg0zhilRpg0B8Q4ywAtA8h0B8R4wwBtF8Q4glAtA8JeAA?PaAzC45A0ngHBFbcRAS0mRBXLaHBQecRAylAAA9gilzhi0g?lRpB8Q4Btwwg0A8RpB8R4ywF8Q4BtA8JeAAPaAz/35AyngH?BFbcRAS0OOBXIaHBQecRAylAAA9gi0zhglR4Btg0B8ilRpA?8BtB8ywRpF8wwR4A8JeAAPaAyFYHB2ngHBFbcRAS0GEBZIa?HBQecRAylAAA9gRpg0zhywRpg0B8Q4BtwwglA8h0B8R4ilF?8Q4BtA8JeAAPaASBwKBzngHBFbcRAS0uABULaHBQecRAylA?AA9gi0zhywBtg0B8RpR4glA8BtB8RpilF8R4wwA8JeAAPZA?RE45AzngHBFbcRAS0Q6A0mv2AUo78AZAAAA9gBtglzhRpg0?ilB8Q4ywg0A8BtB8R4wwh0F8Q4RpA8JeAAPZAx//DB4ngHB?FbcRASU0RBwmv2AUo78AZAAAA",
-    blurb: "100% cover, but avoid whenever you can. I find it boring to use: a plain failsafe that doesn't lend itself to bonus scoring. 0% TetPC chance btw.",
+    blurb: "100% cover. many players live by this one, but I avoid it due to its sameness: a plain failsafe that doesn't lend itself to bonus scoring (save for the TSS+ chance). 0% TetPC chance btw.",
     mirror: false,
   },
   "HOLDO": {
-    blurb: "peak. I always go for this one; high scoring. You can even squeeze a TS0 in before a TetPC.",
+    blurb: "peak. i always go for this one; high scoring. you can even squeeze a TS0 in before a TetPC",
     build_fumen: "v115@6gg0CeRpDeg0BeglRpR4Aeh0AtAeglywT4Bthlwwzh?R4AtJeAgH",
     field_fumen: "v115@OhA8CeB8DeA8BeE8AeC8KeAgH",
     solutions_fumen: "v115@9gh0R4AtRphlwhg0R4BtRpA8glwhg0B8AtywA8glwh?E8wwC8whJeAgWaA48/DBxngHBFbcRASkd9AQOaHBQecRAyl?AAA9gzhAtRpi0ilBtRpA8Q4g0glB8AtywA8R4E8wwC8Q4Je?AAPaATBAEBzngHBFbcRAS0mRBTRaHBQecRAylAAA9gh0R4y?whlwhg0R4RpwwAtA8glwhg0B8RpBtA8glwhE8AtC8whJeAA?PaAT4f2AwngHBFbcRAS0eHBRLaHBQecRAylAAA"
@@ -121,6 +121,36 @@ const extra_S = {
     build_fumen: "v115@ChR4Bewhh0BtR4Cewhg0RpBtR4Aeglwhg0RpAeR4il?whJeAgH",
     field_fumen: "v115@WhB8BeD8AeF8JeAgH",
     solutions_fumen: "v115@9gilg0zhRpglR4i0BtRpR4ywB8BtD8wwF8JeAgWaAU?435AyngHBFbcRASEp2ASLaHBQecRAylAAA9gilRpzhAtglR?4Rpi0BtR4ywB8g0AtD8wwF8JeAAPaAzCgRB2ngHBFbcRAS0?+UBQUaHBQecRAylAAA9gh0AtRpilR4g0BtRpglzhg0AtywB?8R4D8wwF8JeAAPaAz5/DBzngHBFbcRAS0eHBYOaHBQecRAy?lAAA9gh0ywilR4g0RpwwAtglzhg0RpBtB8R4D8AtF8JeAAP?ZAxFAEBwngHBFbcRAS0gOB4mv2AUo78AZAAAA9gRpywg0zh?RpglwwAti0R4ilBtB8R4D8AtF8JeAAPZAREgRB1ngHBFbcR?AS0wHBwmv2AUo78AZAAAA9gg0R4ilBtRpi0glzhRpR4ywB8?BtD8wwF8JeAAPZAR4/DB4ngHBFbcRAS0f9A4mv2AUo78AZA?AAA9gh0Q4ywBtRpg0ilzhRpg0glR4wwB8BtD8Q4F8JeAAPZ?AR4nAByngHBFbcRAS0f9Awmv2AUo78AZAAAA9ggli0zhRpg?lywR4BtRphlwwR4B8BtD8g0F8JeAAPYAY1gHBFrnRASo78A?Yu2KBvfEEBwnAVB9gg0R4ywBtRpR4hlzhRpi0glwwB8BtD8?glF8JeAAPYAXVm9AFrnRASo78A4sYEBvfEEBwnAVB9gg0R4?ilBtRpi0wwzhRpR4ywB8BtD8glF8JeAAPYATlgOBFrnRASo?78AYbk2AvfEEBwnAVB"
+  }, 
+  "BUTTER": {
+    blurb: "good recovery, real good tetpc.", 
+    build_fumen: merge_pages([
+      "v115@zgg0Iei0GeRpCeAtzhRpglAeBtT4ilAeAtT4KeAgH",
+      "v115@zgg0Iei0GeRpCeT4AtRpglAeT4BtilAezhAtKeAgH"
+    ]),
+    field_fumen: "v115@HhA8IeC8GeC8AeE8KeAgH",
+    solutions_fumen: "v115@9gywR4h0hlwhA8wwR4Atg0RpglwhC8Btg0RpglwhC8?AtE8whJeAgWaA353UB0ngHBFbcRASU7KBSRaHBQecRAylAA?A9gywR4glRpg0whA8wwR4AtglRpg0whC8Bthlh0whC8AtE8?whJeAAPaA1FwKBwngHBFbcRASUr2AQOaHBQecRAylAAA9gB?tywR4RpwhA8BtwwR4g0RpwhC8ili0whC8glE8whJeAAPaAV?4vKBzngHBFbcRASEhHBVLaHBQecRAylAAA"
+  },
+  "OTHERBUTTER": {
+    blurb: "the other one. pretty good recovery",
+    build_fumen: merge_pages([
+      "v115@1gglGeilGeh0CeAtzhg0RpAeBtT4g0RpAeAtT4KeAg?H",
+      "v115@1gglGeilGeh0CeT4Atg0RpAeT4Btg0RpAezhAtKeAg?H"
+    ]),
+    field_fumen: "v115@JhA8GeC8GeC8AeE8KeAgH",
+    solutions_fumen: "v115@9gRpywR4Atg0whRpA8wwR4Btg0whC8ilAth0whC8gl?E8whJeAgWaAX7HOB4ngHBFbcRASU7KBWUaHBQecRAylAAA9?gRpywh0R4whRpA8wwAtg0R4glwhC8Btg0ilwhC8AtE8whJe?AAPaAVEg2A2ngHBFbcRASEBVBSRaHBQecRAylAAA9gRpywi?lg0whRpA8wwAtglR4g0whC8BtR4h0whC8AtE8whJeAAPaAV?BoAB5ngHBFbcRASEpRBULaHBQecRAylAAA9gRpywBti0RpA?8ilBtQ4g0C8glzhR4C8wwE8Q4JeAAPZAx8f2A2ngHBFbcRA?SEqHB4mv2AUo78AZAAAA"
+  }, 
+  "SLED": {
+    blurb: "good for aiming for tetpc on queues that kuruma doesn't cover",
+    build_fumen: "v115@4gQ4IeR4BewhQ4hlCeQ4RpwhR4glg0AeBtRpwhAeQ4?gli0BtAewhJeAgH",
+    field_fumen: "v115@MhA8IeB8BeA8AeG8AeA8JeAgH",
+    solutions_fumen: "v115@9gwhBthlywRpwhg0BtglA8wwQ4Rpwhi0glB8R4A8wh?G8Q4A8JeAgWaA2/f2AwngHBFbcRASUb9AXRaHBQecRAylAA?A9gwhgli0ywRpwhglBtg0A8wwQ4RpwhhlBtB8R4A8whG8Q4?A8JeAAPaAVBoAB5ngHBFbcRASEpRBULaHBQecRAylAAA9gw?hh0hlBtywwhg0RpglA8BtR4whg0RpglB8R4A8whG8wwA8Je?AAPaAyF45A3ngHBFbcRAS0GEBXIaHBQecRAylAAA"
+  },
+  "XSLED": {
+    blurb: "really only good for tetris.com. failsafe that offers nontrivial tetPC chance",
+    build_fumen: "v115@5gAtHeBtBewhRpi0AtCewhRpR4g0R4AeglwhAeR4Ae?R4ilwhJeAgH",
+    field_fumen: "v115@NhA8HeB8BeA8AeB8AeF8JeAgH",
+    solutions_fumen: "v115@9gwhi0ywilwhRpg0AtwwA8glR4whRpBtB8R4A8whB8?AtF8JeAgWaAW4HOB5ngHBFbcRASUr2AWOaHBQecRAylAAA9?gwhilywi0whglR4AtwwA8Rpg0whR4BtB8RpA8whB8AtF8Je?AAPaA1/3UB1ngHBFbcRASEpRBSIaHBQecRAylAAA9gzhywg?lRph0R4AtwwA8glRpg0R4BtB8hlA8g0B8AtF8JeAAPaAUB4?UB0ngHBFbcRASExABWRaHBQecRAylAAA9gwhglRpywg0R4w?hglRpAtwwA8i0whhlBtB8R4A8whB8AtF8JeAAPaAU4f2Awn?gHBFbcRASEp2ARRaHBQecRAylAAA9gilzhi0glAtQ4ywA8R?pg0BtR4wwB8RpA8AtB8Q4F8JeAAPaATEYHBzngHBFbcRAS0?+UBULaHBQecRAylAAA9gwhglywR4i0whglBtR4A8Rpg0whh?lBtB8RpA8whB8wwF8JeAAPaAT73UBwngHBFbcRAS02KBVUa?HBQecRAylAAA9gwhilAtR4i0whywR4A8Rpg0whglwwBtB8R?pA8whB8AtF8JeAAPZAx8P9A1ngHBFbcRASECLB4mv2AUo78?AZAAAA"
   }
 }
 

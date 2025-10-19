@@ -31,8 +31,3 @@ import PCF from "../src/PCF.vue"
 import { ref, watch, computed } from "vue"
 let fumen = ref()
 </script>
-<style>
-.container {
-  max-width: 90vw !important;
-}
-</style>

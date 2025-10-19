@@ -34,19 +34,20 @@ const showModal = ref(false);
                 :cell_size="18"
                 :mirror="props.mirror"
             />
-            <PCF :initial_field_fumen="props.field_fumen" sequence="ITSZOLJ"/>
+            
             <h3>Solutions</h3>
             <TFumenList :fumen="props.solutions_fumen" :height="6" :cell_size="18" :mirror="props.mirror" :display_copy="false"/>
+            <PCF :initial_field_fumen="props.field_fumen" sequence="ITSZOLJ"/>
         </div>
     </div>
 </template>
 
 <style scoped>
 .setup-preview {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
+    border: 1px solid #ddd; /* 1 */
+    border-radius: 8px; /* 8 */
+    padding: 9px; /* 10 */
+    margin: 9px; /* 10 */
     cursor: pointer;
     display: inline-block;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -61,7 +62,7 @@ const showModal = ref(false);
 .modal {
     display: block;
     position: fixed;
-    z-index: 1001; /* High z-index to be on top */
+    z-index: 1001; /* high to be on top */  
     left: 0;
     top: 0;
     width: 100%;
@@ -72,13 +73,13 @@ const showModal = ref(false);
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* Smaller margin */
+    margin: 5% auto; /* smaller margin */
     padding: 20px;
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     width: 90%;
-    max-width: 800px; /* Larger max-width for content */
+    max-width: 790px; 
 }
 
 .close {

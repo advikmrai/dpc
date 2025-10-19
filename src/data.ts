@@ -94,7 +94,10 @@ const extra_T = {
 
 const extra_S = {
   "O2S": {
-    build_fumen: "v115@6gQ4IeR4whQ4hlh0CeQ4whR4glg0BtAeRpwhAeQ4gl?g0AeBtRpwhJeAgWaAFLDmClcJSAVDEHBEooRBPoAVBaentC?MNBAA",
+    build_fumen: merge_pages([
+      "v115@6gQ4IeR4whQ4hlh0CeQ4whR4glg0BtAeRpwhAeQ4gl?g0AeBtRpwhJeAgWaAFLDmClcJSAVDEHBEooRBPoAVBaentC?MNBAA",
+      "v115@6gg0Iei0Q4zhCeT4RpBtAeR4glAeQ4RpAeBtilJeAg?H"
+    ]),
     field_fumen: "v115@OhA8IeC8AeC8AeE8JeAgH",
     solutions_fumen: "v115@9gwhglQ4ywh0RpwhglR4wwAtg0A8RpwhhlQ4Btg0C8?whC8AtE8JeAgWUAYEoABgngHBg3CwBAnFgCqyTxC9gwhBty?wR4Rpwhg0BtwwR4A8Rpwhi0ilC8whC8glE8JeAAPUAYBIOB?gngHBg3CwBAi3LCPtjxC9gwhilR4h0RpwhglwwR4Atg0A8R?pwhywBtg0C8whC8AtE8JeAAPUA48nABgngHBg3CwBAn9wCv?vTWC9gg0zhywRpi0Q4BtwwA8RpilR4BtC8glC8Q4E8JeAAP?UAW4nABgngHBg3CwBAXMgCq+LMC9gBtzhR4Rph0ywR4A8Rp?g0BtwwilC8g0C8glE8JeAAPUA1CwKBgngHBg3CwBAiHgCzu?bMC9gh0zhR4RpBtywR4A8Rpg0BtwwilC8g0C8glE8JeAAPU?A1CwKBgngHBg3CwBAirgCzu3LC9gzhBtR4Rph0wwhlR4A8R?pg0ywglBtC8g0C8glE8JeAAPUAT4f2AgngHBg3CwBACmPCP?tbMC",
     blurb: "You can get a TetPC more than 4/5ths the time, which is some insane work.",

@@ -61,9 +61,7 @@ import { extra_O, extra_T, extra_S, extra_Z, extra_I, extra_J, extra_L } from ".
 </script>
 
 <style>
-.container {
-  max-width: 90vw !important;
-}
+
 .fumen-item {
   width: 180px;
 }

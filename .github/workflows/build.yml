@@ -1,0 +1,19 @@
+name: Build demo
+on: [push, pull_request]
+jobs:
+  vite_build:
+    runs-on: ubuntu-latest
+    name: Vite build
+    steps:
+    - uses: actions/checkout@v2
+    - name: Vite build
+      shell: bash
+      run: |
+        yarn install
+        yarn build
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/.vitepress/dist
+        force_orphan: true

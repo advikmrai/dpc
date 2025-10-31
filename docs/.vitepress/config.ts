@@ -3,6 +3,9 @@ export default defineConfig({
   lang: 'en',
   title: 'DPC',
   description: 'my dpc setups',
+
+  base: '/dpc/',
+
   themeConfig: {
     repo: 'advikmrai/dpc',
     nav: [

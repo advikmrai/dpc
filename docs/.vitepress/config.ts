@@ -11,6 +11,7 @@ export default defineConfig({
     nav: [
       { text: 'DPC', link: '/'},
       { text: 'PCF', link: '/pcf.html'},
+      { text: '8L', link: '/8L.html'}
     ],
     outline: [2, 3],
     outlineTitle: 'Six seven:',

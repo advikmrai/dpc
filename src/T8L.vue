@@ -4,16 +4,27 @@ import TFumenPlayer from './TFumenPlayer.vue';
 import TFumenList from "./TFumenList.vue"
 import PCF from "../src/PCF.vue"
 
+interface SecondSetup {
+    name: string,
+    build_fumen: string,
+    field_fumen: string,
+    solutions_fumen: string,
+}
+
 const props = withDefaults(defineProps<{
   name: string,
   blurb?: string,
   build_fumen: string,
-  field_fumen: string,
-  solutions_fumen: string,
+  second_setups: SecondSetup[],
   mirror?: boolean,
 }>(), { mirror: false });
 
 const showModal = ref(false);
+const secondSetupsVisibility = ref<Record<string, boolean>>({});
+
+function toggleSecondSetup(name: string) {
+    secondSetupsVisibility.value[name] = !secondSetupsVisibility.value[name];
+}
 </script>
 
 <template>
@@ -34,20 +45,51 @@ const showModal = ref(false);
                 :cell_size="18"
                 :mirror="props.mirror"
             />
+
+            <h3>Second Bag</h3>
             
-            <h3>Solutions</h3>
-            <TFumenList :fumen="props.solutions_fumen" :height="6" :cell_size="18" :mirror="props.mirror" :display_copy="false"/>
-            <PCF :initial_field_fumen="props.field_fumen" sequence="ITSZOLJ"/>
+            <div class="second-setups-container">
+                <div v-for="setup in props.second_setups" :key="setup.name" class="second-setup-item">
+                <h5>{{ setup.name }}</h5>
+                <TFumenList
+                    :fumen="setup.build_fumen"
+                    :height="7"
+                    :cell_size="18"
+                    :mirror="props.mirror"
+                />
+                <button @click="toggleSecondSetup(setup.name)" class="collapsible-button">
+                    {{ secondSetupsVisibility[setup.name] ? 'Hide' : 'Show' }} Solutions
+                </button>
+                <div v-if="secondSetupsVisibility[setup.name]">
+                    <h5>Solutions</h5>
+                    <TFumenList :fumen="setup.solutions_fumen" :height="6" :cell_size="18" :mirror="props.mirror" :display_copy="false"/>
+                    <PCF :initial_field_fumen="setup.field_fumen" sequence="ITSZOLJ"/>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+.collapsible-button {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.collapsible-button:hover {
+    background-color: #e9e9e9;
+}
+
 .setup-preview {
     border: 1px solid #ddd; /* 1 */
     border-radius: 8px; /* 8 */
     padding: 9px; /* 10 */
-    margin: 9px; /* 10 */
+    margin: 4px; /* 10 */
     cursor: pointer;
     display: inline-block;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -79,7 +121,7 @@ const showModal = ref(false);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     width: 90%;
-    max-width: 975px; 
+    max-width: 880px; 
 }
 
 .close {
@@ -94,5 +136,19 @@ const showModal = ref(false);
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.second-setups-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.second-setup-item {
+    border: 0px solid #ddd;
+    border-radius: 8px;
+    padding: 0px;
+    flex-basis: calc(50% - 8px);
 }
 </style>

@@ -14,6 +14,39 @@ function mirror_DPC(d: DPC): DPC {
   return t
 }
 
+interface EIGHTL {
+  blurb?: string,
+  build_fumen: string,
+  second_setups: {
+    name: string,
+    build_fumen: string,
+    field_fumen: string,
+    solutions_fumen: string,
+  }[],
+}
+
+const FONZIE: EIGHTL = {
+  blurb: "Offers b2b tetpc 8L.",
+  build_fumen: "v115@Ehg0BeglBeBtAeQ4i0glCeBtR4RphlAezhQ4RpJeAg?H",
+  second_setups: [
+    {
+      name: "The tetpc variant",
+      build_fumen: merge_pages([
+        "v115@pgRpwhGeRpwhGeh0whGeg0glwhR4BeBtAeg0glR4Ce?A8BtA8hlB8AeD8JeAgH",
+        "v115@pgRpg0GeRpg0Geglh0GeglzhBeBtAehlR4CeA8BtA8?R4B8AeD8JeAgH"
+      ]),
+      field_fumen: "v115@9gC8GeC8GeC8GeE8BeB8KeAgH",
+      solutions_fumen: "v115@9gC8h0RphlwhC8g0Q4RpAtglwhC8g0R4BtglwhE8Q4?AtB8whJeAgWaA0/nAByngHBFbcRASEZ9AYOaHBQecRAylAA?A9gC8h0R4hlwhC8g0R4RpglwhC8g0BtRpglwhE8BtB8whJe?AAPaA08P9A5ngHBFbcRASEB6AYLaHBQecRAylAAA9gC8h0B?thlwhC8g0RpBtglwhC8g0RpR4glwhE8R4B8whJeAAPaAU7P?9A2ngHBFbcRASEB6ATIaHBQecRAylAAA9gC8h0AtQ4hlwhC?8g0BtR4glwhC8g0AtRpQ4glwhE8RpB8whJeAAPZAxFIOB2n?gHBFbcRAS0QVB2mv2AUo78AZAAAA9gC8h0wwilwhC8g0ywR?pwhC8g0BtglRpwhE8BtB8whJeAAPZAxFg2A1ngHBFbcRAS0?ILBwmv2AUo78AZAAAA9gC8i0wwhlwhC8RpywglwhC8Rpg0R?4glwhE8R4B8whJeAAPZAx/fRB3ngHBFbcRASk22Awmv2AUo?78AZAAAA9gC8zhi0C8RpilQ4g0C8RpywR4E8glwwB8Q4JeA?APZAx8XHBzngHBFbcRASEyRBymv2AUo78AZAAAA9gC8zhi0?C8RpywQ4g0C8RpilR4E8glwwB8Q4JeAAPZAx835AzngHBFb?cRASECLBymv2AUo78AZAAAA9gC8ywBthlC8g0wwRpBtglC8?i0zhE8RpB8glJeAAPZAR7/DB2ngHBFbcRASEi9A4mv2AUo7?8AZAAAA9gC8Rph0AthlC8Rpg0BtwwglC8zhywE8g0AtB8gl?JeAAPZAR4HOB5ngHBFbcRAS0PEB0mv2AUo78AZAAAA9gC8R?pg0R4hlC8Rpi0wwglC8zhywE8R4B8glJeAAPYAZ1A6AFrnR?ASo78AY+REBvfEEBwnAVB9gC8RpQ4zhC8RpR4wwhlC8i0yw?glE8g0Q4B8glJeAAPYAX1Y9AFrnRASo78A48REBvfEEBwnA?VB9gC8Rph0ywC8zhAthlC8Rpg0BtwwglE8g0AtB8glJeAAP?YAWFjHBFrnRASo78A48o2AvfEEBwnAVB9gC8glzhRpC8glB?tR4RpC8hlBti0E8R4B8g0JeAAPYAVlQVBFrnRASo78A4cU9?AvfEEBwnAVB9gC8i0R4hlC8RpR4BtglC8RpywBtE8g0wwB8?glJeAAPYAVVt2AFrnRASo78AYLk9AvfEEBwnAVB9gC8i0R4?hlC8Rpg0wwBtglC8RpywBtE8R4B8glJeAAPYAUlo9AFrnRA?So78AYbtRBvfEEBwnAVB9gC8BtRpR4wwC8g0BtR4xwC8i0z?hE8RpB8wwJeAAPYAUVNEBFrnRASo78AY7IEBvfEEBwnAVB9?gC8glBtwwi0C8glzhRpC8hlywRpE8BtB8g0JeAAPYATVO6A?FrnRASo78A4po9AvfEEBwnAVB",
+    },
+    {
+      name: "The same variant as before",
+      build_fumen: "v115@pgRpwhGeRpwhGeh0whGeg0glwhR4BeBtAeg0glR4Ce?A8BtA8hlB8AeD8JeAgH",
+      field_fumen: "v115@9gC8GeC8GeC8GeE8BeB8KeAgH",
+      solutions_fumen: "v115@9gC8h0RphlwhC8g0Q4RpAtglwhC8g0R4BtglwhE8Q4?AtB8whJeAgWaA0/nAByngHBFbcRASEZ9AYOaHBQecRAylAA?A9gC8h0R4hlwhC8g0R4RpglwhC8g0BtRpglwhE8BtB8whJe?AAPaA08P9A5ngHBFbcRASEB6AYLaHBQecRAylAAA9gC8h0B?thlwhC8g0RpBtglwhC8g0RpR4glwhE8R4B8whJeAAPaAU7P?9A2ngHBFbcRASEB6ATIaHBQecRAylAAA9gC8h0AtQ4hlwhC?8g0BtR4glwhC8g0AtRpQ4glwhE8RpB8whJeAAPZAxFIOB2n?gHBFbcRAS0QVB2mv2AUo78AZAAAA9gC8h0wwilwhC8g0ywR?pwhC8g0BtglRpwhE8BtB8whJeAAPZAxFg2A1ngHBFbcRAS0?ILBwmv2AUo78AZAAAA9gC8i0wwhlwhC8RpywglwhC8Rpg0R?4glwhE8R4B8whJeAAPZAx/fRB3ngHBFbcRASk22Awmv2AUo?78AZAAAA9gC8zhi0C8RpilQ4g0C8RpywR4E8glwwB8Q4JeA?APZAx8XHBzngHBFbcRASEyRBymv2AUo78AZAAAA9gC8zhi0?C8RpywQ4g0C8RpilR4E8glwwB8Q4JeAAPZAx835AzngHBFb?cRASECLBymv2AUo78AZAAAA9gC8ywBthlC8g0wwRpBtglC8?i0zhE8RpB8glJeAAPZAR7/DB2ngHBFbcRASEi9A4mv2AUo7?8AZAAAA9gC8Rph0AthlC8Rpg0BtwwglC8zhywE8g0AtB8gl?JeAAPZAR4HOB5ngHBFbcRAS0PEB0mv2AUo78AZAAAA9gC8R?pg0R4hlC8Rpi0wwglC8zhywE8R4B8glJeAAPYAZ1A6AFrnR?ASo78AY+REBvfEEBwnAVB9gC8RpQ4zhC8RpR4wwhlC8i0yw?glE8g0Q4B8glJeAAPYAX1Y9AFrnRASo78A48REBvfEEBwnA?VB9gC8Rph0ywC8zhAthlC8Rpg0BtwwglE8g0AtB8glJeAAP?YAWFjHBFrnRASo78A48o2AvfEEBwnAVB9gC8glzhRpC8glB?tR4RpC8hlBti0E8R4B8g0JeAAPYAVlQVBFrnRASo78A4cU9?AvfEEBwnAVB9gC8i0R4hlC8RpR4BtglC8RpywBtE8g0wwB8?glJeAAPYAVVt2AFrnRASo78AYLk9AvfEEBwnAVB9gC8i0R4?hlC8Rpg0wwBtglC8RpywBtE8R4B8glJeAAPYAUlo9AFrnRA?So78AYbtRBvfEEBwnAVB9gC8BtRpR4wwC8g0BtR4xwC8i0z?hE8RpB8wwJeAAPYAUVNEBFrnRASo78AY7IEBvfEEBwnAVB9?gC8glBtwwi0C8glzhRpC8hlywRpE8BtB8g0JeAAPYATVO6A?FrnRASo78A4po9AvfEEBwnAVB"
+    }
+  ]
+};
+
 const extra_O = {
   "O2J": {
     build_fumen: "v115@1gAtGewhBtGewhAtCehli0whRpAeR4glRpg0whRpR4?AeglRpKeAgWaAFLDmClcJSAVDEHBEooRBPoAVBTH8LCqXBA?A",
@@ -159,7 +192,9 @@ const extra_S = {
     blurb: "the other one. pretty good recovery",
     build_fumen: merge_pages([
       "v115@1gglGeilGeh0CeAtzhg0RpAeBtT4g0RpAeAtT4KeAg?H",
-      "v115@1gglGeilGeh0CeT4Atg0RpAeT4Btg0RpAezhAtKeAg?H"
+      "v115@1gglGeilGeh0CeT4Atg0RpAeT4Btg0RpAezhAtKeAg?H",
+      "v115@6gQ4IeR4whi0glQ4CeQ4whBtg0glR4AeRpwhAeBthl?Q4AeRpwhJeAgH",
+      "v115@6gQ4IeR4whQ4hlBtCeQ4whR4glg0BtAeRpwhAeQ4gl?i0AeRpwhJeAgH"
     ]),
     field_fumen: "v115@JhA8GeC8GeC8AeE8KeAgH",
     solutions_fumen: "v115@9gRpywR4Atg0whRpA8wwR4Btg0whC8ilAth0whC8gl?E8whJeAgWaAX7HOB4ngHBFbcRASU7KBWUaHBQecRAylAAA9?gRpywh0R4whRpA8wwAtg0R4glwhC8Btg0ilwhC8AtE8whJe?AAPaAVEg2A2ngHBFbcRASEBVBSRaHBQecRAylAAA9gRpywi?lg0whRpA8wwAtglR4g0whC8BtR4h0whC8AtE8whJeAAPaAV?BoAB5ngHBFbcRASEpRBULaHBQecRAylAAA9gRpywBti0RpA?8ilBtQ4g0C8glzhR4C8wwE8Q4JeAAPZAx8f2A2ngHBFbcRA?SEqHB4mv2AUo78AZAAAA"
@@ -337,6 +372,5 @@ const extra_L = {
   "LO": mirror_DPC(extra_J.JO),
 }
 
-
-
 export { DPC, extra_O, extra_T, extra_S, extra_Z, extra_J, extra_L, extra_I, mirror_name }
+export { EIGHTL, FONZIE }

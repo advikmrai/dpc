@@ -38,7 +38,7 @@ function toggleSecondSetup(name: string) {
             <span class="close" @click="showModal = false">&times;</span>
             <h2>{{ name }}</h2>
             <p>{{ blurb }}</p>
-            <h3>Setup</h3>
+            <h3>FIRST BAG</h3>
             <TFumenList
                 :fumen="props.build_fumen"
                 :height="7"
@@ -46,22 +46,21 @@ function toggleSecondSetup(name: string) {
                 :mirror="props.mirror"
             />
 
-            <h3>Second Bag</h3>
+            <h3>SECOND BAGS</h3>
             
             <div class="second-setups-container">
                 <div v-for="setup in props.second_setups" :key="setup.name" class="second-setup-item">
                 <h5>{{ setup.name }}</h5>
                 <TFumenList
                     :fumen="setup.build_fumen"
-                    :height="7"
+                    :height="9"
                     :cell_size="18"
                     :mirror="props.mirror"
                 />
-                <button @click="toggleSecondSetup(setup.name)" class="collapsible-button">
-                    {{ secondSetupsVisibility[setup.name] ? 'Hide' : 'Show' }} Solutions
-                </button>
+                <div @click="toggleSecondSetup(setup.name)" class="toggle-solutions-button">
+                    {{ secondSetupsVisibility[setup.name] ? 'sols ▲' : 'sols ▼' }}
+                </div>
                 <div v-if="secondSetupsVisibility[setup.name]">
-                    <h5>Solutions</h5>
                     <TFumenList :fumen="setup.solutions_fumen" :height="6" :cell_size="18" :mirror="props.mirror" :display_copy="false"/>
                     <PCF :initial_field_fumen="setup.field_fumen" sequence="ITSZOLJ"/>
                 </div>
@@ -72,17 +71,16 @@ function toggleSecondSetup(name: string) {
 </template>
 
 <style scoped>
-.collapsible-button {
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-top: 10px;
+.toggle-solutions-button {
     cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #2c3e50; /* A dark color, but not black */
 }
 
-.collapsible-button:hover {
-    background-color: #e9e9e9;
+.toggle-solutions-button:hover {
+    text-decoration: underline;
 }
 
 .setup-preview {

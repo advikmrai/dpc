@@ -76,7 +76,7 @@ function toggleSecondSetup(name: string) {
     display: inline-block;
     margin-top: 10px;
     font-weight: 500;
-    color: #2c3e50; /* A dark color, but not black */
+    color: var(--vp-c-brand);
 }
 
 .toggle-solutions-button:hover {
@@ -84,19 +84,18 @@ function toggleSecondSetup(name: string) {
 }
 
 .setup-preview {
-    border: 1px solid #ddd; /* 1 */
-    border-radius: 8px; /* 8 */
-    padding: 9px; /* 10 */
-    margin: 4px; /* 10 */
+    border: 1px solid var(--vp-c-border);
+    border-radius: 8px;
+    padding: 9px;
+    margin: 4px;
     cursor: pointer;
     display: inline-block;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: all 0.2s ease-in-out;
 }
 
 .setup-preview:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-color: var(--vp-c-brand);
 }
 
 .modal {
@@ -112,18 +111,17 @@ function toggleSecondSetup(name: string) {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: var(--vp-c-bg);
     margin: 5% auto; /* smaller margin */
     padding: 20px;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     width: 90%;
     max-width: 880px; 
 }
 
 .close {
-    color: #aaa;
+    color: var(--vp-c-text-2);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -131,7 +129,7 @@ function toggleSecondSetup(name: string) {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: var(--vp-c-text-1);
     text-decoration: none;
     cursor: pointer;
 }
@@ -144,7 +142,7 @@ function toggleSecondSetup(name: string) {
 }
 
 .second-setup-item {
-    border: 0px solid #ddd;
+    border: 0px solid var(--vp-c-border);
     border-radius: 8px;
     padding: 0px;
     flex-basis: calc(50% - 8px);

@@ -3,8 +3,8 @@
     <canvas class="vt-field" ref="canvas" @mousedown="handleMouseDown" @mousemove="handleMouseMove"
       @mouseup="handleMouseUp" @mouseleave="handleMouseLeave" />
     <div class="button-container">
-      <button v-if="display_copy" type="button" class="action-btn copy-btn" @click="to_tech"
-        title="copy as techmino field">{{
+      <button v-if="display_copy" type="button" class="action-btn copy-btn" @click="to_fumen"
+        title="copy as fumen">{{
           button_name }}</button>
       <button v-if="allow_edit" type="button" class="action-btn clear-btn" @click="clearField"
         title="clear field">Clear</button>
@@ -14,8 +14,8 @@
 
 <script setup lang="ts">
 import { ref, watch, onMounted, PropType, triggerRef, computed } from "vue"
-import type { Field, Page } from "tetris-fumen"
-import { to_techmino_field } from "./fumen"
+import { encoder, type Field, type Page } from "tetris-fumen"
+
 // color constants
 const colors = {
   "T": ["#b451ac", "#e56add"],
@@ -47,10 +47,13 @@ function get_color() {
   return props.mirror ? mirrored_colors : colors
 }
 
-async function to_tech() {
-  const res = await to_techmino_field((props.page as Page).field)
-  console.log("export field:", res)
-  navigator.clipboard.writeText(res)
+async function to_fumen() {
+  const page: Page = props.page as Page
+  const fumen_string = encoder.encode([{
+    field: page.field,
+    comment: page.comment
+  }])
+  navigator.clipboard.writeText(fumen_string)
   button_name.value = "Done"
   setTimeout(() => {
     button_name.value = "Copy"
@@ -214,6 +217,12 @@ watch(page, () => {
   ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
   drawField(ctx, page.value as Page)
 })
+
+watch(() => props.mirror, () => {
+  if (!ctx) return
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+  drawField(ctx, page.value as Page)
+})
 </script>
 
 <style>
@@ -227,6 +236,11 @@ watch(page, () => {
   display: flex;
   flex-direction: row;
   gap: 4px;
+  visibility: hidden;
+}
+
+.field-div:hover .button-container {
+  visibility: visible;
 }
 
 .action-btn {
@@ -258,7 +272,7 @@ watch(page, () => {
 }
 
 .vt-field {
-  background-color: #f3f3ed;
+  background-color: transparent;
   border-radius: 4px;
   width: 100%;
 }

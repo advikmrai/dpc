@@ -6,6 +6,7 @@
         :page="initial_page"
         @field_change="update_field"
         :height="10"
+        :mirror="props.mirror"
       ></VTetrisField>
     </div>
   </div>
@@ -15,7 +16,7 @@
   </div>
   <div v-if="pc_fumen !== empty">
     <!-- <TFumenPlayer :fumen="pc_fumen" :height="10" :page="0" :display_copy="false" /> -->
-    <TFumenList :fumen="pc_fumen" :height="10" :display_copy="false" />
+    <TFumenList :fumen="pc_fumen" :height="10" :display_copy="false" :mirror="props.mirror" />
   </div>
 </template>
 <script setup lang="ts">
@@ -29,8 +30,9 @@ import TFumenList from "./TFumenList.vue"
 
 const props = withDefaults(defineProps<{
   initial_field_fumen?: string,
-  sequence?: string
-}>(), { initial_field_fumen: "v115@9gD8DeF8CeG8BeH8CeC8JeAgH", sequence: "ITSZ" })
+  sequence?: string,
+  mirror?: boolean,
+}>(), { initial_field_fumen: "v115@9gD8DeF8CeG8BeH8CeC8JeAgH", sequence: "ITSZ", mirror: false })
 
 const initial_page = computed(() => decoder.decode(props.initial_field_fumen)[0])
 const empty = "v115@vhAAgH"

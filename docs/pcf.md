@@ -9,14 +9,14 @@ title: PC Finder
   <input v-model="fumen" style="border: 1px solid #ccc;">
 </label>
 
-<PCF :initial_field_fumen="fumen"/>
+<PCF :initial_field_fumen="fumen" :mirror="is_mirrored" />
 
 ## PCO
-<PCF/>
+<PCF :mirror="is_mirrored" />
 
 ## ILSZ
 
-<PCF initial_field_fumen="v115@9gD8FeC8GeE8EeD8PeAgH" sequence="TOIZLJS"/>
+<PCF initial_field_fumen="v115@9gD8FeC8GeE8EeD8PeAgH" sequence="TOIZLJS" :mirror="is_mirrored" />
 
 ## Credits
 
@@ -29,5 +29,6 @@ Content of this page comes from:
 import TDPC from "../src/TDPC.vue";
 import PCF from "../src/PCF.vue"
 import { ref, watch, computed } from "vue"
+import { is_mirrored } from "../src/store";
 let fumen = ref()
 </script>

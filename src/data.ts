@@ -5,6 +5,7 @@ interface DPC {
   solutions_fumen: string,
   mirror?: boolean,
   blurb?: string,
+  scoring?: number[],
 }
 
 function mirror_DPC(d: DPC): DPC {
@@ -96,7 +97,18 @@ const ALBATROSS: EIGHTL = {
       build_fumen: "v115@4gRpCeg0DeRpR4whi0CeR4AtwhA8ilAeB8BtwhA8gl?BeC8AtA8whJeAgH",
       field_fumen: "v115@MhB8CeA8DeG8BeF8JeAgH",
       solutions_fumen: "v115@9gzhgli0RpBtilB8g0RpA8BtR4G8R4F8JeAgWaAV7n?AB4ngHBFbcRASE5KBUIaHBQecRAylAAA9gi0RpzhglBtg0R?pB8ilA8BtR4G8R4F8JeAAPaAU7fRB2ngHBFbcRASEB6AWIa?HBQecRAylAAA9gRpywzhglRpi0B8ilA8Btwwg0G8BtF8JeA?APaAT+vKBwngHBFbcRAS0OOBUOaHBQecRAylAAA9gQ4zhi0?RpR4ilB8g0RpA8Q4ywG8glwwF8JeAAPaAT4nAByngHBFbcR?AS0eHBSUaHBQecRAylAAA9gi0RpzhglywRpB8ilA8wwg0R4?G8R4F8JeAAPaAS7P9AyngHBFbcRAS0+5ASIaHBQecRAylAA?A9gRpi0zhglRpywB8ilA8Btwwg0G8BtF8JeAAA9gzhAti0R?pywBtB8g0RpA8wwilG8glAtF8JeAAPaAS4f2AwngHBFbcRA?S0m2AQUaHBQecRAylAAA9gQ4ywAtzhglR4g0BtB8ilA8Q4i?0G8wwAtF8JeAAPZARBwKB3ngHBFbcRASkWEBwmv2AUo78AZ?AAAA"
-    }
+    },
+    {
+      name: "J HOLD CHOOSE TSS/TSD",
+      build_fumen: "v115@BhRpAeR4whAeglBeRpR4AtwhA8glCeB8BtwhA8hlAe?C8AtA8whJeAgH",
+      solutions_fumen: "v115@pgwhRph0R4i0whRpg0R4ilg0whBtg0B8glC8whA8Bt?H8ywH8wwF8JeAgWaATBYHB5ngHBFbcRAS0mRBUOaHBQecRA?ylAAApgywR4zhglh0R4i0ilg0wwRpB8g0C8g0A8RpH8ywH8?wwF8JeAAPaASBIOBzngHBFbcRAS0uAB0SaHBQecRAylAAAp?gzhywAtRph0ilwwBtRpj0B8AtC8g0A8glg0H8ywH8wwF8Je?AAPaAy535A1ngHBFbcRAS0m2AWRaHBQecRAylAAApgh0ywz?hglg0R4wwi0ilR4RpB8g0C8g0A8RpH8ywH8wwF8JeAAPaAS?4fRB5ngHBFbcRAS0m2A1MaHBQecRAylAAApgwwBtR4i0Rpx?wR4j0RpzhB8g0C8wwA8BtH8ywH8wwF8JeAAPZAxCwKByngH?BFbcRASk2RB4mv2AUo78AZAAAApgh0ilR4AtRpg0wwglg0R?4BtRpywg0B8AtC8g0A8h0H8ywH8wwF8JeAAPZAxCQ9A4ngH?BFbcRASkeOBxmv2AUo78AZAAAApgwhywi0glRpwhQ4wwh0i?lRpwhR4g0B8g0C8whA8Q4g0H8ywH8wwF8JeAAPZARBAEBzn?gHBFbcRASkm9A4mv2AUo78AZAAAApgwhj0R4AtRpwhg0glg?0R4BtRpwhg0glg0B8AtC8whA8hlH8ywH8wwF8JeAAPZARBg?2A5ngHBFbcRASkO6Axmv2AUo78AZAAAApgwhRph0R4i0whR?pg0R4ilg0whywB8glC8whA8wwg0H8ywH8wwF8JeAAPZAx/H?OB3ngHBFbcRASUMVB1mv2AUo78AZAAAApgwhhlh0R4AtRpw?hg0glg0R4BtRpwhi0B8AtC8whA8glg0H8ywH8wwF8JeAAPZ?Ax/35A0ngHBFbcRASUELBzmv2AUo78AZAAAApgwhQ4Btywi?0whR4Btwwilg0whi0B8glC8whA8Q4g0H8ywH8wwF8JeAAPZ?AR+XHByngHBFbcRASU8ABymv2AUo78AZAAAApgzhi0glRph?0ywilRpg0BtwwB8g0C8g0A8BtH8ywH8wwF8JeAAPZAx5HOB?zngHBFbcRAS0HVBxmv2AUo78AZAAAApgi0zhAtRph0wwilB?tRpg0xwglB8AtC8g0A8xwH8g0xwH8wwF8JeAAPZAR4HOB5n?gHBFbcRAS0PEB0mv2AUo78AZAAAApgi0zhAtRpi0ilBtRpg?0ywB8AtC8g0A8wwglH8ywH8wwF8JeAAApgwhBth0R4i0whR?pg0R4ilg0whRpg0B8glC8whA8BtH8ywH8wwF8JeAAPYAZV9?KBFrnRASo78AYOcOBvfEEBwnAVBpgwwBtR4i0RpxwBtj0Rp?zhB8g0C8wwA8R4H8ywH8wwF8JeAAPYAYlHVBFrnRASo78AY?OzABvfEEBwnAVBpgBtRpl0wwBtR4zhg0xwR4B8g0C8wwA8R?pH8ywH8wwF8JeAAPYAWFTOBFrnRASo78A48A6AvfEEBwnAV?BpgBtwhh0R4i0wwBtg0R4ilg0xwwhg0B8glC8wwA8whwwH8?whxwH8wwF8JeAAPYAV1IEBFrnRASo78AY7REBvfEEBwnAVB?pgh0ilR4AtRpg0ywR4BtRpzhB8AtC8g0A8xwH8glxwH8wwF?8JeAAPYATlm2AFrnRASo78A4p/KBvfEEBwnAVBpgh0BtzhR?pg0R4BtywRpR4h0B8wwC8g0A8g0wwH8g0xwH8wwF8JeAAPX?ARl+UBFrnRASo78AYhMzAVYt2AFr4AA"
+    },
+    {
+      name: "MINIBUS SWITCHED OI Z HOLD",
+      build_fumen: "v115@4gQ4Deg0DeR4Bewhi0CeQ4RpwhA8ilAeB8RpwhA8gl?BeC8AeA8whJeAgH",
+      field_fumen: "v115@MhA8DeA8DeB8BeC8BeC8AeB8JeAgWYAVFM6AFrnRAS?o78AYb2RBvfEEBwnAVB",
+      solutions_fumen: "v115@9gi0RpzhCtg0RpA8hlBtA8BtR4B8glAtC8R4C8glB8?JeAgWaAU7/DB2ngHBFbcRASEB6AUIaHBQecRAylAAA9gQ4h?lRpBti0R4glRpA8Ctg0A8Q4ywB8BtC8glwwC8AtB8JeAAPa?ATBwKB3ngHBFbcRAS0mRBUUaHBQecRAylAAA9gRpilBti0R?pglR4A8Ctg0A8zhB8BtC8R4C8AtB8JeAAPaAz//DB4ngHBF?bcRAS0OOBYUaHBQecRAylAAA9gywhlBti0zhglA8Ctg0A8w?wRpglB8BtC8RpC8AtB8JeAAPaASB45A5ngHBFbcRAS0uABS?IaHBQecRAylAAA9gRpi0zhAtRpywA8hlBtA8Btwwg0B8glA?tC8BtC8glB8JeAAPaAS4f2AwngHBFbcRAS0m2AQUaHBQecR?AylAAA9gRpilBti0RpywA8Ctg0A8zhB8BtC8glwwC8AtB8J?eAAPZAxFg2A1ngHBFbcRAS0ILBwmv2AUo78AZAAAA9gi0Rp?zhAtywRpA8hlBtA8wwg0R4B8glAtC8R4C8glB8JeAAPZAx/?XHB2ngHBFbcRASU0RB0mv2AUo78AZAAAA9gQ4BtRpzhAtR4?g0RpA8hlBtA8Q4i0B8glAtC8BtC8glB8JeAAA9gywhlBth0?AtzhglA8DtA8wwRpglB8g0AtC8RpC8g0B8JeAAPZAR+P9A5?ngHBFbcRASUk9Awmv2AUo78AZAAAA9gi0R4zhAtywRpA8hl?BtA8wwg0RpB8glAtC8R4C8glB8JeAAPZAR435A2ngHBFbcR?AS0H6Aymv2AUo78AZAAAA9gQ4ywAtzhAtR4g0BtA8hlBtA8?Q4i0B8glAtC8wwAtC8glB8JeAAA9gywR4i0RpzhglA8BtRp?A8wwilB8BtC8R4C8g0B8JeAAPYAVFM6AFrnRASo78AYb2RB?vfEEBwnAVB"
+    },
   ]
 }
 
@@ -173,52 +185,60 @@ const extra_O = {
     field_fumen: "v115@JhA8GeC8GeE8AeC8KeAgH",
     solutions_fumen: "v115@9gRphlywAtg0whRpA8glQ4wwBtg0whC8glR4Ath0wh?E8Q4C8whJeAgWUAYEoABgngHBg3CwBgtjPCaHExC9gRpBty?wR4whRpA8BtwwR4glwhC8i0ilwhE8g0C8whJeAAPUAYBIOB?gngHBg3CwBg9TPCTnjxC9gRphlBti0whRpA8glQ4Btwwg0w?hC8glR4ywwhE8Q4C8whJeAAPUA48nABgngHBg3CwBg99tCa?HUPC9gRpywzhglRpA8wwR4AtilC8R4Bti0E8AtC8g0JeAAP?UAW4nABgngHBg3CwBAfLuCMX9wC9gRpBtzhR4RpA8Btywhl?C8i0wwR4glE8g0C8glJeAAPUA1CwKBgngHBg3CwBAi/wCvH?MMC9gRpBtzhhlRpA8BtywR4C8i0wwR4glE8g0C8glJeAAPU?A1CwKBgngHBg3CwBgs/wCvX8LC9gRpBtR4zhRpA8Bth0wwh?lC8R4g0ywglE8g0C8glJeAAPUAT4f2AgngHBg3CwBACmPCv?HMMC",
     blurb: "you can get a tetPC more than 4/5ths the time, which is some insane work",
-    mirror: false,
+    scoring: [4122.5, 82.778, 100.0],
+    scoring_details: `a`,
   },
   "J2O": {
-    build_fumen: "v115@0gAtHeBtGewhAtCehlRpg0whRpAeR4glRpg0whRpR4?AeglAeh0whJeAgWaAFLDmClcJSAVDEHBEooRBToAVBPeHgC?sXBAA",
+    build_fumen: "v115@0gAtHeBtGewhAtCehlRpg0whRpAeR4glR  pg0whRpR4?AeglAeh0whJeAgWaAFLDmClcJSAVDEHBEooRBToAVBPeHgC?sXBAA",
     field_fumen: "v115@IhA8HeB8GeE8AeA8AeC8JeAgH",
     solutions_fumen: "v115@9gilywzhglA8RpwwAth0R4B8RpBtg0R4E8AtA8g0C8?JeAgWUAY4HOBgngHBg3CwBgsPFDP+VWC9gilzhR4AtglA8R?ph0R4BtB8Rpg0ywAtE8g0A8wwC8JeAAPUAY4f2AgngHBg3C?wBA/dgCad9VC9gilAtRpzhglA8BtRph0R4B8Atywg0R4E8w?wA8g0C8JeAAPUA2FIOBgngHBg3CwBgs/wCvn9VC9gilAtRp?whg0R4glA8BtRpwhi0B8AtywwhR4E8wwA8whC8JeAAPUAUB?IOBgngHBg3CwBg9lPCvXstC9gilywwhg0R4glA8RpwwAtwh?i0B8RpBtwhR4E8AtA8whC8JeAAPUAU4f2AgngHBg3CwBgdr?gCqOstC9gilR4Ath0RpglA8R4Btg0wwRpB8zhywE8AtA8g0?C8JeAAPUAT4f2AgngHBg3CwBAeNPCa3TWC9gilwwzhRpglA?8ywQ4BtRpB8i0R4BtE8g0A8Q4C8JeAAPUAyC4UBgngHBg3C?wBgszPCve9VC9gilQ4ywAtRpglA8g0R4wwBtRpB8i0zhE8Q?4A8AtC8JeAAPUAy/f2AgngHBg3CwBgdPFDTHWWC",
     blurb: "good for scoring. safe bet",
-    mirror: false,
+    scoring: [4480.87, 72.738, 100.0]
   },
   "ALBY": {
     blurb: "lil discovery, surprisingly has decent TetPC.",
     build_fumen: "v115@pgRpHeRpHewhDeR4CewhilR4CeAtwhgli0RpAeBtwh?Ceg0RpAeAtKeAgH",
     field_fumen: "v115@9gB8HeB8HeA8DeB8CeA8CeC8AeA8KeAgH",
-    solutions_fumen: "v115@9gB8RpywR4whB8RpglwwR4AtwhA8g0ilB8BtwhA8i0?C8AtA8whJeAgWaA3/f2AwngHBFbcRASUTOBYIaHBQecRAyl?AAA9gB8hlywR4whB8i0wwR4AtwhA8Rpglg0B8BtwhA8Rpgl?C8AtA8whJeAAPaA08fRB5ngHBFbcRASEZ9ARLaHBQecRAyl?AAA9gB8RpywR4whB8i0wwR4AtwhA8ilg0B8BtwhA8glRpC8?AtA8whJeAAPaAzFwKB4ngHBFbcRASEp2AQIaHBQecRAylAA?A9gB8R4BthlRpB8ywBtglRpA8zhB8i0A8R4wwC8glA8g0Je?AAPZAxCoAB0ngHBFbcRASkeOB0mv2AUo78AZAAAA9gB8ywR?4i0B8BtR4zhA8RpBtB8ilA8RpwwC8glA8g0JeAAPZAx/P9A?wngHBFbcRASUELB2mv2AUo78AZAAAA9gB8ywR4ilB8BtR4z?hA8RpBtB8i0A8RpwwC8glA8g0JeAAPZAR+3UByngHBFbcRA?SUsHBymv2AUo78AZAAAA9gB8g0Q4BtywwhB8g0R4BtRpwhA?8h0glQ4B8RpwhA8ilC8wwA8whJeAAPZAR4vKBzngHBFbcRA?S03AB2mv2AUo78AZAAAA9gB8glQ4BtywwhB8glR4BtRpwhA?8g0hlQ4B8RpwhA8i0C8wwA8whJeAAPYAZFzABFrnRASo78A?YO02AvfEEBwnAVB"
+    solutions_fumen: "v115@9gB8RpywR4whB8RpglwwR4AtwhA8g0ilB8BtwhA8i0?C8AtA8whJeAgWaA3/f2AwngHBFbcRASUTOBYIaHBQecRAyl?AAA9gB8hlywR4whB8i0wwR4AtwhA8Rpglg0B8BtwhA8Rpgl?C8AtA8whJeAAPaA08fRB5ngHBFbcRASEZ9ARLaHBQecRAyl?AAA9gB8RpywR4whB8i0wwR4AtwhA8ilg0B8BtwhA8glRpC8?AtA8whJeAAPaAzFwKB4ngHBFbcRASEp2AQIaHBQecRAylAA?A9gB8R4BthlRpB8ywBtglRpA8zhB8i0A8R4wwC8glA8g0Je?AAPZAxCoAB0ngHBFbcRASkeOB0mv2AUo78AZAAAA9gB8ywR?4i0B8BtR4zhA8RpBtB8ilA8RpwwC8glA8g0JeAAPZAx/P9A?wngHBFbcRASUELB2mv2AUo78AZAAAA9gB8ywR4ilB8BtR4z?hA8RpBtB8i0A8RpwwC8glA8g0JeAAPZAR+3UByngHBFbcRA?SUsHBymv2AUo78AZAAAA9gB8g0Q4BtywwhB8g0R4BtRpwhA?8h0glQ4B8RpwhA8ilC8wwA8whJeAAPZAR4vKBzngHBFbcRA?S03AB2mv2AUo78AZAAAA9gB8glQ4BtywwhB8glR4BtRpwhA?8g0hlQ4B8RpwhA8i0C8wwA8whJeAAPYAZFzABFrnRASo78A?YO02AvfEEBwnAVB",
+    scoring: [3772.94, 21.111, 92.302]
   },
   "TSTET": {
+    scoring: [4300.16, 70.992, 99.960],
     blurb: "the PC gang server found this one specifically per my request; i was looking for a TS0 into TetPC setup. contrived, but surprisingly good",
     build_fumen: "v115@pgg0Iei0GeRpHeRpglBeBtAeQ4AeRpglCeBtR4Rphl?AezhQ4JeAgH",
     field_fumen: "v115@9gA8IeC8GeB8HeC8BeB8AeA8KeAgH",
     solutions_fumen: "v115@9gA8i0ilRpwhC8g0glR4RpwhB8BtR4ywwhC8BtB8ww?A8whJeAgWaA1FgRBwngHBFbcRASUr2AROaHBQecRAylAAA9?gA8i0R4AtRpwhC8g0glBtRpwhB8ilAtywwhC8R4B8wwA8wh?JeAAPaAyCQ9A2ngHBFbcRAS0uABXOaHBQecRAylAAA9gA8B?tRpg0zhC8Rpi0hlB8BtR4ywglC8R4B8wwA8glJeAAPZAxCY?HB0ngHBFbcRASk2RB0mv2AUo78AZAAAA9gA8i0R4ywwhC8g?0glRpwwAtwhB8ilRpBtwhC8R4B8AtA8whJeAAPZAx/3UB5n?gHBFbcRASk22A2mv2AUo78AZAAAA9gA8i0BtywwhC8R4BtR?pwhB8R4ilRpwhC8g0glB8wwA8whJeAAPZAR435A2ngHBFbc?RAS0H6Aymv2AUo78AZAAAA9gA8i0zhhlC8g0RpQ4ywB8BtR?pR4wwglC8BtB8Q4A8glJeAAPYAWV+ABFrnRASo78A4cNEBv?fEEBwnAVB9gA8BtRpg0ywwhC8Rpi0glwhB8BtR4ilwhC8R4?B8wwA8whJeAAPYAV1IEBFrnRASo78AY7REBvfEEBwnAVB"
   },
   "FALLBACK": {
+    scoring: [3820.75, 18.095, 96.468],
     blurb: "for when you place O one tile from edge and your queue precludes kuruma; TSD-DPC with I shifted.",
     build_fumen: "v115@1gAtGewhBtGewhAtCehlRpg0whRpAeR4glRpg0whRp?R4AeglAeh0JeAgH",
     field_fumen: "v115@JhA8GeC8GeE8AeA8AeB8JeAgH",
     solutions_fumen: "v115@9gRphlBtzhRpA8glQ4Bti0C8glR4ywg0E8Q4A8wwB8?JeAgWaA3/f2AwngHBFbcRASUTOBYIaHBQecRAylAAA9gRpB?thlQ4i0RpA8BtglR4wwg0C8zhywE8glA8Q4B8JeAAPaAyCI?OB4ngHBFbcRAS0GEBQIaHBQecRAylAAA9gRphlQ4ywAtg0R?pA8glR4wwBtg0C8glzhh0E8Q4A8AtB8JeAAPaAS4f2AwngH?BFbcRAS0m2AQUaHBQecRAylAAA9gRpBtR4ywg0RpA8Btzhg?0C8R4ilh0E8glA8wwB8JeAAPZAREoABzngHBFbcRAS0o9A0?mv2AUo78AZAAAA9gRpBtR4ywglRpA8Bth0ilC8R4g0zhE8g?0A8wwB8JeAAPZAxC45A0ngHBFbcRASkGLB0mv2AUo78AZAA?AA"
   },
   "TKISHIFT": {
+    scoring: [4430.44, 73.175, 100.0],
     blurb: "i like this one better than the unshifted variant and go for it a lot. great tetpc and tsd chances",
     build_fumen: "v115@+gRpAeR4AtDeRpR4BtBeg0RpilAtCeg0RpglzhAeh0?JeAgH",
     field_fumen: "v115@ShB8AeC8DeF8BeA8JeAgH",
     solutions_fumen: "v115@9gwhRph0R4ilwhRpg0R4ywAtwhB8g0C8wwBtwhF8gl?AtA8JeAgWaA0/P9A0ngHBFbcRASEZ9AYIaHBQecRAylAAA9?gwhRph0R4ywwhRpg0R4hlwwAtwhB8g0C8glBtwhF8glAtA8?JeAAPaA08fRB5ngHBFbcRASEZ9ARLaHBQecRAylAAA9gzhB?thlRph0ywBtglRpg0B8wwC8glR4g0F8R4A8JeAAPaAT+P9A?xngHBFbcRAS0OOBSOaHBQecRAylAAA9gzhBthlR4h0ywBtg?lRpg0B8wwC8glRpg0F8R4A8JeAAPZAx/3UB1ngHBFbcRASk?22A0mv2AUo78AZAAAA"
   }, 
   "TWOL": {
+    scoring: [7785.48, 65.357, 100.0],
     blurb: "the best one BY FAR. you get TWO perfect clears, and really good TSS+ chance. if you can get the 2L PC with your queue, ALWAYS go for it",
     build_fumen: "v115@rgR4GeR4HewwBtFeywBtEeRpg0zhglTpi0ilRpJeAg?H",
     field_fumen: "v115@/gB8GeB8HeC8FeE8OeAgH",
     solutions_fumen: "v115@9gh0B8R4zhg0B8R4ywhlg0C8BtwwRpglE8BtRpglJe?AgWaAU7HOB4ngHBFbcRASEB6AVRaHBQecRAylAAA9gh0B8R?4Bthlg0B8R4RpBtglg0C8zhwwglE8RpywJeAAPaASEAEB1n?gHBFbcRAS0GEBTOaHBQecRAylAAA9gh0B8Btzhg0B8ywR4h?lg0C8wwR4RpglE8BtRpglJeAAPaAy8P9A5ngHBFbcRAS0+5?AXOaHBQecRAylAAA9gh0B8zhR4g0B8ywBthlg0C8wwRpBtg?lE8RpR4glJeAAPaAS7HOB0ngHBFbcRAS0+5AURaHBQecRAy?lAAA9gh0B8R4zhg0B8R4ywRpg0C8BtwwilE8BtglRpJeAAP?aAS7XHBwngHBFbcRAS0+5ATOaHBQecRAylAAA9gh0B8zhQ4?glg0B8ywBtR4g0C8wwRpBtQ4E8RpilJeAAPZAx//DB4ngHB?FbcRASU0RBwmv2AUo78AZAAAA9gh0B8R4ywAtg0B8R4Rpww?Btg0C8zhAtglE8RpilJeAAPZAx8P9A1ngHBFbcRASECLB4m?v2AUo78AZAAAA9gh0B8Btzhg0B8ywR4Rpg0C8wwR4ilE8Bt?glRpJeAAPYATluABFrnRASo78A4pvRBvfEEBwnAVB"
   },
   "HUTCH": {
+    scoring: [3939.31, 55.754, 99.683],
     blurb: "random setup i found that has decent tetpc chance. haven't gotten to apply it yet",
     build_fumen: "v115@6gQ4DeBtCeR4whilBtCeQ4whgli0RpAeRpwhCeg0Rp?AeRpwhJeAgH",
     field_fumen: "v115@OhA8DeB8CeC8CeC8AeC8JeAgH",
     solutions_fumen: "v115@9gwhBtywR4RpwhglBtwwR4A8RpwhglB8i0C8whhlC8?g0C8JeAgWaAVEgRB5ngHBFbcRASEBVBWUaHBQecRAylAAA9?gh0R4zhRpg0R4BthlA8Rpg0wwB8BtglC8ywC8glC8JeAAPa?AzFQ9AxngHBFbcRAS0+UBXRaHBQecRAylAAA9gilywR4Rpz?hwwR4A8RpBtB8i0C8glBtC8g0C8JeAAPaAyCIOB4ngHBFbc?RAS0GEBQIaHBQecRAylAAA9gilywh0RpzhwwR4A8RpBtB8R?4g0C8glBtC8g0C8JeAAPZAxC4UB0ngHBFbcRAS042A0mv2A?Uo78AZAAAA"
   }, 
   "CASTLELIKE": {
+    scoring: [3873.72, 31.111, 97.698],
     blurb: "discovered td. great tetpc AND offerssssss tsd",
     build_fumen: "v115@ygg0Ieg0CeBtCeh0Q4CeBtzhR4AeRpilRpAeQ4AeRp?glBeRpJeAgH",
     field_fumen: "v115@GhA8IeA8CeB8CeB8AeA8AeC8BeB8JeAgH",
@@ -231,6 +251,7 @@ const extra_O = {
     solutions_fumen: "v115@zgRpi0BthlwhRpB8g0Q4BtglwhE8R4A8glwhC8ywQ4?B8whD8wwE8JeAgWaAWBwKB3ngHBFbcRASUzABWIaHBQecRA?ylAAAzgRpywR4hlwhRpB8R4h0glwhE8Atg0A8glwhC8wwBt?g0B8whD8AtE8JeAAPaAU4f2AwngHBFbcRASEp2ARRaHBQec?RAylAAAzgRpywhli0RpB8zhQ4g0E8AtglA8R4C8wwBtglB8?Q4D8AtE8JeAAPZAR7nAB4ngHBFbcRASEi9A0mv2AUo78AZA?AAA"
   },
   "SDPCSPC": {
+    scoring: [4224.77, 51.429, 82.421],
     blurb: "lol. even has tetpc",
     build_fumen: "v115@0gAtEeRpAeBtEeRpwhAtywCeglg0whRpwwR4ilg0wh?RpR4Ceh0whJeAgH",
     field_fumen: "v115@+gA8EeB8AeB8EeG8CeG8CeC8JeAgH",
@@ -240,24 +261,28 @@ const extra_O = {
 
 const extra_T = {
   "MKO": {
+    scoring: [4218.08, 74.484, 100.0],
     build_fumen: merge_pages(["v115@9gwhh0EeQ4Aewhg0CeAtRpR4whg0wwAeBtRpglQ4wh?ywAtAeilKeAgH","v115@9gilEeQ4AeglwwCeAth0R4ywAeBtg0RpQ4zhAtAeg0?RpKeAgH", "v115@+gywEewhRpwwCei0whRpR4AeglBtg0whAeR4ilAeBt?whJeAgH"]),
     field_fumen: "v115@RhC8EeA8AeE8AeC8KeAgH",
     solutions_fumen: "v115@9gRpQ4Bti0glwhRpR4BtilwhC8Q4ywg0A8whE8wwC8?whJeAgWaA15HOBxngHBFbcRASE5KBQRaHBQecRAylAAA9gR?pg0ilR4AtwhRpi0R4BtwhC8glywAtA8whE8wwC8whJeAAA9?gRpQ4ywh0AtwhRpR4hlg0BtwhC8Q4wwglg0AtA8whE8glC8?whJeAAPZARBQ9AzngHBFbcRASkO6A4mv2AUo78AZAAAA9gR?pQ4Bti0hlRpR4BtzhC8Q4ywg0A8glE8wwC8glJeAAPYAYFz?ABFrnRASo78AY+o2AvfEEBwnAVB",
     blurb: "pretty darn good, 0% b2b tho.",
   },
   "UPSIDEDOWN": {
+    scoring: [4931.34, 76.706, 99.841],
     build_fumen: "v115@ugglIeglDewhBeBthlCewhCeBtDewhg0AeywR4Rpwh?i0wwR4AeRpJeAgH",
     field_fumen: "v115@4gA8IeA8DeA8BeD8CeF8DeG8AeB8JeAgH",
     solutions_fumen: "v115@zgi0RpA8Q4hlwhBtg0RpA8R4glwhA8BtD8Q4glwhF8?ywwhG8wwB8JeAgWaAW+/DB4ngHBFbcRASUb9AVIaHBQecRA?ylAAAzgQ4hlRpA8i0whR4glRpA8Btg0whA8Q4glD8BtwhF8?ywwhG8wwB8JeAAPaA28fRBxngHBFbcRASUb9ARRaHBQecRA?ylAAAzgRpi0A8BtglwhRpR4g0A8ilwhA8R4D8BtwhF8ywwh?G8wwB8JeAAPaATE45A3ngHBFbcRAS0+UBSOaHBQecRAylAA?AzgRpi0A8zhRpR4g0A8BthlA8R4D8BtglF8ywglG8wwB8Je?AAPaAz/nAB2ngHBFbcRAS0OOBYLaHBQecRAylAAAzgRpR4g?lA8i0whRpilA8Btg0whA8R4D8BtwhF8ywwhG8wwB8JeAAPa?AT4nAB2ngHBFbcRAS0eHBTIaHBQecRAylAAAzgBti0A8RpR?4zhg0A8RphlA8BtD8R4glF8ywglG8wwB8JeAAPZAR+f2Axn?gHBFbcRASU02A2mv2AUo78AZAAAAzgzhglA8Q4i0BtilA8R?4RpA8BtD8Q4RpF8ywg0G8wwB8JeAAPYAWlnHBFrnRASo78A?4Mr2AvfEEBwnAVB",
     blurb: "offers a nontrivial tetPC chance; extremely good for maintaining B2B; one can slide the T under the S even after it is placed while still maintaining B2B.",
   },
   "ELEPHANT": {
+    scoring: [3647.06, 0, 94.643],
     build_fumen: "v115@ygwhIewhCehlDewhQ4Ceglh0BtwhR4Aewwglg0RpBt?AeQ4ywg0RpLeAgH",
     field_fumen: "v115@GhA8IeA8CeB8DeA8AeG8LeAgH",
     solutions_fumen: "v115@9gwhh0AtRpywA8whg0BtRpR4glA8whg0AtB8R4wwgl?A8whG8hlJeAgWaA08nABzngHBFbcRASEB6AYOaHBQecRAyl?AAA9gywAtQ4zhA8h0BtR4RpglA8g0wwAtB8Q4RpglA8g0G8?hlJeAAPaASBwKB3ngHBFbcRAS0uABUOaHBQecRAylAAA9gw?hili0RpA8whglR4ywRpA8whR4B8wwg0BtA8whG8BtJeAAPa?Ay535AxngHBFbcRAS0m2AWOaHBQecRAylAAA9gwhilywRpA?8whglR4i0RpA8whR4B8wwg0BtA8whG8BtJeAAA9gwhh0AtR?pR4glA8whg0BtRpywA8whg0AtB8R4wwglA8whG8hlJeAAPZ?AxFg2A1ngHBFbcRAS0ILBwmv2AUo78AZAAAA9gwhywRpi0A?8whilRpR4g0A8whglwwB8R4BtA8whG8BtJeAAA9gwhilRpi?0A8whywRpR4g0A8whglwwB8R4BtA8whG8BtJeAAA9gBtRpz?hglA8h0RpywR4A8g0BtB8wwR4glA8g0G8hlJeAAPZAR+P9A?5ngHBFbcRASUk9Awmv2AUo78AZAAAA9gh0RpzhglA8BtRpy?wR4A8g0BtB8wwR4glA8g0G8hlJeAAA9gBtRpywR4A8h0Rpz?hglA8g0BtB8wwR4glA8g0G8hlJeAAPYAZlf9AFrnRASo78A?Ye22AvfEEBwnAVB",
     blurb: "called that way from the JOS shape. found this as a T-two-tiles-from-edge recovery. a bit silly and impractical"
   },
   "F": {
+    scoring: [4542.58, 71.032, 100.0],
     build_fumen: "v115@pgilGeglIeh0Gewhg0CeAtDewhg0wwAeBtR4Rpwhyw?AtR4AeRpwhJeAgH",
     field_fumen: "v115@zgC8GeA8IeB8GeF8DeG8AeC8JeAgH",
     solutions_fumen: "v115@zgC8RpzhglA8BtRpR4ilB8BtR4i0F8ywg0G8wwC8Je?AgWaAz535A5ngHBFbcRAS0eHBXLaHBQecRAylAAAzgC8Q4h?lzhA8BtR4glRph0B8BtQ4glRpg0F8ywg0G8wwC8JeAAPaAT?4P9A4ngHBFbcRAS0eHBSRaHBQecRAylAAAzgC8g0zhRpA8B?ti0glQ4RpB8BtilR4F8ywQ4G8wwC8JeAAPaAyFwKB4ngHBF?bcRAS0GEBZRaHBQecRAylAAAzgC8Q4zhRpA8BtR4ilRpB8B?tQ4gli0F8ywg0G8wwC8JeAAPaAy535A1ngHBFbcRAS0m2AW?RaHBQecRAylAAAzgC8Rpg0zhA8BtRpi0R4B8BtywR4F8wwi?lG8glC8JeAAPaAS4vKBwngHBFbcRAS0m2ATUaHBQecRAylA?AAzgC8zhi0A8ywR4AtRpg0B8wwR4BtRpF8AtilG8glC8JeA?APZAREQ9A1ngHBFbcRAS0o9Awmv2AUo78AZAAAAzgC8ilzh?A8BtglQ4ywh0B8BtR4Rpg0F8Q4Rpg0G8wwC8JeAAPZAxCoA?B4ngHBFbcRASkeOB2mv2AUo78AZAAAAzgC8R4Rph0AtA8zh?Rpg0BtB8R4ywg0AtF8wwilG8glC8JeAAPZAx/vKBzngHBFb?cRASU0RB4mv2AUo78AZAAAAzgC8R4g0BtRpA8zhi0RpB8R4?ywBtF8wwilG8glC8JeAAPZAx8/DBxngHBFbcRASEaOB2mv2?AUo78AZAAAAzgC8R4RpilA8zhRpglh0B8R4ywAtg0F8wwBt?g0G8AtC8JeAAPZAR7/DByngHBFbcRASEi9A2mv2AUo78AZA?AAAzgC8glQ4ywRpA8ilR4wwAtRpB8zhi0F8Q4Btg0G8AtC8?JeAAPZAR735A0ngHBFbcRASEK6Aymv2AUo78AZAAAAzgC8R?4Rpi0A8zhRphlg0B8R4ywAtglF8wwBtglG8AtC8JeAAPZAx?5XHBxngHBFbcRAS0vRBwmv2AUo78AZAAAAzgC8Q4zhRpA8B?tR4h0wwRpB8BtQ4g0ywF8g0ilG8glC8JeAAPYAXFrRBFrnR?ASo78A4Mk9AvfEEBwnAVBzgC8Q4zhh0A8BtR4RpilB8BtQ4?Rpglg0F8ywg0G8wwC8JeAAPYAW1QOBFrnRASo78A4s2KBvf?EEBwnAVBzgC8Q4hlRph0A8BtR4glzhB8BtQ4glRpg0F8ywg?0G8wwC8JeAAPYATF8ABFrnRASo78A4Z2RBvfEEBwnAVB"
@@ -273,30 +298,40 @@ const extra_T = {
     mirror: false,
   },
   "SIXP": {
+    scoring: [6881.62, 98.611, 99.524],
     blurb: "insane. found from rtexiles. limited use chance tho",
     build_fumen: "v115@2gg0Iei0HeQ4DeglRpBtR4AeilRpAeBtQ4zhJeAgH",
     field_fumen: "v115@2gA8IeC8HeA8DeG8AeE8AeG8JeAgH",
     solutions_fumen: "v115@pgg0zhR4Athli0A8R4BtwwglRpwwC8AtxwglRpxwA8?zwG8wwE8wwG8JeAgWaAU7fRBwngHBFbcRASEB6A1SaHBQec?RAylAAApgg0zhR4AtRpi0A8R4BtRpilC8AtywglywA8zwG8?wwE8wwG8JeAAPaA05vKBxngHBFbcRASEp2A5SaHBQecRAyl?AAApgg0zhR4ili0A8R4ywAtRpwwC8xwBtRpxwA8xwglAtG8?wwE8wwG8JeAAPaAy5vKBzngHBFbcRAS0m2AZIaHBQecRAyl?AAApgg0zhR4ywi0A8R4hlwwAtRpwwC8wwglBtRpxwA8xwgl?AtG8wwE8wwG8JeAAPZAx/HOB5ngHBFbcRASUMVB2mv2AUo7?8AZAAAApgg0zhR4Rpwwi0A8R4BtxwilC8wwBtwwglywA8xw?RpG8wwE8wwG8JeAAPZAx/nAByngHBFbcRASUcOBymv2AUo7?8AZAAAApgg0zhwwBtR4i0A8ywR4glRpwwC8wwilRpxwA8xw?BtG8wwE8wwG8JeAAPZAR+fRBwngHBFbcRASUUEB2mv2AUo7?8AZAAAApgBtili0RpwwBtA8zhRpxwglC8wwg0R4zwA8xwR4?G8wwE8wwG8JeAAPYATV1ABFrnRASo78A4J8ABvfEEBwnAVB?pgBtilR4wwRpg0BtA8R4xwRpi0C8zwzhA8zwG8wwE8glG8J?eAAPYASFr2AFrnRASo78A4p2KBvfEEBwnAVBpghlywR4AtR?ph0whA8R4BtRpg0glwhC8Atywg0glwhwwA8zwG8wwE8whG8?JeAAPXAQF8ABFrnRASo78A4MczAVYt2AFr4AApgBtilwwwh?g0RpwwBtA8xwwhg0RpywC8h0R4zwA8wwwhR4G8whE8glG8J?eAAPXAQ15ABFrnRASo78A48QzAVYt2AFr4AApgBtilR4Rpg?0wwBtA8R4wwRpg0ywC8xwh0zwA8zhG8wwE8glG8JeAAPXAQ?1oRBFrnRASo78A4ZVzAVYt2AFr4AApgBtilR4i0wwBtA8R4?wwRpg0ywC8zhzwA8xwRpG8wwE8glG8JeAAPXAQ1IEBFrnRA?So78A45QzAVYt2AFr4AApgQ4zhwwBtRpR4wwA8ywg0RpilC?8wwi0glQ4xwA8xwBtG8wwE8wwG8JeAAApgh0ilywRpg0BtA?8zhRpg0R4C8zwR4BtA8zwG8wwE8glG8JeAAPWAQlW9AFrnR?ASo78AYRaHBQecRAylAAA"
   },
   "HOLDL": {
+    scoring: [5291.5, 100.0, 100.0],
     blurb: "apparently *the* T SPC, many solves from other setups aim to be congruent to this?",
     build_fumen: "v115@zgwhIewhRpGewhRpEeAtg0whwwCeR4Btg0ywAeR4Ae?Ath0JeAgH",
     field_fumen: "v115@9gA8IeC8GeC8EeH8AeC8JeAgH",
     solutions_fumen: "v115@zgBtzhh0R4A8BtglRpg0R4glC8glRpg0ilC8hlywH8?wwC8JeAgWaA08XHBzngHBFbcRASEB6AZOaHBQecRAylAAAz?gBthlzhR4A8Btglg0RpR4glC8glg0RpilC8h0ywH8wwC8Je?AAPaAz83UB3ngHBFbcRAS0OOBRLaHBQecRAylAAAzgBtzhi?lg0A8BtglRpglR4g0C8glRpR4h0C8hlywH8wwC8JeAAPaAS?BIOB5ngHBFbcRAS0uABVIaHBQecRAylAAAzgBtzhh0RpA8B?tglQ4ywRpC8glR4wwilC8hlQ4g0glH8g0C8JeAAPaAy8f2A?2ngHBFbcRAS0+5AWLaHBQecRAylAAAzgBtzhh0hlA8Btilg?0RpglC8glR4g0RpglC8R4ywH8wwC8JeAAPaAy5fRBzngHBF?bcRAS0+5AQIaHBQecRAylAAAzgBtzhR4hlA8Btglg0R4Rpg?lC8gli0RpglC8hlywH8wwC8JeAAPaAS4HOB1ngHBFbcRAS0?m2AURaHBQecRAylAAAzgzhRpBthlA8i0RpjlC8g0R4glBtg?lC8R4ywH8wwC8JeAAPZAxCAEB2ngHBFbcRASk2RBwmv2AUo?78AZAAAAzgBti0RpQ4hlA8Btglg0RpR4glC8glzhQ4glC8h?lywH8wwC8JeAAPYAUlOOBFrnRASo78AYrm2AvfEEBwnAVBz?gBtzhR4hlA8Bth0R4RpglC8g0ilRpglC8g0glywH8wwC8Je?AAPYATl3ABFrnRASo78A4J0RBvfEEBwnAVB"
   }, 
   "BALL": {
+    scoring: [4045.67, 71.667, 100.0],
     blurb: "first one i ever learned. gets ball name from OSZ ball",
     build_fumen: "v115@6gQ4AewhGeR4whAeAtg0BeywQ4whBtg0RpilA8whAt?h0RpglwwC8JeAgH",
     field_fumen: "v115@OhA8AeA8GeC8AeB8BeE8JeAgH",
     solutions_fumen: "v115@9gwhh0Rphlywwhg0Q4RpAtglA8wwA8whg0R4BtglC8?whB8Q4AtE8JeAgWaAXEoABzngHBFbcRASUDVBUUaHBQecRA?ylAAA9gwhh0Bthlywwhg0RpBtglA8wwA8whg0RpR4glC8wh?B8R4E8JeAAPaA1/f2AwngHBFbcRASEROBXLaHBQecRAylAA?A9gwhh0R4hlywwhg0R4RpglA8wwA8whg0BtRpglC8whB8Bt?E8JeAAA9gwhh0AtQ4hlywwhg0BtR4glA8wwA8whg0AtRpQ4?glC8whB8RpE8JeAAPaAS+/DB0ngHBFbcRAS0W9ATLaHBQec?RAylAAA"
   },
   "SIDE1": {
+    scoring: [3657.67, 0, 80.437],
     blurb: "discovered, lowk practical recovery.",
     build_fumen: "v115@zgRpHeRpBewhEeA8ywwhh0R4AtB8wwglwhg0R4BtA8?ilwhg0BeAtKeAgH",
     field_fumen: "v115@HhB8HeB8BeA8EeF8BeA8KeAgH",
     solutions_fumen: "v115@9gi0wwQ4BthlwhB8xwR4BtglwhB8g0wwA8Q4Rpglwh?F8RpA8whJeAgWaA1535A5ngHBFbcRASEhHBYIaHBQecRAyl?AAA9gi0wwRpQ4hlwhB8xwRpR4glwhB8g0wwA8BtQ4glwhF8?BtA8whJeAAPaAz8nABzngHBFbcRAS02KBYIaHBQecRAylAA?A9gi0wwBtglRpwhB8xwilRpwhB8g0wwA8BtR4whF8R4A8wh?JeAAPZARBwKBzngHBFbcRASk+AB4mv2AUo78AZAAAA9gzhg?0BtglR4B8Rpi0R4wwB8RpA8ilxwF8BtA8wwJeAAPZAx/XHB?2ngHBFbcRASU0RB0mv2AUo78AZAAAA9gzhBtglg0R4B8Rpi?lR4wwB8RpA8Btg0xwF8h0A8wwJeAAA9gi0wwBtglR4whB8x?wilRpwhB8g0wwA8BtRpwhF8R4A8whJeAAPZAR7HOBwngHBF?bcRASESEBwmv2AUo78AZAAAA9gi0wwBtRpR4B8xwzhhlB8g?0wwA8BtR4glF8RpA8glJeAAPZAR4vKBzngHBFbcRAS03AB2?mv2AUo78AZAAAA9gi0wwBtRphlB8xwzhR4B8g0wwA8BtR4g?lF8RpA8glJeAAPZAR435A2ngHBFbcRAS0H6Aymv2AUo78AZ?AAAA9gzhi0R4wwB8RpBtR4xwB8RpA8BtilF8g0glA8wwJeA?AA"
+  },
+  "UPSIDEDOWNDPC": {
+    scoring: [3613.75, 0, 90.476],
+    blurb: "for when upside-down T SPC can't be built due to like L before Z but you already put the T down. 90% pc, don't go for.",
+    build_fumen: "v115@9gwhBeBtCeQ4AewhCeBtRpR4whg0AeywRpglQ4whi0?wwAeilKeAgH",
+    field_fumen: "v115@RhA8BeB8CeA8AeE8AeC8KeAgH",
+    solutions_fumen: "v115@9gQ4hlRpywAtwhR4glRph0BtwhA8Q4glB8g0wwAtA8?whE8g0C8whJeAgWaAWBwKB3ngHBFbcRASUzABWIaHBQecRA?ylAAA9gQ4ywglBtRpwhR4ilh0RpwhA8Q4wwB8g0BtA8whE8?g0C8whJeAAPaASEYHB3ngHBFbcRAS0GEBUIaHBQecRAylAA?A9gRpR4glywAtwhRpilh0BtwhA8R4B8g0wwAtA8whE8g0C8?whJeAAA9gQ4ywglh0RpwhR4ilBtRpwhA8Q4wwB8g0BtA8wh?E8g0C8whJeAAA"
   }
-
 }
 
 const extra_S = {
@@ -317,6 +352,7 @@ const extra_S = {
     solutions_fumen: "v115@9gzhRpQ4i0BthlRpR4A8g0A8BtglywQ4E8glA8wwD8?JeAgWaA0FYHB2ngHBFbcRASEJEBZUaHBQecRAylAAA9gQ4B?tzhi0R4BthlRpA8g0A8Q4ywglRpE8wwA8glD8JeAAPaA0Cw?KByngHBFbcRASEJEBQIaHBQecRAylAAA9gBtglwhRpQ4i0i?lwhRpR4A8g0A8BtwhywQ4E8whA8wwD8JeAAPaAS73UB4ngH?BFbcRAS0+5AVUaHBQecRAylAAA9gzhywi0BthlQ4wwRpA8g?0A8BtglR4RpE8glA8Q4D8JeAAPZAx/3UB5ngHBFbcRASk22?A2mv2AUo78AZAAAA9gRphlQ4Bti0RpwwglR4BtA8g0A8ywz?hE8glA8Q4D8JeAAPZAx8fRBxngHBFbcRASEKVB2mv2AUo78?AZAAAA"
   },
   "S2O": {
+    scoring: [4130.58, 36.19, 100.0],
     build_fumen: "v115@2gRpEewhBeRpEewhCeR4Bthlwhg0AeT4Btglwhi0R4?CeglJeAgWaAFLDmClcJSAVDEHBEooRBToAVBqiLuCJHBAA",
     field_fumen: "v115@KhB8EeA8BeB8EeF8CeA8JeAgH",
     solutions_fumen: "v115@9gQ4hlzhywR4glB8Rpg0wwAtA8Q4glB8Rpg0BtF8h0?AtA8JeAgWaAU4XHB2ngHBFbcRASEp2AUOaHBQecRAylAAA9?gRpg0zhilRpg0B8Q4ywAtA8h0B8R4wwBtF8Q4glAtA8JeAA?PaAzC45A0ngHBFbcRAS0mRBXLaHBQecRAylAAA9gilzhi0g?lRpB8Q4Btwwg0A8RpB8R4ywF8Q4BtA8JeAAPaAz/35AyngH?BFbcRAS0OOBXIaHBQecRAylAAA9gi0zhglR4Btg0B8ilRpA?8BtB8ywRpF8wwR4A8JeAAPaAyFYHB2ngHBFbcRAS0GEBZIa?HBQecRAylAAA9gRpg0zhywRpg0B8Q4BtwwglA8h0B8R4ilF?8Q4BtA8JeAAPaASBwKBzngHBFbcRAS0uABULaHBQecRAylA?AA9gi0zhywBtg0B8RpR4glA8BtB8RpilF8R4wwA8JeAAPZA?RE45AzngHBFbcRAS0Q6A0mv2AUo78AZAAAA9gBtglzhRpg0?ilB8Q4ywg0A8BtB8R4wwh0F8Q4RpA8JeAAPZAx//DB4ngHB?FbcRASU0RBwmv2AUo78AZAAAA",
@@ -324,24 +360,28 @@ const extra_S = {
     mirror: false,
   },
   "HOLDO": {
-    blurb: "peak. i always go for this one; high scoring. you can even squeeze a TS0 in before a TetPC",
+    scoring: [4589.88, 78.333, 100.0],
+    blurb: "peak. i've always went for this one since day 1; high scoring. you can even squeeze a TS0 in before a TetPC",
     build_fumen: "v115@6gg0CeRpDeg0BeglRpR4Aeh0AtAeglywT4Bthlwwzh?R4AtJeAgH",
     field_fumen: "v115@OhA8CeB8DeA8BeE8AeC8KeAgH",
     solutions_fumen: "v115@9gh0R4AtRphlwhg0R4BtRpA8glwhg0B8AtywA8glwh?E8wwC8whJeAgWaA48/DBxngHBFbcRASkd9AQOaHBQecRAyl?AAA9gzhAtRpi0ilBtRpA8Q4g0glB8AtywA8R4E8wwC8Q4Je?AAPaATBAEBzngHBFbcRAS0mRBTRaHBQecRAylAAA9gh0R4y?whlwhg0R4RpwwAtA8glwhg0B8RpBtA8glwhE8AtC8whJeAA?PaAT4f2AwngHBFbcRAS0eHBRLaHBQecRAylAAA"
   },
   "ELPTSHIFTED": {
+    scoring: [4426.49, 64.524, 98.651],
     blurb: "discovered this, and was surprised it wasn't documented anywhere. great TSS+ chances, easy solves (easier than regular elephant imo)",
     build_fumen: "v115@ChR4Bewhh0BtR4Cewhg0RpBtR4Aeglwhg0RpAeR4il?whJeAgH",
     field_fumen: "v115@WhB8BeD8AeF8JeAgH",
     solutions_fumen: "v115@9gilg0zhRpglR4i0BtRpR4ywB8BtD8wwF8JeAgWaAU?435AyngHBFbcRASEp2ASLaHBQecRAylAAA9gilRpzhAtglR?4Rpi0BtR4ywB8g0AtD8wwF8JeAAPaAzCgRB2ngHBFbcRAS0?+UBQUaHBQecRAylAAA9gh0AtRpilR4g0BtRpglzhg0AtywB?8R4D8wwF8JeAAPaAz5/DBzngHBFbcRAS0eHBYOaHBQecRAy?lAAA9gh0ywilR4g0RpwwAtglzhg0RpBtB8R4D8AtF8JeAAP?ZAxFAEBwngHBFbcRAS0gOB4mv2AUo78AZAAAA9gRpywg0zh?RpglwwAti0R4ilBtB8R4D8AtF8JeAAPZAREgRB1ngHBFbcR?AS0wHBwmv2AUo78AZAAAA9gg0R4ilBtRpi0glzhRpR4ywB8?BtD8wwF8JeAAPZAR4/DB4ngHBFbcRAS0f9A4mv2AUo78AZA?AAA9gh0Q4ywBtRpg0ilzhRpg0glR4wwB8BtD8Q4F8JeAAPZ?AR4nAByngHBFbcRAS0f9Awmv2AUo78AZAAAA9ggli0zhRpg?lywR4BtRphlwwR4B8BtD8g0F8JeAAPYAY1gHBFrnRASo78A?Yu2KBvfEEBwnAVB9gg0R4ywBtRpR4hlzhRpi0glwwB8BtD8?glF8JeAAPYAXVm9AFrnRASo78A4sYEBvfEEBwnAVB9gg0R4?ilBtRpi0wwzhRpR4ywB8BtD8glF8JeAAPYATlgOBFrnRASo?78AYbk2AvfEEBwnAVB"
   }, 
   "ELEPHANT": {
+    scoring: [4290.22, 57.778, 100.0],
     blurb: "documented elephant. good for tss+ but can be tricky otw, ig shifted possesses that too",
     build_fumen: "v115@9gwhEeR4Bewhh0BtR4Cewhg0RpBtR4Aeglwhg0RpAe?R4ilJeAgH",
     field_fumen: "v115@RhA8EeB8BeD8AeE8JeAgH",
     solutions_fumen: "v115@9gRpzhgli0RpR4ilBtg0A8R4ywB8BtD8wwE8JeAgWa?AV4P9A0ngHBFbcRASEhHBTLaHBQecRAylAAA9gQ4zhRpi0R?4ilRpBtg0A8Q4glywB8BtD8wwE8JeAAPaAU+3UByngHBFbc?RASEZ9AWOaHBQecRAylAAA9gBti0RpQ4hlzhg0RpR4glA8B?tywB8Q4glD8wwE8JeAAPaAz5fRB3ngHBFbcRAS02KBQRaHB?QecRAylAAA9gQ4BtywzhR4BtwwilRpA8Q4i0glB8RpD8g0E?8JeAAPaAT4fRBzngHBFbcRAS0eHBVOaHBQecRAylAAA9gzh?R4AtilywR4BtglRpA8wwi0AtB8RpD8g0E8JeAAPaAyC4UB0?ngHBFbcRAS0GEBQUaHBQecRAylAAA9gi0ywzhBtg0Q4wwil?RpA8BtR4glB8RpD8Q4E8JeAAPZAxFQ9AxngHBFbcRAS0ILB?4mv2AUo78AZAAAA9gywR4Atglg0Rpzhili0A8wwR4BtB8Rp?D8AtE8JeAAPYAZ1xRBFrnRASo78AYe2RBvfEEBwnAVB"
   },
   "BUTTER": {
+    scoring: [4078.43, 76.508, 100.0],
     blurb: "good recovery, real good tetpc.", 
     build_fumen: merge_pages([
       "v115@zgg0Iei0GeRpCeAtzhRpglAeBtT4ilAeAtT4KeAgH",
@@ -351,6 +391,7 @@ const extra_S = {
     solutions_fumen: "v115@9gywR4h0hlwhA8wwR4Atg0RpglwhC8Btg0RpglwhC8?AtE8whJeAgWaA353UB0ngHBFbcRASU7KBSRaHBQecRAylAA?A9gywR4glRpg0whA8wwR4AtglRpg0whC8Bthlh0whC8AtE8?whJeAAPaA1FwKBwngHBFbcRASUr2AQOaHBQecRAylAAA9gB?tywR4RpwhA8BtwwR4g0RpwhC8ili0whC8glE8whJeAAPaAV?4vKBzngHBFbcRASEhHBVLaHBQecRAylAAA"
   },
   "OTHERBUTTER": {
+    scoring: [4057.32, 73.889, 100.0],
     blurb: "the other one. pretty good recovery",
     build_fumen: merge_pages([
       "v115@1gglGeilGeh0CeAtzhg0RpAeBtT4g0RpAeAtT4KeAg?H",
@@ -362,60 +403,70 @@ const extra_S = {
     solutions_fumen: "v115@9gRpywR4Atg0whRpA8wwR4Btg0whC8ilAth0whC8gl?E8whJeAgWaAX7HOB4ngHBFbcRASU7KBWUaHBQecRAylAAA9?gRpywh0R4whRpA8wwAtg0R4glwhC8Btg0ilwhC8AtE8whJe?AAPaAVEg2A2ngHBFbcRASEBVBSRaHBQecRAylAAA9gRpywi?lg0whRpA8wwAtglR4g0whC8BtR4h0whC8AtE8whJeAAPaAV?BoAB5ngHBFbcRASEpRBULaHBQecRAylAAA9gRpywBti0RpA?8ilBtQ4g0C8glzhR4C8wwE8Q4JeAAPZAx8f2A2ngHBFbcRA?SEqHB4mv2AUo78AZAAAA"
   }, 
   "SLED": {
+    scoring: [4017.14, 66.667, 100.0],
     blurb: "good for aiming for tetpc on queues that kuruma doesn't cover",
     build_fumen: "v115@4gQ4IeR4BewhQ4hlCeQ4RpwhR4glg0AeBtRpwhAeQ4?gli0BtAewhJeAgH",
     field_fumen: "v115@MhA8IeB8BeA8AeG8AeA8JeAgH",
     solutions_fumen: "v115@9gwhBthlywRpwhg0BtglA8wwQ4Rpwhi0glB8R4A8wh?G8Q4A8JeAgWaA2/f2AwngHBFbcRASUb9AXRaHBQecRAylAA?A9gwhgli0ywRpwhglBtg0A8wwQ4RpwhhlBtB8R4A8whG8Q4?A8JeAAPaAVBoAB5ngHBFbcRASEpRBULaHBQecRAylAAA9gw?hh0hlBtywwhg0RpglA8BtR4whg0RpglB8R4A8whG8wwA8Je?AAPaAyF45A3ngHBFbcRAS0GEBXIaHBQecRAylAAA"
   },
   "XSLED": {
+    scoring: [3810.29, 28.651, 99.127],
     blurb: "really only good for tetris.com. failsafe that offers nontrivial tetPC chance",
     build_fumen: "v115@5gAtHeBtBewhRpi0AtCewhRpR4g0R4AeglwhAeR4Ae?R4ilwhJeAgH",
     field_fumen: "v115@NhA8HeB8BeA8AeB8AeF8JeAgH",
     solutions_fumen: "v115@9gwhi0ywilwhRpg0AtwwA8glR4whRpBtB8R4A8whB8?AtF8JeAgWaAW4HOB5ngHBFbcRASUr2AWOaHBQecRAylAAA9?gwhilywi0whglR4AtwwA8Rpg0whR4BtB8RpA8whB8AtF8Je?AAPaA1/3UB1ngHBFbcRASEpRBSIaHBQecRAylAAA9gzhywg?lRph0R4AtwwA8glRpg0R4BtB8hlA8g0B8AtF8JeAAPaAUB4?UB0ngHBFbcRASExABWRaHBQecRAylAAA9gwhglRpywg0R4w?hglRpAtwwA8i0whhlBtB8R4A8whB8AtF8JeAAPaAU4f2Awn?gHBFbcRASEp2ARRaHBQecRAylAAA9gilzhi0glAtQ4ywA8R?pg0BtR4wwB8RpA8AtB8Q4F8JeAAPaATEYHBzngHBFbcRAS0?+UBULaHBQecRAylAAA9gwhglywR4i0whglBtR4A8Rpg0whh?lBtB8RpA8whB8wwF8JeAAPaAT73UBwngHBFbcRAS02KBVUa?HBQecRAylAAA9gwhilAtR4i0whywR4A8Rpg0whglwwBtB8R?pA8whB8AtF8JeAAPZAx8P9A1ngHBFbcRASECLB4mv2AUo78?AZAAAA"
   }, 
   "FTREC": {
+    scoring: [3692.7, 27.778, 100.0],
     blurb: "came about from trying to find a DPC for that S placement, which I used for completing the TSD for the few queues of MS2 which failed to PC. don't go for it",
     build_fumen: "v115@zgwhGeQ4AewhGeR4whg0glQ4BtCeQ4whg0glR4BtAe?Rph0hlQ4CeRpJeAgH",
     field_fumen: "v115@HhA8GeA8AeA8GeG8CeB8JeAgH",
     solutions_fumen: "v115@9gBtywR4i0A8BtwwR4hlA8g0A8zhRpglG8RpglB8Je?AgWaAY+P9A5ngHBFbcRASkd9AUUaHBQecRAylAAA9gBtzhw?wi0A8BtglQ4ywA8g0A8ilR4RpG8Q4RpB8JeAAPaA2535A5n?gHBFbcRASUr2AYOaHBQecRAylAAA9gBtzhQ4i0A8BtglRpR?4A8g0A8ilRpwwQ4G8ywB8JeAAPaAV+P9AxngHBFbcRASERO?BTLaHBQecRAylAAA9gzhAtR4i0A8RpBtywA8g0A8RpAtR4w?wglG8ilB8JeAAPaAzFwKB0ngHBFbcRAS0+UBZUaHBQecRAy?lAAA"
   }, 
   "CUP": {
+    scoring: [4116.11, 49.841, 100.0],
     blurb: "pc gang server offered it to me for this recovery S placement. BONUS; has BOTH TSD AND TETPC CHANCES!!!",
     build_fumen: "v115@ygwhIewhCeBtCeglwhQ4CeBtilwhR4AeR4i0RpAeS4?Ceg0RpJeAgH",
     field_fumen: "v115@GhA8IeA8CeB8CeB8AeC8CeC8JeAgH",
     solutions_fumen: "v115@9gwhilRpi0A8whglR4ywAtg0A8whR4B8wwBtB8whC8?RpAtC8JeAgWaAT7XHB4ngHBFbcRAS02KBULaHBQecRAylAA?A9gwhh0AtilRpA8whg0BtglR4RpA8whg0AtB8ywB8whC8R4?wwC8JeAAPaAT4/DB0ngHBFbcRAS0eHBTOaHBQecRAylAAA9?gwhh0ywAtRpA8whg0ilBtRpA8whg0glB8AtR4B8whC8wwR4?C8JeAAPaASEoABzngHBFbcRAS0GEBSUaHBQecRAylAAA9gw?hi0Q4ywAtA8whRpg0R4wwBtA8whRpB8Q4glAtB8whC8ilC8?JeAAPaASBYHBxngHBFbcRAS0uABTRaHBQecRAylAAA9gwhh?0ywR4AtA8whg0ilR4BtA8whg0glB8RpAtB8whC8wwRpC8Je?AAPaAy8HOBzngHBFbcRAS0+5AZRaHBQecRAylAAA9gwhilR?ph0AtA8whglR4Rpg0BtA8whR4B8wwg0AtB8whC8ywC8JeAA?PZAxCQ9A2ngHBFbcRASkeOBwmv2AUo78AZAAAA9gBtRpQ4z?hA8h0RpR4ywA8g0BtB8Q4glwwB8g0C8ilC8JeAAPZAR+P9A?1ngHBFbcRASUM6A4mv2AUo78AZAAAA"
   }, 
   "ALTCUP": {
-    blurb: "found on my own after cup. 0 tss+ chance but 89% tetpc chance.",
+    scoring: [3785.42, 21.111, 99.881],
+    blurb: "found on my own after cup. 0 tss+ chance but a bit higher tetpc chance.",
     build_fumen: "v115@8gglCeBtBeilQ4CeBtzhR4AeR4i0RpAeS4Ceg0RpJe?AgH",
     field_fumen: "v115@QhA8CeB8BeC8AeC8CeC8JeAgH",
     solutions_fumen: "v115@9gwhi0Q4BtywwhRpg0R4BtwwA8whRpB8Q4glC8whC8?ilC8JeAgWaA4FQ9A5ngHBFbcRASklHBQIaHBQecRAylAAA9?gwhglRpg0ywR4whglRpBtwwR4A8whhlB8BtC8whC8i0C8Je?AAPaAzC4UBwngHBFbcRAS0+UBRIaHBQecRAylAAA9gBtRpz?hR4h0RpywR4A8g0BtB8wwglC8g0C8ilC8JeAAPaAT7nABwn?gHBFbcRAS02KBSUaHBQecRAylAAA9gwhi0ilywwhRpg0BtR?4wwA8whRpB8BtC8whC8glR4C8JeAAPaASEYHB3ngHBFbcRA?S0GEBUIaHBQecRAylAAA9gilAtzhR4RpBti0R4A8RpAtB8w?wg0C8glC8ywC8JeAAPaASB4UB0ngHBFbcRAS0uABVUaHBQe?cRAylAAA9gwhh0AtRpglywwhg0BtRpR4wwA8whg0AtB8R4C?8whC8ilC8JeAAPaAy/f2AwngHBFbcRAS0W9AWIaHBQecRAy?lAAA"
   }, 
   "LOWTSD": {
+    scoring: [4391.62, 55.0, 99.881],
     blurb: "discovered, just saw the high tss+ chance.",
     build_fumen: "v115@9gwhCeR4DewhBtR4Cehlwhg0BtRpAeR4glwhi0RpR4?AeglJeAgH",
     field_fumen: "v115@RhA8CeB8DeH8AeA8JeAgH",
     solutions_fumen: "v115@9gg0zhR4AtRpi0glR4BtRpA8ilB8AtywH8wwA8JeAg?WaAXB45A1ngHBFbcRASUrRBTUaHBQecRAylAAA9gQ4zhwwB?thlR4RpywBtglA8Q4RpB8i0glH8g0A8JeAAPaAT+f2A5ngH?BFbcRAS0OOBRUaHBQecRAylAAA9gg0zhR4ywi0glR4RpwwA?tA8ilB8RpBtH8AtA8JeAAPaAz835A3ngHBFbcRAS02KBXLa?HBQecRAylAAA9gilh0wwzhglRpg0ywR4AtA8Rpg0B8R4BtH?8AtA8JeAAPaASBoABxngHBFbcRAS0uABSRaHBQecRAylAAA?9gi0ilRpR4ywzhR4AtA8wwg0glB8RpBtH8AtA8JeAAPXARF?sHBFrnRASo78AYkezAVYt2AFr4AA"
   },
   "ELPT_TET": {
+    scoring: [4003.41, 64.563, 100.0],
     blurb: "discovered, just saw the insane tetpc chance, only 2 minimals. kinda like kuruma",
     build_fumen: "v115@0gglIeilFeQ4BtCeR4hlR4BtAeR4RpglAeQ4zhAeRp?glJeAgH",
     field_fumen: "v115@IhA8IeC8GeE8AeC8JeAgH",
     solutions_fumen: "v115@9gwhBtywR4hlwhA8BtwwR4RpglwhC8i0RpglwhE8g0?C8JeAgWaA38/DB1ngHBFbcRASUTOBQLaHBQecRAylAAA9gw?hBthlywRpwhA8BtglQ4wwg0RpwhC8glR4i0whE8Q4C8JeAA?PaA2FoABzngHBFbcRASULEBZOaHBQecRAylAAA"
   },
   "INCLINE": {
+    scoring: [3834.09, 33.333, 100.0],
     blurb: "discovered, just saw good insane tetpc chance. prolly not practical. \n NVM? the PERFECT bot used it https://youtu.be/ZCfnjGJGhYk?si=uKKNliOOqcPD79Lp&t=66",
     build_fumen: "v115@zgwhIewhRph0EewhRpg0CeR4AtwhR4g0glAeR4BtR4?ilCeAtKeAgH",
     field_fumen: "v115@HhA8IeE8EeE8CeA8KeAgH",
     solutions_fumen: "v115@9gBtywR4hlwhA8BtwwR4RpglwhE8g0RpglwhE8i0A8?whJeAgWaA4FQ9A5ngHBFbcRASklHBQIaHBQecRAylAAA9gB?tywRpi0A8BtwwzhQ4g0E8RpglR4E8ilA8Q4JeAAPaA0835A?wngHBFbcRASEB6AXLaHBQecRAylAAA9gBtywR4i0A8BtwwR?4zhE8RpilE8RpglA8g0JeAAPaAz835AwngHBFbcRAS02KBW?UaHBQecRAylAAA"
   },
   "VLIME": {
+    scoring: [3637.89, 0, 62.897],
     blurb: "low dependency, bad but is recovery",
     build_fumen: "v115@6gglBewhDeilQ4Aewhh0CeAtS4whg0RpAeBtS4whg0?RpAeAtBeQ4KeAgH",
     field_fumen: "v115@OhA8BeA8DeD8AeD8AeA8BeA8KeAgH",
     solutions_fumen: "v115@9gilywi0whglRpQ4wwBtA8g0whA8RpR4D8whD8Q4A8?BtA8whJeAgWaA1CoAB4ngHBFbcRASEpRBZLaHBQecRAylAA?A9gRpg0ywzhRpg0Q4wwBtA8hlA8h0R4D8glD8Q4A8BtA8gl?JeAAPaA08XHBzngHBFbcRASEB6AZOaHBQecRAylAAA9gQ4h?lywi0whR4glRpBtA8g0whA8Q4glRpD8whD8wwA8BtA8whJe?AAPYAWFjHBFrnRASo78A48o2AvfEEBwnAVB"
   },
   "SSPIN": {
+    scoring: [3878.19, 41.667, 100.0],
     blurb: "100% cover all bags when tsd forgone. has tetpc chance. really good for tetris.com; great recovery",
     build_fumen: "v115@zgwhAeAtGewhBtGewhAtCeRpilwhR4Aeg0RpglT4Be?i0R4KeAgH",
     field_fumen: "v115@HhA8AeA8GeC8GeB8BeE8KeAgH",
@@ -430,6 +481,7 @@ const extra_Z = {
 
 const extra_I = {
   "I2L2O": {
+    scoring: [4332.58, 70.0, 100.0],
     blurb: "i go for this one. good tsd or quad pc, can't get both at once or anyth.",
     build_fumen: merge_pages([
       "v115@9gRpCeQ4BtBeRpglBeR4BtAeilCeQ4i0zhAezhg0Je?AgWaAFLDmClcJSAVDEHBEooRBJoAVBp/TFDTHBAA",
@@ -441,6 +493,7 @@ const extra_I = {
     mirror: false,
   },
   "BIGL": {
+    scoring: [4281.13, 50.556, 100.0],
     blurb: "i discovered it and called it that cuz the IOLI structure on the left looked like a big L :o",
     build_fumen: "vv115@pgwhIewhIewhCeR4AtCewhBeR4BtBeg0RpilAtCeg0?RpglzhAeh0JeAgH",
     field_fumen: "v115@9gA8IeA8IeA8CeC8CeA8BeD8BeA8JeAgH",
@@ -448,6 +501,7 @@ const extra_I = {
     mirror: false,
   },
   "DECENT": {
+    scoring: [4258.31, 57.103, 100.0],
     blurb: "tuff somewhat, good tetpc and tsd chances; don't go out of my way to use",
     build_fumen: "v115@ygwhIewhBtCeQ4Cewhg0BtBeR4Bewhi0CeQ4glRpzh?AeilRpJeAgH",
     field_fumen: "v115@GhA8IeC8CeA8CeD8BeB8BeA8JeAgH",
@@ -455,42 +509,49 @@ const extra_I = {
     mirror: false,
   },
   "BUTTER": {
+    scoring: [4015.4, 66.667, 100.0],
     blurb: "great for tetpc & thus b2b; easy solves",
     build_fumen: "v115@3gg0Iei0CezhglQ4CeAtRpilR4AeBtRpzhQ4AeAtKe?AgH",
     field_fumen: "v115@LhA8IeC8CeG8AeA8KeAgH",
     solutions_fumen: "v115@9gh0hlywR4whg0RpglA8wwR4Atwhg0RpglC8BtwhG8?AtA8whJeAgWaAXEgRB5ngHBFbcRASUDVBXRaHBQecRAylAA?A9gglRpg0ywR4whglRpg0A8wwR4Atwhhlh0C8BtwhG8AtA8?whJeAAPaAV7HOB4ngHBFbcRASE5KBWIaHBQecRAylAAA"
   }, 
   "TSPIN": {
+    scoring: [4397.54, 76.032, 100.0],
     blurb: "literally has the t-spin shape. that tsd solve whhich doesn't put the t in the pre-made shape is crazy tho",
     build_fumen: "v115@zgh0Heg0Gehlg0AtAeR4BeRpglBtR4CeRpglAtzhAe?zhJeAgH",
     field_fumen: "v115@HhB8HeA8GeD8AeB8BeC8JeAgH",
     solutions_fumen: "v115@9gzhglRpi0B8ilRpR4g0A8ywBtR4D8wwB8BtC8JeAg?WaA1CwKB2ngHBFbcRASEBVBQRaHBQecRAylAAA9gi0Q4Btz?hB8g0R4BtilA8ywQ4RpglD8wwB8RpC8JeAAPaAU7fRB2ngH?BFbcRASEB6AWIaHBQecRAylAAA9gi0zhglRpB8g0BtilRpA?8ywBtR4D8wwB8R4C8JeAAPaATEgRB5ngHBFbcRAS0+UBWIa?HBQecRAylAAA9gi0RpQ4zhB8g0RpR4ilA8ywBtQ4glD8wwB?8BtC8JeAAPaAT435AyngHBFbcRAS0eHBRUaHBQecRAylAAA?9gzhhlR4RpB8i0R4AtRpA8ywg0glBtD8wwB8glAtC8JeAAP?ZARE4UBzngHBFbcRAS0wHB0mv2AUo78AZAAAA9gzhBtR4Rp?B8i0BtglRpA8ywg0ilD8wwB8R4C8JeAAPZAxCYHB4ngHBFb?cRASk2RB2mv2AUo78AZAAAA9gzhBtR4RpB8i0R4glRpA8yw?g0ilD8wwB8BtC8JeAAPZARB4UB0ngHBFbcRASkuHB0mv2AU?o78AZAAAA9gi0R4ilRpB8R4ywAtRpA8zhwwBtD8g0B8glAt?C8JeAAPYAWVeOBFrnRASo78A4c9KBvfEEBwnAVB"
   },
   "JLI": {
+    scoring: [4553.21, 79.206, 100.0],
     blurb: "the tss+ quad more likely thatn quadeven wait ts lowk tuff asl",
     build_fumen: "v115@8gwhEeRpBewhAeAtAeR4Rpg0glwhBtR4ywg0glwhAt?zhwwh0hlJeAgH",
     field_fumen: "v115@QhA8EeB8BeA8AeA8AeG8JeAgH",
     solutions_fumen: "v115@9gwhRpQ4Bthlh0whRpR4Btglg0A8whywQ4B8glg0A8?whA8wwG8JeAgWaA5535AxngHBFbcRASklHBZLaHBQecRAyl?AAA9gwhywBthlh0whQ4wwRpBtglg0A8whR4RpB8glg0A8wh?A8Q4G8JeAAPaAyF45AzngHBFbcRAS0GEBWUaHBQecRAylAA?A9gh0glQ4BtzhilR4BtRpA8g0ywQ4B8RpA8g0A8wwG8JeAA?PYAU1x2AFrnRASo78AYLb9AvfEEBwnAVB"
   },
   "OUT": {
+    scoring: [4540.87, 79.246, 100.0],
     blurb: "somewhat tuff, upgrade lowk from tki if you really want a tsd",
     build_fumen: "v115@ugBtIeBtGeilBeg0DeglRpQ4Aei0CeRpR4zhAezhQ4?JeAgH",
     field_fumen: "v115@ChB8IeB8GeC8BeA8DeD8KeAgH",
     solutions_fumen: "v115@9gBti0B8hlwhQ4BtywB8glwhR4RpwwC8glwhA8Q4Rp?g0D8whJeAgWaAz5XHB1ngHBFbcRAS0eHBZIaHBQecRAylAA?A9gRpi0B8hlwhRpQ4ywB8glwhBtR4wwC8glwhA8BtQ4g0D8?whJeAAPaASEYHB3ngHBFbcRAS0GEBUIaHBQecRAylAAA9gi?0BtB8hlwhQ4ywBtB8glwhR4wwRpC8glwhA8Q4g0RpD8whJe?AAPaASBIOB5ngHBFbcRAS0uABVIaHBQecRAylAAA9gRpywB?8hlwhRpQ4wwh0B8glwhBtR4g0C8glwhA8BtQ4g0D8whJeAA?PaAy/XHByngHBFbcRAS0W9AYRaHBQecRAylAAA9gywBtB8h?lwhQ4wwh0BtB8glwhR4g0RpC8glwhA8Q4g0RpD8whJeAAPa?AS+f2A1ngHBFbcRAS0W9ARLaHBQecRAylAAA9gBtywB8hlw?hQ4Btwwh0B8glwhR4Rpg0C8glwhA8Q4Rpg0D8whJeAAPaAy?5/DB3ngHBFbcRAS0m2AYLaHBQecRAylAAA9gh0AtRpB8hlw?hg0BtywB8glwhg0AtR4wwC8glwhA8R4RpD8whJeAAPZAx8v?KB5ngHBFbcRASEKVBwmv2AUo78AZAAAA9gBti0B8hlwhRpQ?4ywB8glwhRpR4wwC8glwhA8BtQ4g0D8whJeAAPZAR73UB0n?gHBFbcRASEqHBymv2AUo78AZAAAA9gglzhB8i0glRpywB8Q?4g0hlBtwwC8R4A8RpBtD8Q4JeAAPYAXlPEBFrnRASo78A4c?22AvfEEBwnAVB9gBtglRpB8i0ilywB8Q4g0zhwwC8R4A8Bt?RpD8Q4JeAAPYAWFD6AFrnRASo78A4smRBvfEEBwnAVB9gzh?glB8i0Q4BtywB8RpR4BtwwC8RpA8Q4ilD8g0JeAAPYAU1x2?AFrnRASo78AYLb9AvfEEBwnAVB"
   },
   "GOD": {
-    blurb: "incredibly tuff.",
+    scoring: [4525.83, 76.944, 100.0],
+    blurb: "pretty tuff.",
     build_fumen: "v115@xgRpHeRpEeQ4Beg0whglDeR4Aeg0whglBtCeQ4h0wh?hlBtAe0hJeAgH",
     field_fumen: "v115@FhB8HeB8EeA8BeC8DeB8AeB8JeAgH",
     solutions_fumen: "v115@9gi0BthlwhB8Rpg0Q4BtglwhB8RpwwR4A8glwhC8yw?Q4B8whB8JeAgWaAyFgRB4ngHBFbcRAS0eHBQRaHBQecRAyl?AAA9gRpywhlwhB8RpQ4wwh0glwhB8BtR4g0A8glwhC8BtQ4?g0B8whB8JeAAA9gi0BthlwhB8Q4ywBtglwhB8R4wwRpA8gl?whC8Q4g0RpB8whB8JeAAPaAyCYHB4ngHBFbcRAS0uABZIaH?BQecRAylAAA9gBtywhlwhB8Q4Btwwh0glwhB8R4Rpg0A8gl?whC8Q4Rpg0B8whB8JeAAPaAyC45A4ngHBFbcRAS0uABXIaH?BQecRAylAAA9gRpi0hlwhB8RpQ4ywglwhB8BtR4wwA8glwh?C8BtQ4g0B8whB8JeAAPaAS+P9A5ngHBFbcRAS0W9ASOaHBQ?ecRAylAAA9gBti0hlwhB8RpQ4ywglwhB8RpR4wwA8glwhC8?BtQ4g0B8whB8JeAAPZAR7nAB4ngHBFbcRASEi9A0mv2AUo7?8AZAAAA9gh0AtRphlwhB8g0BtywglwhB8g0AtR4wwA8glwh?C8R4RpB8whB8JeAAPZAx5fRBzngHBFbcRAS0HVB2mv2AUo7?8AZAAAA9gBtglRpi0B8ilywQ4g0B8zhwwA8R4C8BtRpB8Q4?B8JeAAPYAWFDVBFrnRASo78A48Y9AvfEEBwnAVB9gglzhi0?B8glRpywQ4g0B8hlBtwwA8R4C8RpBtB8Q4B8JeAAPYAVVeO?BFrnRASo78AYrILBvfEEBwnAVB9gzhgli0B8Q4BtywRpB8R?4BtwwA8RpC8Q4ilB8g0B8JeAAPYAVFb9AFrnRASo78AY7xR?BvfEEBwnAVB"
   },
   "STICK": {
+    scoring: [4012.94, 65.556, 100.0],
     blurb: "good recovery, can go for it",
     build_fumen: "v115@6gQ4AewhGeR4whAeRpglBeBtQ4whg0RpglCeBtwhi0?hlAezhJeAgH",
     field_fumen: "v115@OhA8AeA8GeC8AeC8BeD8JeAgH",
     solutions_fumen: "v115@9gwhgli0RpywwhglBtg0RpA8wwA8whhlBtR4C8whC8?R4D8JeAgWaAW4P9A4ngHBFbcRASUr2ATUaHBQecRAylAAA9?gwhilRpg0ywwhglR4Rpg0A8wwA8whR4Bth0C8whC8BtD8Je?AAPaAV+HOByngHBFbcRASEROBVUaHBQecRAylAAA9gwhBth?lRpywwhg0BtglRpA8wwA8whi0glR4C8whC8R4D8JeAAPaAU?B4UB0ngHBFbcRASExABWRaHBQecRAylAAA9gwhi0Q4hlyww?hRpg0R4glA8wwA8whRpBtQ4glC8whC8BtD8JeAAPaAzCYHB?wngHBFbcRAS0mRBZIaHBQecRAylAAA9gwhglQ4BtRpywwhg?lR4g0RpA8wwA8whhlQ4i0C8whC8BtD8JeAAPaAy53UB0ngH?BFbcRAS0+5AQRaHBQecRAylAAA"
   },
   "PELICAN": {
+    scoring: [4156.71, 77.619, 100.0],
     blurb: "tuffy",
     build_fumen: "v115@4gRpBewhEeRpBewhQ4BtCei0whR4BtAeilg0whAeQ4?CeglzhJeAgH",
     field_fumen: "v115@MhB8BeA8EeB8BeA8AeA8CeE8JeAgH",
@@ -507,6 +568,7 @@ const extra_J = {
     mirror: false,
   },
   "OJSZ": {
+    scoring: [3871.73, 36.667, 98.333],
     blurb: "see",
     build_fumen: "v115@0gg0GewhAeg0Eehlwhh0Q4BtCeglwhRpR4BtAeg0gl?whRpAeQ4Cei0JeAgWaAFLDmClcJSAVDEHBEooRBKoAVBPtb?MCs/AAA",
     field_fumen: "v115@IhA8GeA8AeA8EeE8AeA8CeC8JeAgH",
@@ -521,6 +583,7 @@ const extra_J = {
     mirror: false,
   },
   "DRAWBRIDGE": {
+    scoring: [4463.13, 95.278, 100.0],
     blurb: "goated + tetpc chance. that first solution cover is crazy",
     build_fumen: merge_pages([
       "v115@+gRpEeh0glRpBtAeQ4Aeh0glywBtR4h0hlwwzhQ4h0?JeAgH",
@@ -530,6 +593,7 @@ const extra_J = {
     solutions_fumen: "v115@9gh0R4AthlwhRpg0R4BtwwglwhRpg0B8AtxwglwhG8?wwA8whB8JeAgWaA5Fg2A1ngHBFbcRASkFVBZLaHBQecRAyl?AAA9gwwzhi0RpxwBthlQ4g0RpwwB8BtglR4G8glA8Q4B8Je?AAPZARBoAB5ngHBFbcRASkm9A2mv2AUo78AZAAAA9gzhAti?0RpilBtwwQ4g0RpglB8AtxwR4G8wwA8Q4B8JeAAPZAx8fRB?xngHBFbcRASEKVB2mv2AUo78AZAAAA"
   },
   "TSM": {
+    scoring: [4827.88, 67.778, 100.0],
     blurb: "covers all queues, fast and easy.",
     build_fumen: merge_pages([
       "v115@3gg0GeR4i0BewhAeR4Atg0wwCewhRpBtg0xwAeglwh?RpAth0wwilwhJeAgH",
@@ -539,30 +603,49 @@ const extra_J = {
     solutions_fumen: "v115@zgwhh0R4ilRpwhg0R4A8glBtRpwhg0E8BtA8whE8yw?H8wwB8JeAgWaAZEIOB3ngHBFbcRASkFVBXUaHBQecRAylAA?AzgilR4zhAtRpR4A8i0BtRpE8g0AtA8glE8ywH8wwB8JeAA?PZARB45A5ngHBFbcRASkO6A2mv2AUo78AZAAAA"
   }, 
   "STSD": {
+    scoring: [4685.72, 92.817, 99.603],
     blurb: "i loved stsd ones.",
     build_fumen: "v115@pgRpHeRpHewhIewhAei0Q4BthlwhBeh0R4BtglwhBe?i0Q4BeglJeAgH",
     field_fumen: "v115@9gB8HeB8HeA8IeB8AeD8BeA8JeAgH",
     solutions_fumen: "v115@9gB8RpzhR4B8RpilR4AtA8ywgli0BtB8wwD8g0AtA8?JeAgWaAT4vKBzngHBFbcRAS0eHBUOaHBQecRAylAAA9gB8i?lQ4zhB8glBtR4i0A8ywBtQ4Rpg0B8wwD8RpA8JeAAPaAyCQ?9A2ngHBFbcRAS0uABXOaHBQecRAylAAA9gB8RpBtzhB8Rpg?0BtilA8ywi0glR4B8wwD8R4A8JeAAPaAy//DB4ngHBFbcRA?S0W9AYOaHBQecRAylAAA9gB8g0zhilB8i0R4glRpA8ywR4B?tRpB8wwD8BtA8JeAAPaAS+vKBwngHBFbcRAS0W9AUIaHBQe?cRAylAAA9gB8RpglQ4zhB8RpglR4h0AtA8ywhlQ4g0BtB8w?wD8g0AtA8JeAAPZAREYHBzngHBFbcRAS0ABB0mv2AUo78AZ?AAAA9gB8g0BtQ4zhB8i0R4glRpA8ywBtQ4glRpB8wwD8hlA?8JeAAPZAxCAEByngHBFbcRASkeOB4mv2AUo78AZAAAA9gB8?RpglBti0B8Rpglzhg0A8ywhlBtR4B8wwD8R4A8JeAAPZAx8?fRBxngHBFbcRASEKVB2mv2AUo78AZAAAA9gB8ilR4Rpg0B8?glzhRpg0A8ywR4Bth0B8wwD8BtA8JeAAPZAx8/DB1ngHBFb?cRASEaOB4mv2AUo78AZAAAA9gB8Rph0AtilB8Rpg0BtglR4?A8ywg0AtzhB8wwD8R4A8JeAAPYAZlo9AFrnRASo78A4fk2A?vfEEBwnAVB9gB8Rpilh0AtB8RpglR4g0BtA8ywR4zhB8wwD?8g0AtA8JeAAPYAZFELBFrnRASo78AYuo9AvfEEBwnAVB9gB?8ilRpg0R4B8glBtRpi0A8ywBtzhB8wwD8R4A8JeAAPYAVlW?9AFrnRASo78AYrvRBvfEEBwnAVB9gB8zhhlR4B8i0RpR4At?A8ywg0RpglBtB8wwD8glAtA8JeAAPYAUFk9AFrnRASo78AY?LrRBvfEEBwnAVB9gB8h0R4ywAtB8g0R4RpwwBtA8zhRpilB?8g0D8glAtA8JeAAPYAUV85AFrnRASo78AYbU9AvfEEBwnAV?B9gB8i0BtglRpB8zhBtRpA8ywg0ilR4B8wwD8R4A8JeAAPY?ATVOVBFrnRASo78A4pILBvfEEBwnAVB9gB8zhBtR4B8i0Rp?BtglA8ywg0RpilB8wwD8R4A8JeAAPYATF8ABFrnRASo78A4?Z2RBvfEEBwnAVB9gB8zhBtR4B8i0RpR4glA8ywg0RpilB8w?wD8BtA8JeAAPYAS1BLBFrnRASo78A4JLEBvfEEBwnAVB9gB?8h0RpQ4ywB8g0glRpR4wwAtA8ilzhBtB8g0D8Q4AtA8JeAA?PYASV9KBFrnRASo78A45IEBvfEEBwnAVB9gB8ilwwBtRpB8?R4ywg0RpA8R4zhi0B8glD8BtA8JeAAPXAQ1IEBFrnRASo78?A45QzAVYt2AFr4AA"
   },
+  "STSD2": {
+    scoring: [4616.61, 96.706, 99.722],
+    blurb: "the first stsd dpc i used ever. good",
+    build_fumen: merge_pages(["v115@xgRpHeRpIewhh0AtilR4Aewhg0Btglg0R4Bewhg0At?Bei0BewhJeAgH","v115@xgRpHeRpIewhh0AtQ4hlh0Aewhg0BtR4glg0Bewhg0?AtBeQ4glg0BewhJeAgH"]),
+    field_fumen: "v115@FhB8HeB8IeC8BeC8AeB8JeAgH",
+    solutions_fumen: "v115@9gh0R4zhB8g0R4RpilB8g0BtRpglywC8BtC8wwB8Je?AgWaAz//DB4ngHBFbcRAS0OOBYUaHBQecRAylAAA9gh0Btz?hB8g0RpBtilB8g0RpR4glywC8R4C8wwB8JeAAPaAT+f2A5n?gHBFbcRAS0OOBRUaHBQecRAylAAA9gh0RpzhB8g0Q4RpAti?lB8g0R4BtglywC8Q4AtC8wwB8JeAAPaAyCIOB0ngHBFbcRA?S0uABZUaHBQecRAylAAA9gzhAti0B8RpglBtR4g0B8RpglA?tR4ywC8hlC8wwB8JeAAPaAy/f2A4ngHBFbcRAS0W9AWOaHB?QecRAylAAA9gBtzhRpB8ili0RpB8glBtR4g0ywC8R4C8wwB?8JeAAPaAy8P9A5ngHBFbcRAS0+5AXOaHBQecRAylAAA9gh0?AtQ4zhB8g0BtR4ilB8g0AtRpQ4glywC8RpC8wwB8JeAAPaA?y53UB4ngHBFbcRAS0+5AQUaHBQecRAylAAA9gzhR4RpB8il?i0RpB8glBtR4g0ywC8BtC8wwB8JeAAPaAy5P9A3ngHBFbcR?AS0m2AXLaHBQecRAylAAA9gBtzhRpB8g0BtR4glRpB8i0il?ywC8R4C8wwB8JeAAPZAx/HOB1ngHBFbcRASUMVB0mv2AUo7?8AZAAAA9gzhR4RpB8g0BtR4glRpB8i0ilywC8BtC8wwB8Je?AAPZAR+3UByngHBFbcRASUsHBymv2AUo78AZAAAA9gilBti?0B8glR4zhg0B8R4RpBtywC8RpC8wwB8JeAAPZAx53UB0ngH?BFbcRASEy2Aymv2AUo78AZAAAA9gg0R4zhglB8i0BtilB8R?4RpBtywC8RpC8wwB8JeAAPZAx5fRBzngHBFbcRAS0HVB2mv?2AUo78AZAAAA9gg0BtQ4hlRpB8i0R4glRpB8zhQ4glywC8B?tC8wwB8JeAAPZAx5P9A3ngHBFbcRAS0/KB4mv2AUo78AZAA?AA9gh0AtR4glRpB8g0BtilRpB8g0AtzhywC8R4C8wwB8JeA?APZAx535AxngHBFbcRAS0/KBwmv2AUo78AZAAAA9gilRpi0?B8glBtRpR4g0B8zhR4ywC8BtC8wwB8JeAAPYAUlILBFrnRA?So78AYrv2AvfEEBwnAVB",
+  },
   "BIGC": {
-    blurb: "lowk really funny. discovered, might be a lil impractical but not even that bad. the tetpc is funny",
+    scoring: [3929.66, 33.73, 78.611],
+    blurb: "lowk really funny. discovered, might be a *lil* impractical but not even that bad. the tetpc is funny",
     build_fumen: "v115@vghlwhHeglwhCeAtDeglwhBeBtDeg0whAeg0AtCeR4?g0Rpi0AeR4h0RpJeAgH",
     field_fumen: "v115@DhC8HeB8CeA8DeB8BeB8DeB8KeAgH",
     solutions_fumen: "v115@9gilwwRpC8whglAtxwRpg0B8whBtA8wwR4g0B8whAt?B8R4h0B8whJeAgWaAU7HOBwngHBFbcRASEB6AVLaHBQecRA?ylAAA9gBthlRpC8whwwBtglRpg0B8whxwA8glR4g0B8whww?B8R4h0B8whJeAAPaAy/f2A0ngHBFbcRAS0W9AWLaHBQecRA?ylAAA9gilR4wwC8whglAtR4xwg0B8whBtA8Rpwwg0B8whAt?B8Rph0B8whJeAAPZARBwKBzngHBFbcRASk+AB4mv2AUo78A?ZAAAA9gh0BthlC8whg0R4BtglwwB8whR4A8RpxwB8whg0B8?RpglwwB8whJeAAPZARBYHBxngHBFbcRASk+ABymv2AUo78A?ZAAAA9gilwwBtC8whRpxwi0B8whRpA8wwR4g0B8whglB8R4?BtB8whJeAAPZAx8vKB1ngHBFbcRASEyRB4mv2AUo78AZAAA?A9gilwwR4C8whRpxwi0B8whRpA8wwBtg0B8whglB8R4BtB8?whJeAAPZAx8nABzngHBFbcRASEaOBymv2AUo78AZAAAA9gh?0hlBtC8whg0R4glwwBtB8whR4A8xwRpB8whg0B8glwwRpB8?whJeAAPZAR735AwngHBFbcRASEK6Awmv2AUo78AZAAAA9gh?0hlRpC8whg0R4glRpwwB8whR4A8BtxwB8whg0B8glBtwwB8?whJeAAPZAR4P9AwngHBFbcRAS0H6A0mv2AUo78AZAAAA9gi?lR4AtC8whRpR4BtwwB8whRpA8g0AtxwB8whglB8i0wwB8wh?JeAAPZAR435A2ngHBFbcRAS0H6Aymv2AUo78AZAAAA9gili?0C8whRpBtR4wwB8whRpA8BtxwB8whglB8R4g0wwB8whJeAA?PYAYF8ABFrnRASo78AYet2AvfEEBwnAVB"
   },
+  "BETTERBIGC": {
+    scoring: [3916.71, 43.056, 98.651],
+    blurb: "BIG C shifted, found after. actually fair lol",
+    build_fumen: "v115@pgwhGehlwhHeglwhCeAtDeglwhBeBtDeg0Rpg0AtCe?R4g0Rpi0AeR4h0JeAgH",
+    field_fumen: "v115@9gA8GeC8HeB8CeA8DeB8BeB8DeA8JeAgH",
+    solutions_fumen: "v115@9gA8whilwwRpC8whglAtxwRpg0B8whBtA8wwR4g0B8?whAtB8R4h0A8JeAgWaA05XHB1ngHBFbcRASEp2AZOaHBQec?RAylAAA9gA8zhwwBtC8ilxwg0BtB8glR4A8wwg0RpB8R4B8?h0RpA8JeAAPaAy/XHByngHBFbcRAS0W9AYRaHBQecRAylAA?A9gA8whBthlRpC8whwwBtglRpg0B8whxwA8glR4g0B8whww?B8R4h0A8JeAAPaAS+35A3ngHBFbcRAS0W9ARUaHBQecRAyl?AAA9gA8wwBtzhC8xwBth0hlB8wwR4A8g0RpglB8R4B8g0Rp?glA8JeAAPaAy5nAB1ngHBFbcRAS0m2AXRaHBQecRAylAAA9?gA8zhR4AtC8glRpR4BtwwB8glRpA8g0AtxwB8hlB8i0wwA8?JeAAPZAREYHBzngHBFbcRAS0ABB0mv2AUo78AZAAAA9gA8w?wBthlh0C8xwBtglg0RpB8wwR4A8glg0RpB8R4B8zhA8JeAA?A9gA8whilR4wwC8whglAtR4xwg0B8whBtA8Rpwwg0B8whAt?B8Rph0A8JeAAPZARBoAB5ngHBFbcRASkm9A2mv2AUo78AZA?AAA9gA8wwBtzhC8xwBtglRpg0B8wwR4A8glRpg0B8R4B8hl?h0A8JeAAPZARBoABxngHBFbcRASkm9Aymv2AUo78AZAAAA9?gA8whh0BthlC8whg0R4BtglwwB8whR4A8RpxwB8whg0B8Rp?glwwA8JeAAPZAR+vKB4ngHBFbcRASUUEBwmv2AUo78AZAAA?A9gA8BtR4wwh0C8glBtxwg0RpB8glR4A8wwg0RpB8hlB8zh?A8JeAAPZAx835AzngHBFbcRASECLBymv2AUo78AZAAAA9gA?8zhwwBtC8glRpxwi0B8glRpA8wwR4g0B8hlB8R4BtA8JeAA?PZAR7P9A2ngHBFbcRASEK6A4mv2AUo78AZAAAA9gA8whilw?wR4C8whRpxwi0B8whRpA8wwBtg0B8whglB8R4BtA8JeAAPZ?AR735A0ngHBFbcRASEK6Aymv2AUo78AZAAAA9gA8zhwwR4C?8glRpxwi0B8glRpA8wwBtg0B8hlB8R4BtA8JeAAPZAx5/DB?3ngHBFbcRAS0XOB4mv2AUo78AZAAAA9gA8whh0hlRpC8whg?0R4glRpwwB8whR4A8BtxwB8whg0B8glBtwwA8JeAAPZAR43?5AyngHBFbcRAS0H6Awmv2AUo78AZAAAA9gA8h0wwBtR4C8h?lxwzhB8g0glwwA8R4RpB8g0glB8BtRpA8JeAAPYAVVtRBFr?nRASo78AYLELBvfEEBwnAVB9gA8zhRpwwC8ilBtxwg0B8gl?R4A8Btwwg0B8R4B8Rph0A8JeAAPYATFTOBFrnRASo78A4J0?2AvfEEBwnAVB"
+  },
   "CHILL": {
+    scoring: [4095.12, 63.889, 96.032],
     blurb: "eh pretty good",
     build_fumen: "v115@4gQ4GeBtR4Dehlg0BtQ4Beg0Rpgli0Ceg0RpglzhAe?h0JeAgH",
     field_fumen: "v115@MhA8GeD8DeF8BeA8JeAgH",
     solutions_fumen: "v115@9gwhh0AtilwwRpwhg0BtglA8xwRpwhg0AtD8wwR4wh?F8R4A8JeAgWaAX4f2AwngHBFbcRASUjHBSUaHBQecRAylAA?A9gwhh0AtilR4wwwhg0BtglA8R4xwwhg0AtD8RpwwwhF8Rp?A8JeAAPaAzCAEB2ngHBFbcRAS0mRBYUaHBQecRAylAAA9gz?hilRpwwh0R4glA8Btxwg0R4D8Btwwg0F8RpA8JeAAPZAR+/?DB0ngHBFbcRASUk9A4mv2AUo78AZAAAA9gwhh0AtilwwR4w?hg0BtglA8xwRpwhg0AtD8wwRpwhF8R4A8JeAAPZAR735Awn?gHBFbcRASEK6Awmv2AUo78AZAAAA"
   },
   "HOLDLSPC": {
+    scoring: [5141.77, 93.929, 100.0],
     blurb: "saw rtxile using it",
     build_fumen: "v115@6gR4AtFeR4Bth0DeglwwAth0RpAeilxwh0Rpzhwwh0?JeAgH",
     field_fumen: "v115@EhC8FeF8DeG8AeF8JeAgH",
     solutions_fumen: "v115@zgh0hlBtzhg0RpglQ4BtC8g0RpglR4F8ywQ4G8wwF8?JeAgWaA0C45AwngHBFbcRASExABXOaHBQecRAylAAAzgh0R?pBtzhg0ilQ4BtC8g0glRpR4F8ywQ4G8wwF8JeAAPaATEoAB?3ngHBFbcRAS0+UBTOaHBQecRAylAAAzgglRpg0BtzhglRpg?0Q4BtC8hlh0R4F8ywQ4G8wwF8JeAAPaATB45AxngHBFbcRA?S0mRBSIaHBQecRAylAAAzgh0hlBtzhg0Q4ywBtC8g0R4wwR?pF8Q4glRpG8glF8JeAAPaASBQ9AzngHBFbcRAS0uABSLaHB?QecRAylAAAzgRpBtR4zhRpglBth0C8ilR4g0F8ywg0G8wwF?8JeAAPZARE4UB3ngHBFbcRAS0wHB2mv2AUo78AZAAAAzgRp?BtR4zhRpglR4h0C8ilBtg0F8ywg0G8wwF8JeAAPZAxC4UBw?ngHBFbcRAS042Aymv2AUo78AZAAAAzgRpQ4ilzhRpR4ywC8?i0BtwwF8g0Q4BtG8glF8JeAAPYAVFb9AFrnRASo78AY7xRB?vfEEBwnAVBzgi0ilzhRpg0glywC8RpQ4BtwwF8R4BtG8Q4F?8JeAAPYAU1gHBFrnRASo78AYrGEBvfEEBwnAVBzgi0ywzhR?pg0AtwwR4C8RpBtR4F8AtilG8glF8JeAAPYATVuHBFrnRAS?o78A4pYEBvfEEBwnAVBzgi0ilzhRpg0AtywC8RpBtR4F8At?R4wwG8glF8JeAAPXAQlQVBFrnRASo78A4fMzAVYt2AFr4AA"
   },
   "EHTRIS": {
+    scoring: [3862.51, 34.444, 84.683],
     blurb: "tuff tsm + quad chance",
     build_fumen: "v115@1gglIeglAei0DeAthlRpg0Beg0BtR4RpCeg0AtR4zh?Aeh0JeAgH",
     field_fumen: "v115@JhA8IeA8AeC8DeF8BeA8JeAgH",

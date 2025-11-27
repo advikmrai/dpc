@@ -11,31 +11,64 @@ const props = withDefaults(defineProps<{
   field_fumen: string,
   solutions_fumen: string,
   mirror?: boolean,
+  scoring?: number[],
+  scoring_details?: string,
 }>(), { mirror: false });
 
 const showModal = ref(false);
+const showScoringDetails = ref(false);
+
+function openModal() {
+  showModal.value = true;
+}
+
+function closeModal() {
+  showModal.value = false;
+  if (document.activeElement instanceof HTMLElement) {
+    document.activeElement.blur();
+  }
+}
+
+function toggleScoringDetails() {
+  showScoringDetails.value = !showScoringDetails.value;
+}
 </script>
 
 <template>
-    <div @click="showModal = true" class="setup-preview">
+    <div @click="openModal" class="setup-preview">
         <h4>{{ name }}</h4>
         <TFumenPlayer :fumen="props.build_fumen" :height="7" :cell_size="18" :mirror="props.mirror" :hideControls="true" />
     </div>
 
-    <div v-if="showModal" class="modal" @click.self="showModal = false">
-        <div class="modal-content">
-            <span class="close" @click="showModal = false">&times;</span>
+    <div v-if="showModal" class="modal" @click.self="closeModal">
+        <div class="modal-content"> 
+            <span class="close" @click="closeModal">&times;</span>
+            <div v-if="props.scoring" class="scoring-info-compact">
+                <span>avg PC score: {{ props.scoring[0] }}</span> |
+                <span>extra%: {{ props.scoring[1] }}%</span> |
+                <span>PC Chance: {{ props.scoring[2] }}%</span>
+            </div>
             <h2>{{ name }}</h2>
-            <p>{{ blurb }}</p>
-            <h3>Setup</h3>
+                        <p>{{ blurb }}</p>
+            
+                        <h3>SETUP</h3>
             <TFumenList
                 :fumen="props.build_fumen"
                 :height="7"
                 :cell_size="18"
                 :mirror="props.mirror"
             />
+
+            <div v-if="props.scoring_details">
+                            <div @click="toggleScoringDetails" class="toggle-details-button">
+                                {{ showScoringDetails ? 'scoring details ▲' : 'scoring details ▼' }}
+                            </div>
+                            <div v-if="showScoringDetails" class="scoring-details-content">
+                                <pre>{{ props.scoring_details }}</pre>
+                            </div>
+                        </div>
             
-            <h3>Solutions</h3>
+            <h3>SOLUTIONS</h3>
             <TFumenList :fumen="props.solutions_fumen" :height="6" :cell_size="18" :mirror="props.mirror" :display_copy="false"/>
             <PCF :initial_field_fumen="props.field_fumen" sequence="ITSZOLJ"/>
         </div>
@@ -94,5 +127,40 @@ const showModal = ref(false);
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.scoring-info-compact {
+    font-size: 0.8em; 
+    color: #666; 
+    margin-top: 2px;
+    margin-bottom: -30px;
+    text-align: right; 
+    padding-right: 30px; 
+}
+
+.scoring-info-compact span {
+    margin-left: 10px; /* Space between items */
+}
+
+.toggle-details-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--vp-c-brand); /* Assuming VitePress brand color */
+}
+
+.toggle-details-button:hover {
+    text-decoration: underline;
+}
+
+.scoring-details-content {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid var(--vp-c-border); /* Assuming VitePress border color */
+    border-radius: 4px;
+    background-color: var(--vp-c-bg-soft); /* Assuming VitePress soft background color */
+    font-size: 0.9em;
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
 }
 </style>

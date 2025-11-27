@@ -1,6 +1,6 @@
 <template>
   <div>
-    <VTetrisField :page="pages[page]" :height="props.height" :display_copy="props.display_copy"/>
+    <VTetrisField :page="pages[page]" :height="props.height" :display_copy="props.display_copy" :mirror="props.mirror"/>
   </div>
   <div v-if="!hideControls" class="fumen-ctl">
     <TButton @click="setPage(0)">|&lt;</TButton>
@@ -21,7 +21,8 @@ const props = defineProps({
   page: { type: Number, default: 0 },
   height: { type: Number, default: 20 },
   display_copy: {type: Boolean, default: true},
-  hideControls: { type: Boolean, default: false }
+  hideControls: { type: Boolean, default: false },
+  mirror: { type: Boolean, default: false }
 })
 const pages = computed(() => decoder.decode(props.fumen))
 const page = ref(props.page)

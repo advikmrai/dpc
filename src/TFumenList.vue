@@ -11,6 +11,7 @@
 import { ref, watch, computed } from "vue"
 import { decoder } from "tetris-fumen"
 import VTetrisField from "./VTetrisField.vue"
+import { mirror_name } from "./fumen"
 const props = defineProps({
   fumen: { type: String, default: "v115@vhAAgH" },
   height: { type: Number, default: 20 },
@@ -18,7 +19,17 @@ const props = defineProps({
   mirror: { type: Boolean, default: false },
   display_copy: {type: Boolean, default: true}
 })
-const pages = computed(() => decoder.decode(props.fumen))
+const pages = computed(() => {
+  const decoded_pages = decoder.decode(props.fumen)
+  if (props.mirror) {
+    return decoded_pages.map(p => {
+      const new_page = Object.assign(Object.create(Object.getPrototypeOf(p)), p)
+      new_page.comment = mirror_name(p.comment)
+      return new_page
+    })
+  }
+  return decoded_pages
+})
 </script>
 
 <style>

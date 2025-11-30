@@ -74,6 +74,8 @@ toggle mirror: ctrl+m
 <TDPC name="JLI HOLD O" v-bind="extra_I.JLI" :mirror="is_mirrored" />
 <TDPC name="DECENT VARIANT" v-bind="extra_I.DECENT" :mirror="is_mirrored" />
 <TDPC name="BIG L" v-bind="extra_I.BIGL" :mirror="is_mirrored" />
+<TDPC name="HOLD I" v-bind="extra_I.IHOLDDPC" :mirror="is_mirrored" />
+<TDPC name="HOLD I SPC" v-bind="extra_I.IHOLDSPC" :mirror="is_mirrored" />
 
 ## Extra T
 [train](https://jstris.jezevec10.com/play/mode/2593)

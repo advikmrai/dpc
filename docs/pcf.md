@@ -18,6 +18,18 @@ title: PC Finder
 
 <PCF initial_field_fumen="v115@9gD8FeC8GeE8EeD8PeAgH" sequence="TOIZLJS" :mirror="is_mirrored" />
 
+## 2nd
+
+### IOSZ type
+
+<PCF initial_field_fumen="v115@KhA8FeF8DeE8OeAgH" sequence="IOTZLJSI" :mirror="is_mirrored" />
+
+### ITSZ type
+
+
+<PCF initial_field_fumen="v115@9gA8IeA8GeA8AeA8EeE8FeC8JeAgH" sequence="TOTZLJSI" :mirror="is_mirrored" />
+
+
 ## Credits
 
 Content of this page comes from:

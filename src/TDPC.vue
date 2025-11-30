@@ -89,7 +89,8 @@ function toggleScoringDetails() {
 
 .setup-preview:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.15); */
+    border-color: var(--vp-c-brand);
 }
 
 .modal {

@@ -4,8 +4,6 @@ title: DPC
 
 # DPC
 
-These setups are useful
-
 <!-- , so you can attain results like I do:
 
 ![me on blitz](assets/me_on_blitz.gif) -->
@@ -121,10 +119,12 @@ toggle mirror: ctrl+m
 
 ## Credits
 
-Many thanks to Enter-tainer for the existence of their dpc site
-
-- https://github.com/Enter-tainer/dpc
-- https://github.com/flaribbit/v-tetris-field
+thanks so much to:
+- sfinder man#2879
+- https://hsterts.github.io/Fumenities/ 
+- http://tetris.johnbeak.cz/
+- tetris users
+- many thanks to Enter-tainer https://github.com/Enter-tainer/dpc for the existence of their dpc site at https://dpc.mgt.moe
 
 <!-- end -->
 

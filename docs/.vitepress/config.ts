@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en',
-  title: 'DPC',
-  description: 'my dpc setups',
+  title: 'tetris setups',
+  description: 'for fun and lolz',
 
-  base: '/dpc/',
+  base: '/',
 
   themeConfig: {
     repo: 'advikmrai/dpc',

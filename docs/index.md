@@ -4,9 +4,11 @@ title: DPC
 
 # DPC
 
-These setups are useful for PC looping, so you can attain results like I do:
+These setups are useful
 
-![me on blitz](assets/me_on_blitz.gif)
+<!-- , so you can attain results like I do:
+
+![me on blitz](assets/me_on_blitz.gif) -->
 
 toggle dark mode: d 
 
@@ -46,9 +48,10 @@ toggle mirror: ctrl+m
 <TDPC name="TSD" v-bind="extra_S.TSD" :mirror="is_mirrored" />
 <TDPC name="ELEPHANT SHIFTED" v-bind="extra_S.ELPTSHIFTED" :mirror="is_mirrored" />
 <TDPC name="ELEPHANT" v-bind="extra_S.ELEPHANT" :mirror="is_mirrored" />
+<TDPC name="ANTILIME ELEPHANT" v-bind="extra_S.ANTILIME" :mirror="is_mirrored" />
 <TDPC name="SLED" v-bind="extra_S.SLED" :mirror="is_mirrored" />
-<TDPC name="BUTTER" v-bind="extra_S.BUTTER" :mirror="is_mirrored" />
-<TDPC name="THE OTHER BUTTER" v-bind="extra_S.OTHERBUTTER" :mirror="is_mirrored" />
+<TDPC name="FAKE BUTTER" v-bind="extra_S.BUTTER" :mirror="is_mirrored" />
+<TDPC name="OTHER FAKE BUTTER" v-bind="extra_S.OTHERBUTTER" :mirror="is_mirrored" />
 <TDPC name="TET ELEPHANT" v-bind="extra_S.ELPT_TET" :mirror="is_mirrored" /> 
 <TDPC name="LIME" v-bind="extra_S.S2O" :mirror="is_mirrored" />
 <TDPC name="BROKEN SLED" v-bind="extra_S.XSLED" :mirror="is_mirrored" />
@@ -65,7 +68,7 @@ toggle mirror: ctrl+m
 [train](https://jstris.jezevec10.com/play/mode/2594)
 
 <TDPC name="TKI DPC" v-bind="extra_I.I2L2O" :mirror="is_mirrored" />
-<TDPC name="BUTTER" v-bind="extra_I.BUTTER" :mirror="is_mirrored" />
+<TDPC name="FAKE BUTTER" v-bind="extra_I.BUTTER" :mirror="is_mirrored" />
 <TDPC name="OUT-OF-ORDER TKI" v-bind="extra_I.OUT" :mirror="is_mirrored" />
 <TDPC name="GOD" v-bind="extra_I.GOD" :mirror="is_mirrored" />
 <TDPC name="T SPIN" v-bind="extra_I.TSPIN" :mirror="is_mirrored" />
@@ -109,10 +112,12 @@ toggle mirror: ctrl+m
 <TDPC name="THAT STSD" v-bind="extra_J.STSD" :mirror="is_mirrored" />
 <TDPC name="THE BIG C" v-bind="extra_J.BIGC" :mirror="is_mirrored" />
 <TDPC name="BETTER BIG C" v-bind="extra_J.BETTERBIGC" :mirror="is_mirrored" />
+<TDPC name="HYDRAULIC PRESS SPC" v-bind="extra_J.HYDRAULIC" :mirror="is_mirrored" />
+<TDPC name="DIABOLICAL FIN" v-bind="extra_J.FIN" :mirror="is_mirrored" />
 <TDPC name="OJ and SZ" v-bind="extra_J.OJSZ" :mirror="is_mirrored" />
-<TDPC name="CHILL" v-bind="extra_J.CHILL" :mirror="is_mirrored" />
-<TDPC name="HOLD L SPC" v-bind="extra_J.HOLDLSPC" :mirror="is_mirrored" />
 <TDPC name="EH-TRIS" v-bind="extra_J.EHTRIS" :mirror="is_mirrored" />
+<TDPC name="CHILL" v-bind="extra_J.CHILL" :mirror="is_mirrored" />
+
 
 ## Credits
 

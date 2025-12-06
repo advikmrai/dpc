@@ -1,11 +1,10 @@
-# DPC solutions
+# DPC, 8L, 14L setups
 
-thanks to:
-- https://github.com/flaribbit/v-tetris-field
-- http://tetris.johnbeak.cz/dpc/builds.php
-- https://four.lol/perfect-clears/dpc
+thanks so much to:
+- sfinder man#2879
+- https://hsterts.github.io/Fumenities/ 
+- http://tetris.johnbeak.cz/
+- tetris users
+- https://github.com/Enter-tainer/dpc for og site at https://dpc.mgt.moe
 
-develop: `yarn dev`
-build `yarn build`
 
-Note that the path of `@mgtd/pcf-wasm` is hardcoded at this moment, please change it if needed.

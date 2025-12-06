@@ -112,9 +112,10 @@ function drawField(ctx: CanvasRenderingContext2D, page: Page) {
 const binary_field = computed(() => {
   let res = BigInt(0)
   const current_field = page.value.field
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < props.height; i++) {
     for (var j = 0; j < 10; j++) {
-      var piece = current_field.at(j, i)
+      let source_j = props.mirror ? 9 - j : j
+      var piece = current_field.at(source_j, i)
       const shift_amount = BigInt(i * 10 + j)
       if (piece != "_") {
         // console.log(i, j, shift_amount)
@@ -150,7 +151,8 @@ function handleMouseDown(event: MouseEvent) {
   if (!props.allow_edit) return
   isDrawing.value = true
   const { realX, realY } = getMousePosition(event)
-  const currentValue = page.value.field.at(realX, realY)
+  const target_x = props.mirror ? 9 - realX : realX
+  const currentValue = page.value.field.at(target_x, realY)
   drawMode.value = currentValue === '_' ? 'X' : '_'
   setCell(realX, realY, drawMode.value)
   lastCell.value = { x: realX, y: realY }
@@ -186,7 +188,8 @@ function getMousePosition(event: MouseEvent) {
 function setCell(x: number, y: number, value: string) {
   const new_page: Page = Object.assign(Object.create(Object.getPrototypeOf(page.value)), page.value)
   let new_field = new_page.field.copy()
-  new_field.set(x, y, value)
+  const target_x = props.mirror ? 9 - x : x
+  new_field.set(target_x, y, value)
   new_page.field = new_field
   page.value = new_page
   if (props.allow_edit) {
@@ -205,8 +208,8 @@ onMounted(() => {
     emit('field_change', binary_field.value)
   }
 })
-watch(props, () => {
-  page.value = props.page as Page
+watch(() => props.page, (newPage) => {
+  page.value = newPage as Page
   if (props.allow_edit) {
     emit('field_change', binary_field.value)
   }
@@ -222,6 +225,9 @@ watch(() => props.mirror, () => {
   if (!ctx) return
   ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
   drawField(ctx, page.value as Page)
+  if (props.allow_edit) {
+    emit('field_change', binary_field.value)
+  }
 })
 </script>
 

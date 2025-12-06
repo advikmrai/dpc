@@ -26,6 +26,40 @@ interface EIGHTL {
   }[],
 }
 
+interface FOURTEENL {
+  blurb?: string,
+  build_fumen: string,
+  second_setups: {
+    name: string,
+    build_fumen: string,
+    third_setups: {
+        name: string,
+        build_fumen: string,
+        fourth_setups: {
+            name: string,
+            blurb?: string,
+            build_fumen: string,
+            field_fumen?: string,
+            solutions_fumen: string,
+        }[]
+    }[]
+  }[],
+}
+
+
+const TRIPLETRIPLE: EIGHTL = {
+  blurb: "yoo u might get triple triple.",
+  build_fumen: "v115@zgwhIewhRpGewhRpBewwBeAtg0whR4AeglxwBtg0R4?ilwwAeAth0JeAgH",
+  second_setups: [
+    {
+      name: "",
+      build_fumen: "v115@VgglRpGeglRpFewhhlR4EewhA8R4EeAtwhC8wwi0Bt?whC8xwA8g0AtE8wwL8AeC8JeAgH",
+      field_fumen: "v115@zgC8GeC8FeE8EeD8EeH8AeC8JeAgH",
+      solutions_fumen: "v115@zgC8ilzhC8gli0RpE8R4g0RpD8R4ywH8wwC8JeAgWa?AU73UB0ngHBFbcRASEB6AWOaHBQecRAylAAAzgC8Rpg0zhC?8Rpi0glE8R4ilD8R4ywH8wwC8JeAAPaAyCgRB2ngHBFbcRA?S0GEBQOaHBQecRAylAAAzgC8ilzhC8glg0ywAtE8g0RpBtD?8h0RpAtH8wwC8JeAAPaAy5HOBxngHBFbcRAS0m2AZOaHBQe?cRAylAAAzgC8ilzhC8glg0ywAtE8g0Q4wwBtD8h0R4AtH8Q?4C8JeAAPaAS4f2AwngHBFbcRAS0m2AQUaHBQecRAylAAAzg?C8RpBtglh0C8Rpilg0E8R4Btg0D8R4ywH8wwC8JeAAPZAR7?fRByngHBFbcRASESEB2mv2AUo78AZAAAAzgC8ilRph0C8gl?zhg0E8R4Rpg0D8R4ywH8wwC8JeAAPZAR7HOBwngHBFbcRAS?ESEBwmv2AUo78AZAAAAzgC8Rpg0zhC8Bti0glE8BtilD8Rp?ywH8wwC8JeAAPZAR7vKByngHBFbcRASE6AB2mv2AUo78AZA?AAAzgC8Rpg0zhC8Rpi0AtE8R4wwBtD8R4xwAtH8wwC8JeAA?PZAR43UBxngHBFbcRAS0nHBwmv2AUo78AZAAAAzgC8Rph0i?lC8Rpg0whglAtE8wwg0whBtD8ywwhAtH8whC8JeAAPZAR4f?2A0ngHBFbcRAS0v2A2mv2AUo78AZAAAAzgC8Q4BtzhC8R4B?tRpE8Q4glwwRpD8ilxwH8wwC8JeAAPYAZV2RBFrnRASo78A?Yu4RBvfEEBwnAVBzgC8Rph0ilC8Rpg0whglAtE8R4whBtD8?R4g0whAtH8whC8JeAAPYAY1pHBFrnRASo78AYO7KBvfEEBw?nAVBzgC8g0R4zhC8i0glRpE8ilRpD8R4ywH8wwC8JeAAPYA?Wl+5AFrnRASo78A4ckRBvfEEBwnAVBzgC8Rphlwhh0C8RpQ?4glwhg0E8wwR4whg0D8ywQ4whH8glC8JeAAPYAVlQ6AFrnR?ASo78AYr4RBvfEEBwnAVBzgC8ilzhC8BtR4RpE8BtwwRpD8?glR4xwH8wwC8JeAAPYAVVEEBFrnRASo78AYrPEBvfEEBwnA?VBzgC8RpQ4hlh0C8BtR4glg0E8BtQ4glg0D8RpywH8wwC8J?eAAPYAUlf9AFrnRASo78AY7oRBvfEEBwnAVBzgC8Rphlwhh?0C8ywglwhg0E8wwQ4glwhg0D8RpR4whH8Q4C8JeAAPYAT1J?VBFrnRASo78A4ZGLBvfEEBwnAVBzgC8RpwwzhC8RpxwAtgl?E8R4ilD8R4wwBtH8AtC8JeAAPYAS1h9AFrnRASo78A4Jb9A?vfEEBwnAVBzgC8RpR4ilC8zhglAtE8R4wwBtD8RpxwAtH8w?wC8JeAAPYASVd9AFrnRASo78A45Y9AvfEEBwnAVBzgC8ilz?hC8ywR4AtE8wwR4BtD8gli0AtH8g0C8JeAAPYASV0KBFrnR?ASo78A4ZEEBvfEEBwnAVBzgC8h0wwzhC8g0ywAtglE8Rpil?D8g0RpBtH8AtC8JeAAPXARVeOBFrnRASo78A4lVzAVYt2AF?r4AAzgC8zhilC8RpR4glAtE8R4wwBtD8RpxwAtH8wwC8JeA?APXAR1wABFrnRASo78AYBRzAVYt2AFr4AAzgC8Rpi0R4C8B?tzhE8BtwwR4D8Rpxwg0H8wwC8JeAAPXARleHBFrnRASo78A?4fezAVYt2AFr4AAzgC8ilBtR4C8zhR4E8RpwwBtD8glRpxw?H8wwC8JeAAPXAQVeOBFrnRASo78AYeVzAVYt2AFr4AA",
+    },
+  ]
+};
+
 const FONZIE: EIGHTL = {
   blurb: "Offers b2b tetpc 8L.",
   build_fumen: "v115@Ehg0BeglBeBtAeQ4i0glCeBtR4RphlAezhQ4RpJeAg?H",
@@ -143,6 +177,12 @@ const MS2: EIGHTL = {
       build_fumen: "v115@VgwhIewhGeR4whAeh0BeglR4glwhAeg0CejlB8g0Ae?BthlRpC8BeBtA8RpC8AeJ8AeE8JeAgH",
       field_fumen: "v115@zgA8IeA8GeC8AeB8BeE8AeA8CeH8AeE8JeAgH",
       solutions_fumen: "v115@zgA8whRph0AtilA8whRpg0BtglC8whB8g0AtE8whA8?ywH8wwE8JeAgWaAU7P9AyngHBFbcRASEB6ASUaHBQecRAyl?AAAzgA8zhRpilA8h0BtRpglC8g0B8BtE8g0A8ywH8wwE8Je?AAPaAzCQ9A2ngHBFbcRAS0mRBXUaHBQecRAylAAAzgA8whR?pg0R4ilA8whRpi0glC8whB8R4E8whA8ywH8wwE8JeAAPZAx?FIOB2ngHBFbcRAS0QVB2mv2AUo78AZAAAAzgA8whRph0Ati?lA8whRpg0BtglC8whB8R4E8whA8R4AtH8g0E8JeAAPZAx/f?2AwngHBFbcRASUsHB2mv2AUo78AZAAAAzgA8whg0ywAtilA?8whi0BtglC8whB8R4E8whA8R4AtH8wwE8JeAAPYAYVO6AFr?nRASo78AYeNEBvfEEBwnAVBzgA8whQ4ywAtilA8whR4wwBt?glC8whB8h0E8whA8Q4g0AtH8g0E8JeAAPYAW1ZOBFrnRASo?78A4M7KBvfEEBwnAVB",
+    },
+    {
+      name: "O SLOT",
+      build_fumen: "v115@VgwhBeg0FewhBeg0FewhQ4h0BeglBeglwhR4CejlB8?Q4AeBthlRpC8BeBtA8RpC8AeJ8AeE8JeAgH",
+      field_fumen: "v115@zgA8BeA8FeA8BeA8FeD8BeA8BeD8CeH8AeE8JeAgH",
+      solutions_fumen: "v115@zgA8RpA8h0zhA8RpA8g0ilR4D8g0glA8R4D8ywH8ww?E8JeAgWaAU+/DB0ngHBFbcRASEZ9AUIaHBQecRAylAAAzgA?8RpA8h0AtilA8RpA8g0BtglR4D8g0AtA8R4D8ywH8wwE8Je?AAPaAT435A2ngHBFbcRAS0eHBSIaHBQecRAylAAAzgA8RpA?8ilh0AtA8RpA8glR4g0BtD8R4A8g0AtD8ywH8wwE8JeAAAz?gA8RpA8glzhAtA8RpA8gli0BtD8hlA8g0AtD8ywH8wwE8Je?AAPZAxCIOB4ngHBFbcRASkOVB2mv2AUo78AZAAAAzgA8RpA?8whg0ywAtA8RpA8whi0BtD8whglA8wwAtD8ilH8whE8JeAA?PZAx5vKB3ngHBFbcRAS0vRB4mv2AUo78AZAAAAzgA8RpA8h?0ywAtA8RpA8zhBtD8g0glA8wwAtD8ilH8g0E8JeAAPZAR4/?DB4ngHBFbcRAS0f9A4mv2AUo78AZAAAAzgA8RpA8ilh0AtA?8RpA8ywg0BtD8R4A8g0AtD8R4wwH8glE8JeAAPYAU1AVBFr?nRASo78AYr2KBvfEEBwnAVB"
     }
     
   ]
@@ -205,7 +245,6 @@ const HACHISPIN: EIGHTL = {
   ]
 }
 
-
 const PWNBYNUMBERS: EIGHTL = {
   blurb: "new to me. looks cool and covers the setup which I usually just go MS2 for, but lowk reduced pc chances/bad recovery",
   build_fumen: "v115@9gwhDeh0wwBewhAeAtRpg0xwBewhBtRpg0glwwR4wh?AtBeilR4KeAgH",
@@ -225,25 +264,20 @@ const PWNBYNUMBERS: EIGHTL = {
   ]
 }
 
-interface FOURTEENL {
-  blurb?: string,
-  build_fumen: string,
-  second_setups: {
-    name: string,
-    build_fumen: string,
-    third_setups: {
-        name: string,
-        build_fumen: string,
-        fourth_setups: {
-            name: string,
-            blurb?: string,
-            build_fumen: string,
-            field_fumen?: string,
-            solutions_fumen: string,
-        }[]
-    }[]
-  }[],
+const SATSUKI: EIGHTL = {
+  blurb: "i used for tetris.com lol. hold j",
+  build_fumen: "v115@pgQ4IeR4HewhQ4HewhglDewwCewhglAeBtxwRpAewh?hlAeBtwwRpKeAgH",
+  second_setups: [
+    {
+      name: "",
+      build_fumen: "v115@VgQ4hlGeR4glGeA8Q4glBeh0CeB8Ceg0Rpg0AeB8ww?Btg0Rpg0whB8xwBtA8h0whB8wwF8whC8AeE8whJeAgHVgRp?g0GeRpg0GeA8h0BeglQ4Cewhg0gWBeglR4g0AexhQpBthlQ?4g0whAewhQpwwAtgWglh0whBewwB8glxwglwhTeAgHVgRpg?0GeRpg0GeA8h0Beh0CexwgHBeg0Q4hlAexwQaBtg0R4glwh?AeglQawwAtglwhQ4glwhBewwB8g0xhglwhTeAgH",
+      field_fumen: "v115@HhB8HeA8DeB8CeB8BeE8KeAgH",
+      solutions_fumen: "v115@zgC8h0AtilwhC8g0BtglRpwhC8g0AtB8RpwhB8ywD8?whC8wwF8JeAgWaAT4/DBwngHBFbcRAS0eHBTLaHBQecRAyl?AAAzgC8ilRpg0whC8glR4Rpg0whC8R4B8h0whB8ywD8whC8?wwF8JeAAPaAyFoAB3ngHBFbcRAS0GEBYIaHBQecRAylAAAz?gC8i0Q4hlwhC8Rpg0R4glwhC8RpB8Q4glwhB8ywD8whC8ww?F8JeAAPaASBg2AzngHBFbcRAS0uABRLaHBQecRAylAAAzgC?8h0AtQ4hlwhC8g0BtR4glwhC8g0AtB8Q4glwhB8ywD8whC8?wwF8JeAAPaAy//DBwngHBFbcRAS0W9AYIaHBQecRAylAAAz?gC8ili0whC8glR4Btg0whC8R4B8BtwhB8ywD8whC8wwF8Je?AAPaAy/nAB2ngHBFbcRAS0W9AXUaHBQecRAylAAAzgC8i0z?hC8Rpg0BthlC8RpB8BtglB8ywD8glC8wwF8JeAAPaAy835A?zngHBFbcRAS0+5AWRaHBQecRAylAAAzgC8glRpi0whC8glR?pBtg0whC8hlB8BtwhB8ywD8whC8wwF8JeAAPZAx/HOB5ngH?BFbcRASUMVB2mv2AUo78AZAAAAzgC8g0R4zhC8i0BthlC8R?4B8BtglB8ywD8glC8wwF8JeAAPZAx5nAB5ngHBFbcRAS0XO?B0mv2AUo78AZAAAAzgC8g0R4ilwhC8i0glRpwhC8R4B8Rpw?hB8ywD8whC8wwF8JeAAPZAR4HOB5ngHBFbcRAS0PEB0mv2A?Uo78AZAAAAzgC8Rpgli0whC8ilBtg0whC8RpB8BtwhB8ywD?8whC8wwF8JeAAPZAR4f2A4ngHBFbcRAS0v2A4mv2AUo78AZ?AAAAzgC8h0AtRpR4C8g0BtRphlC8g0AtB8R4glB8ywD8glC?8wwF8JeAAPYAZV8UBFrnRASo78AYuvRBvfEEBwnAVBzgC8h?0AtRphlC8g0BtRpR4C8g0AtB8R4glB8ywD8glC8wwF8JeAA?PYAYVOVBFrnRASo78AYetRBvfEEBwnAVBzgC8g0R4Btglwh?C8i0ilwhC8R4B8BtwhB8ywD8whC8wwF8JeAAPYAYVO6AFrn?RASo78AYeNEBvfEEBwnAVBzgC8h0AtilwhC8g0BtglRpwhC?8R4B8RpwhB8R4AtD8whC8g0F8JeAAPYAX1h9AFrnRASo78A?4cWEBvfEEBwnAVBzgC8Rpi0R4C8zhg0hlC8RpB8R4glB8yw?D8glC8wwF8JeAAPYAU1gHBFrnRASo78AYrGEBvfEEBwnAVB?zgC8Rpi0hlC8zhg0R4C8RpB8R4glB8ywD8glC8wwF8JeAAP?YAUV8UBFrnRASo78AYb0KBvfEEBwnAVBzgC8ilRpg0whC8y?wRpg0whC8R4B8h0whB8R4wwD8whC8glF8JeAAPYASlm2AFr?nRASo78A4Z0KBvfEEBwnAVBzgC8ili0whC8ywBtg0whC8R4?B8BtwhB8R4wwD8whC8glF8JeAAPYASV0KBFrnRASo78A4ZE?EBvfEEBwnAVBzgC8h0AtRphlC8g0BtRpwwglC8R4B8ywB8R?4AtD8glC8g0F8JeAAPXAQ1oRBFrnRASo78A4ZVzAVYt2AFr?4AA"
+    },
+  ]
 }
+
+
 
 /*
 const TEMPLATE: FOURTEENL = {
@@ -400,7 +434,7 @@ const extra_O = {
   },
   "TSTET": {
     scoring: [4300.16, 70.992, 99.960],
-    blurb: "the PC gang server found this one specifically per my request; i was looking for a TS0 into TetPC setup. contrived, but surprisingly good",
+    blurb: "the PC gang server found this one specifically per my request; i was looking for a TS0 into TetPC setup. lowk good iff you can build it",
     build_fumen: "v115@pgg0Iei0GeRpHeRpglBeBtAeQ4AeRpglCeBtR4Rphl?AezhQ4JeAgH",
     field_fumen: "v115@9gA8IeC8GeB8HeC8BeB8AeA8KeAgH",
     solutions_fumen: "v115@9gA8i0ilRpwhC8g0glR4RpwhB8BtR4ywwhC8BtB8ww?A8whJeAgWaA1FgRBwngHBFbcRASUr2AROaHBQecRAylAAA9?gA8i0R4AtRpwhC8g0glBtRpwhB8ilAtywwhC8R4B8wwA8wh?JeAAPaAyCQ9A2ngHBFbcRAS0uABXOaHBQecRAylAAA9gA8B?tRpg0zhC8Rpi0hlB8BtR4ywglC8R4B8wwA8glJeAAPZAxCY?HB0ngHBFbcRASk2RB0mv2AUo78AZAAAA9gA8i0R4ywwhC8g?0glRpwwAtwhB8ilRpBtwhC8R4B8AtA8whJeAAPZAx/3UB5n?gHBFbcRASk22A2mv2AUo78AZAAAA9gA8i0BtywwhC8R4BtR?pwhB8R4ilRpwhC8g0glB8wwA8whJeAAPZAR435A2ngHBFbc?RAS0H6Aymv2AUo78AZAAAA9gA8i0zhhlC8g0RpQ4ywB8BtR?pR4wwglC8BtB8Q4A8glJeAAPYAWV+ABFrnRASo78A4cNEBv?fEEBwnAVB9gA8BtRpg0ywwhC8Rpi0glwhB8BtR4ilwhC8R4?B8wwA8whJeAAPYAV1IEBFrnRASo78AY7REBvfEEBwnAVB"
@@ -429,13 +463,13 @@ const extra_O = {
   "HUTCH": {
     scoring: [3939.31, 55.754, 99.683],
     blurb: "random setup i found that has decent tetpc chance. haven't gotten to apply it yet",
-    build_fumen: "v115@6gQ4DeBtCeR4whilBtCeQ4whgli0RpAeRpwhCeg0Rp?AeRpwhJeAgH",
-    field_fumen: "v115@OhA8DeB8CeC8CeC8AeC8JeAgH",
-    solutions_fumen: "v115@9gwhBtywR4RpwhglBtwwR4A8RpwhglB8i0C8whhlC8?g0C8JeAgWaAVEgRB5ngHBFbcRASEBVBWUaHBQecRAylAAA9?gh0R4zhRpg0R4BthlA8Rpg0wwB8BtglC8ywC8glC8JeAAPa?AzFQ9AxngHBFbcRAS0+UBXRaHBQecRAylAAA9gilywR4Rpz?hwwR4A8RpBtB8i0C8glBtC8g0C8JeAAPaAyCIOB4ngHBFbc?RAS0GEBQIaHBQecRAylAAA9gilywh0RpzhwwR4A8RpBtB8R?4g0C8glBtC8g0C8JeAAPZAxC4UB0ngHBFbcRAS042A0mv2A?Uo78AZAAAA"
+    build_fumen: "v115@1gAtGewhBtCeR4BewhAtCeR4i0whRpAeRpilg0whRp?AeRpglMeAgH",
+    field_fumen: "v115@JhA8GeC8CeB8BeC8AeC8MeAgH",
+    solutions_fumen: "v115@9gRpBtywR4whRpA8BtwwR4g0whC8ilB8g0whC8glC8?h0whJeAgWaAVEgRB5ngHBFbcRASEBVBWUaHBQecRAylAAA9?gRpzhBthlRpA8h0R4BtglC8g0R4B8wwglC8g0C8ywJeAgWa?AzFQ9AxngHBFbcRAS0+UBXRaHBQecRAylAAA9gRpBtywi0R?pA8BtwwzhC8ilB8R4C8glC8R4g0JeAgWaAyCIOB4ngHBFbc?RAS0GEBQIaHBQecRAylAAA9gRphlywi0RpA8BtwwzhC8glB?tB8R4C8glC8R4g0JeAgWZAxC4UB0ngHBFbcRAS042A0mv2A?Uo78AZAAAA"
   }, 
   "CASTLELIKE": {
     scoring: [3873.72, 31.111, 97.698],
-    blurb: "discovered td. great tetpc AND offerssssss tsd",
+    blurb: "discovered td. there is tetpc AND tsd but low chances don't go for otw  ",
     build_fumen: "v115@ygg0Ieg0CeBtCeh0Q4CeBtzhR4AeRpilRpAeQ4AeRp?glBeRpJeAgH",
     field_fumen: "v115@GhA8IeA8CeB8CeB8AeA8AeC8BeB8JeAgH",
     solutions_fumen: "v115@9gwhBtywi0A8whQ4Btwwilg0A8whR4B8glRpB8whA8?Q4C8RpB8JeAgWaA3FYHB2ngHBFbcRASkt2ARIaHBQecRAyl?AAA9gwhBtywRpglA8whQ4Btwwg0ilA8whR4B8i0B8whA8Q4?C8RpB8JeAAPaATEAEB1ngHBFbcRAS0+UBTUaHBQecRAylAA?A9gwhBtywilA8whQ4BtwwRph0A8whR4B8Rpg0B8whA8Q4C8?glg0B8JeAAPaAy/vKBzngHBFbcRAS0W9AZLaHBQecRAylAA?A9gilzhR4A8Rph0BtywA8Rpg0B8BtwwB8glA8g0C8R4B8Je?AAPZAxCAEB2ngHBFbcRASk2RBwmv2AUo78AZAAAA9gi0BtR?pR4A8zhBtywA8ilB8RpwwB8glA8g0C8R4B8JeAAPYAZVcHB?FrnRASo78AYu/KBvfEEBwnAVB9gwhywR4i0A8whRpR4Btgl?g0A8whRpB8ilB8whA8wwC8BtB8JeAAPYAYlOOBFrnRASo78?AYuW9AvfEEBwnAVB9gBtilRpR4A8h0zhywA8g0BtB8RpwwB?8g0A8glC8R4B8JeAAPYATVO6AFrnRASo78A4po9AvfEEBwn?AVB"
@@ -575,6 +609,13 @@ const extra_S = {
     build_fumen: "v115@9gwhEeR4Bewhh0BtR4Cewhg0RpBtR4Aeglwhg0RpAe?R4ilJeAgH",
     field_fumen: "v115@RhA8EeB8BeD8AeE8JeAgH",
     solutions_fumen: "v115@9gRpzhgli0RpR4ilBtg0A8R4ywB8BtD8wwE8JeAgWa?AV4P9A0ngHBFbcRASEhHBTLaHBQecRAylAAA9gQ4zhRpi0R?4ilRpBtg0A8Q4glywB8BtD8wwE8JeAAPaAU+3UByngHBFbc?RASEZ9AWOaHBQecRAylAAA9gBti0RpQ4hlzhg0RpR4glA8B?tywB8Q4glD8wwE8JeAAPaAz5fRB3ngHBFbcRAS02KBQRaHB?QecRAylAAA9gQ4BtywzhR4BtwwilRpA8Q4i0glB8RpD8g0E?8JeAAPaAT4fRBzngHBFbcRAS0eHBVOaHBQecRAylAAA9gzh?R4AtilywR4BtglRpA8wwi0AtB8RpD8g0E8JeAAPaAyC4UB0?ngHBFbcRAS0GEBQUaHBQecRAylAAA9gi0ywzhBtg0Q4wwil?RpA8BtR4glB8RpD8Q4E8JeAAPZAxFQ9AxngHBFbcRAS0ILB?4mv2AUo78AZAAAA9gywR4Atglg0Rpzhili0A8wwR4BtB8Rp?D8AtE8JeAAPYAZ1xRBFrnRASo78AYe2RBvfEEBwnAVB"
+  },
+  "ANTILIME": {
+    scoring: [4207.44, 55.556, 97.9365],
+    blurb: "100% build apparently if you forgo tsd. also combined with elephant(/shifted) covers all queues.",
+    build_fumen: "v115@9gwhRpCeR4BewhRpBtR4Cewhi0BtR4AeglwhBeg0Ae?R4ilJeAgH",
+    field_fumen: "v115@RhC8CeB8BeA8BeA8AeE8JeAgH",
+    solutions_fumen: "v115@9gBti0RpQ4hlzhg0RpR4glC8ywB8Q4glA8BtA8wwE8?JeAgWaAz8/DB5ngHBFbcRAS02KBYUaHBQecRAylAAA9gRpR?4zhhlRpywAti0glC8wwBtB8g0glA8R4A8AtE8JeAAPaAT7f?2A2ngHBFbcRAS02KBRRaHBQecRAylAAA9gRpR4zhglg0Rpy?wAtilg0C8wwBtB8h0A8R4A8AtE8JeAAPaAT4/DBwngHBFbc?RAS0eHBTLaHBQecRAylAAA9gi0ywzhBtg0Q4wwilRpC8R4g?lB8RpA8BtA8Q4E8JeAAPaAS+HOByngHBFbcRAS0W9AURaHB?QecRAylAAA9gQ4zhRpi0R4ilRpBtg0C8ywB8BtA8Q4glA8w?wE8JeAAPZAxCoABwngHBFbcRASkeOBymv2AUo78AZAAAA9g?ilzhi0glRpQ4ywBtg0C8R4wwB8BtA8RpA8Q4E8JeAAPZARB?Q9A3ngHBFbcRASkm9Awmv2AUo78AZAAAA9gRpzhgli0RpR4?ilBtg0C8ywB8BtA8R4A8wwE8JeAAPZAR7P9AyngHBFbcRAS?EK6A2mv2AUo78AZAAAA9gRpR4i0BtglRpzhg0ilC8ywB8Bt?A8R4A8wwE8JeAAPYAX1h9AFrnRASo78A4cWEBvfEEBwnAVB?9gQ4ywh0zhR4Btg0ilRpC8BtglB8RpA8Q4wwA8g0E8JeAAA?9gg0RpQ4ywBtgli0zhilC8R4wwB8BtA8RpA8Q4E8JeAAPYA?SF02AFrnRASo78A4J7KBvfEEBwnAVB",
   },
   "BUTTER": {
     scoring: [4078.43, 76.508, 100.0],
@@ -847,9 +888,9 @@ const extra_J = {
     field_fumen: "v115@MhA8GeD8DeF8BeA8JeAgH",
     solutions_fumen: "v115@9gwhh0AtilwwRpwhg0BtglA8xwRpwhg0AtD8wwR4wh?F8R4A8JeAgWaAX4f2AwngHBFbcRASUjHBSUaHBQecRAylAA?A9gwhh0AtilR4wwwhg0BtglA8R4xwwhg0AtD8RpwwwhF8Rp?A8JeAAPaAzCAEB2ngHBFbcRAS0mRBYUaHBQecRAylAAA9gz?hilRpwwh0R4glA8Btxwg0R4D8Btwwg0F8RpA8JeAAPZAR+/?DB0ngHBFbcRASUk9A4mv2AUo78AZAAAA9gwhh0AtilwwR4w?hg0BtglA8xwRpwhg0AtD8wwRpwhF8R4A8JeAAPZAR735Awn?gHBFbcRASEK6Awmv2AUo78AZAAAA"
   },
-  "HOLDLSPC": {
+  "HYDRAULIC": {
     scoring: [5141.77, 93.929, 100.0],
-    blurb: "saw rtxile using it",
+    blurb: "HOLD L. saw rtxile using it",
     build_fumen: "v115@6gR4AtFeR4Bth0DeglwwAth0RpAeilxwh0Rpzhwwh0?JeAgH",
     field_fumen: "v115@EhC8FeF8DeG8AeF8JeAgH",
     solutions_fumen: "v115@zgh0hlBtzhg0RpglQ4BtC8g0RpglR4F8ywQ4G8wwF8?JeAgWaA0C45AwngHBFbcRASExABXOaHBQecRAylAAAzgh0R?pBtzhg0ilQ4BtC8g0glRpR4F8ywQ4G8wwF8JeAAPaATEoAB?3ngHBFbcRAS0+UBTOaHBQecRAylAAAzgglRpg0BtzhglRpg?0Q4BtC8hlh0R4F8ywQ4G8wwF8JeAAPaATB45AxngHBFbcRA?S0mRBSIaHBQecRAylAAAzgh0hlBtzhg0Q4ywBtC8g0R4wwR?pF8Q4glRpG8glF8JeAAPaASBQ9AzngHBFbcRAS0uABSLaHB?QecRAylAAAzgRpBtR4zhRpglBth0C8ilR4g0F8ywg0G8wwF?8JeAAPZARE4UB3ngHBFbcRAS0wHB2mv2AUo78AZAAAAzgRp?BtR4zhRpglR4h0C8ilBtg0F8ywg0G8wwF8JeAAPZAxC4UBw?ngHBFbcRAS042Aymv2AUo78AZAAAAzgRpQ4ilzhRpR4ywC8?i0BtwwF8g0Q4BtG8glF8JeAAPYAVFb9AFrnRASo78AY7xRB?vfEEBwnAVBzgi0ilzhRpg0glywC8RpQ4BtwwF8R4BtG8Q4F?8JeAAPYAU1gHBFrnRASo78AYrGEBvfEEBwnAVBzgi0ywzhR?pg0AtwwR4C8RpBtR4F8AtilG8glF8JeAAPYATVuHBFrnRAS?o78A4pYEBvfEEBwnAVBzgi0ilzhRpg0AtywC8RpBtR4F8At?R4wwG8glF8JeAAPXAQlQVBFrnRASo78A4fMzAVYt2AFr4AA"
@@ -860,6 +901,13 @@ const extra_J = {
     build_fumen: "v115@1gglIeglAei0DeAthlRpg0Beg0BtR4RpCeg0AtR4zh?Aeh0JeAgH",
     field_fumen: "v115@JhA8IeA8AeC8DeF8BeA8JeAgH",
     solutions_fumen: "v115@9gwhh0wwBthlRpwhg0A8xwBtglRpwhg0A8wwC8glR4?whF8R4A8JeAgWaA28nABzngHBFbcRASUD6AZLaHBQecRAyl?AAA9gilwwzhRpglAtA8xwi0RpBtA8wwC8g0R4AtF8R4A8Je?AAPaAz5P9A3ngHBFbcRAS0eHBXRaHBQecRAylAAA9gilwwz?hR4glAtA8xwi0RpBtA8wwC8g0RpAtF8R4A8JeAAPaAS43UB?xngHBFbcRAS0m2AVOaHBQecRAylAAA9gwhh0wwBthlR4whg?0A8xwBtglRpwhg0A8wwC8glRpwhF8R4A8JeAAPZAREgRB5n?gHBFbcRAS0wHBymv2AUo78AZAAAA9gilwwBtzhRpA8xwBtg?0R4RpA8wwC8i0glF8R4A8JeAAPYAU1xRBFrnRASo78AYL7K?BvfEEBwnAVB" 
+  },
+  "FIN": {
+    scoring: [4138.89, 42.302, 100.0],
+    blurb: "based fin-tsd I saw that guy in the pc server using on like puyo or smth.",
+    build_fumen: "v115@ygglGeilCeQ4EewhAeRpR4Cewwwhg0Rpg0Q4Btxwwh?l0BtwwwhJeAgH",
+    field_fumen: "v115@GhA8GeC8CeA8EeA8AeD8CeB8JeAgH",
+    solutions_fumen: "v115@9gwhh0AtRpilA8whg0BtRpglC8whg0AtA8ywR4A8wh?D8wwR4B8JeAgWaA3/f2AwngHBFbcRASUTOBYIaHBQecRAyl?AAA9gzhRpilA8h0R4RpglC8g0R4A8BtywA8g0D8BtwwB8Je?AAPaAz/XHByngHBFbcRAS0OOBZIaHBQecRAylAAA9gwhg0R?4RpilA8whi0RpglC8whR4A8BtywA8whD8BtwwB8JeAAPaAy?/HOB5ngHBFbcRAS0uABQIaHBQecRAylAAA9gwhi0BtilA8w?hRpg0Q4BtC8whRpA8R4ywA8whD8Q4glwwB8JeAAPaAy5vKB?3ngHBFbcRAS0m2AZLaHBQecRAylAAA9gwhi0BtywA8whRpg?0Q4BtC8whRpA8R4ilA8whD8Q4glwwB8JeAAPaAS43UB5ngH?BFbcRAS0m2AVUaHBQecRAylAAA9gzhBtilA8h0R4RpglC8g?0R4A8RpywA8g0D8BtwwB8JeAAPZAxFg2A1ngHBFbcRAS0IL?Bwmv2AUo78AZAAAA"
   }
 }
 
@@ -870,5 +918,5 @@ const extra_L = {
 }
 
 export { DPC, extra_O, extra_T, extra_S, extra_Z, extra_J, extra_L, extra_I, mirror_name }
-export { EIGHTL, FONZIE, ALBATROSS, MS2, SINGLEYOU, FLATTOP, HACHISPIN, PWNBYNUMBERS}
+export { EIGHTL, FONZIE, ALBATROSS, MS2, SINGLEYOU, FLATTOP, HACHISPIN, PWNBYNUMBERS, TRIPLETRIPLE, SATSUKI}
 export { FOURTEENL, STICKSPIN, BTCANNON, ALBATROSS14}

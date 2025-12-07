@@ -8,11 +8,6 @@ title: DPC
 
 ![me on blitz](assets/me_on_blitz.gif) -->
 
-toggle dark mode: d 
-
-toggle mirror: ctrl+m
-
-
 ## Extra O
 [train](https://jstris.jezevec10.com/play/mode/2591)
 

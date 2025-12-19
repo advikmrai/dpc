@@ -6,15 +6,15 @@ import PCF from "../src/PCF.vue"
 
 interface SecondSetup {
     name: string,
-    build_fumen: string,
-    field_fumen: string,
+    build_fumen?: string,
+    field_fumen?: string,
     solutions_fumen: string,
 }
 
 const props = withDefaults(defineProps<{
   name: string,
   blurb?: string,
-  build_fumen: string,
+  build_fumen?: string,
   second_setups: SecondSetup[],
   mirror?: boolean,
 }>(), { mirror: false });
@@ -64,12 +64,6 @@ function toggleSecondSetup(name: string) {
                         <pre>{{ setup.scoring_details }}</pre>
                     </div>
                 </div>
-                <TFumenList
-                    :fumen="setup.build_fumen"
-                    :height="9"
-                    :cell_size="18"
-                    :mirror="props.mirror"
-                />
                 
                 <div @click="toggleSecondSetup(setup.name)" class="toggle-solutions-button">
                     {{ secondSetupsVisibility[setup.name] ? 'sols ▲' : 'sols ▼' }}
@@ -94,7 +88,7 @@ function toggleSecondSetup(name: string) {
 }
 
 .scoring-info-compact span {
-    margin-left: 0px; 
+    margin-left: 0px; /* Space between items */
 }
 
 .toggle-details-button {
@@ -102,7 +96,7 @@ function toggleSecondSetup(name: string) {
     display: inline-block;
     margin-top: 10px;
     font-weight: 500;
-    color: var(--vp-c-brand); 
+    color: var(--vp-c-brand); /* Assuming VitePress brand color */
 }
 
 .toggle-details-button:hover {
@@ -112,11 +106,11 @@ function toggleSecondSetup(name: string) {
 .scoring-details-content {
     margin-top: 10px;
     padding: 10px;
-    border: 1px solid var(--vp-c-border); 
+    border: 1px solid var(--vp-c-border); /* Assuming VitePress border color */
     border-radius: 4px;
-    background-color: var(--vp-c-bg-soft); 
+    background-color: var(--vp-c-bg-soft); /* Assuming VitePress soft background color */
     font-size: 0.9em;
-    white-space: pre-wrap; 
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
 }
 .toggle-solutions-button {
     cursor: pointer;
@@ -160,7 +154,7 @@ function toggleSecondSetup(name: string) {
 
 .modal-content {
     background-color: var(--vp-c-bg);
-    margin: 5% auto; 
+    margin: 5% auto; /* smaller margin */
     padding: 20px;
     border: none;
     border-radius: 8px;

@@ -4,6 +4,10 @@ title: DPC
 
 # DPC
 
+this site contains DPC (double perfect clear), 6L (six-line), 8L (eight-line), 14L (fourteen-line) tetris setups and their perfect clear solutions. many of them have extra scoring opportunities, like TSMs (t-spin minis), TSSs (t-spin singles), TSDs (t-spin doubles), and tet PCs (tetris/quad perfect clears). these are useful for looping in-game. good for blitz/ultra. sites like tetris.com, tetr.io, jstris, etc.
+
+click a setup for more info
+
 <!-- , so you can attain results like I do:
 
 ![me on blitz](assets/me_on_blitz.gif) -->
@@ -13,18 +17,19 @@ title: DPC
 
 <TDPC name="KURUMA" v-bind="extra_O.O2J" :mirror="is_mirrored" />
 <TDPC name="TSD DPC" v-bind="extra_O.J2O" :mirror="is_mirrored" />
-<TDPC name="1-TILE FALLBACK" v-bind="extra_O.FALLBACK" :mirror="is_mirrored" />
-
 <TDPC name="TKI SHIFTED" v-bind="extra_O.TKISHIFT" :mirror="is_mirrored" />
-<TDPC name="ALBY" v-bind="extra_O.ALBY" :mirror="is_mirrored" />
-
 <TDPC name="2L PC into 7th" v-bind="extra_O.TWOL" :mirror="is_mirrored" />
+<TDPC name="BUTTER" v-bind="extra_O.BUTTER" :mirror="is_mirrored" />
+<TDPC name="TS&TET" v-bind="extra_O.TSTET" :mirror="is_mirrored" />
 <TDPC name="CASTLELIKE" v-bind="extra_O.CASTLELIKE" :mirror="is_mirrored" />
 <TDPC name="HUTCH" v-bind="extra_O.HUTCH" :mirror="is_mirrored" />
+<TDPC name="ALBY" v-bind="extra_O.ALBY" :mirror="is_mirrored" />
 <TDPC name="CREVICE SPC" v-bind="extra_O.CREVICE" :mirror="is_mirrored" />
-<TDPC name="TS&TET" v-bind="extra_O.TSTET" :mirror="is_mirrored" />
-
 <TDPC name="SDPC SPC" v-bind="extra_O.SDPCSPC" :mirror="is_mirrored" />
+<TDPC name="1-TILE FALLBACK" v-bind="extra_O.FALLBACK" :mirror="is_mirrored" />
+<TDPC name="TKI SPC" v-bind="extra_O.TKISPC" :mirror="is_mirrored" />
+<TDPC name="2L FAIL S" v-bind="extra_O.FAILS" :mirror="is_mirrored" />
+<TDPC name="2L FAIL Z" v-bind="extra_O.FAILZ" :mirror="is_mirrored" />
 
 
 ## <span class="sr-only">Extra S</span>
@@ -37,24 +42,30 @@ title: DPC
 [train](https://jstris.jezevec10.com/play/mode/2589)
 
 <TDPC name="KURUMA" v-bind="extra_S.O2S" :mirror="is_mirrored" />
-<TDPC name="HOLD O" v-bind="extra_S.HOLDO" :mirror="is_mirrored" />
+<TDPC name="TKI (HOLD O)" v-bind="extra_S.HOLDO" :mirror="is_mirrored" />
+<TDPC name="TKI (HOLD S)" v-bind="extra_S.HOLDS" :mirror="is_mirrored" />
 <TDPC name="TSD" v-bind="extra_S.TSD" :mirror="is_mirrored" />
 <TDPC name="ELEPHANT SHIFTED" v-bind="extra_S.ELPTSHIFTED" :mirror="is_mirrored" />
 <TDPC name="ELEPHANT" v-bind="extra_S.ELEPHANT" :mirror="is_mirrored" />
-<TDPC name="ANTILIME ELEPHANT" v-bind="extra_S.ANTILIME" :mirror="is_mirrored" />
-<TDPC name="SLED" v-bind="extra_S.SLED" :mirror="is_mirrored" />
-<TDPC name="FAKE BUTTER" v-bind="extra_S.BUTTER" :mirror="is_mirrored" />
-<TDPC name="OTHER FAKE BUTTER" v-bind="extra_S.OTHERBUTTER" :mirror="is_mirrored" />
+<TDPC name="ANTILIME" v-bind="extra_S.ANTILIME" :mirror="is_mirrored" />
+<TDPC name="JB / SLED" v-bind="extra_S.SLED" :mirror="is_mirrored" />
+<TDPC name="LONG S" v-bind="extra_S.BUTTER" :mirror="is_mirrored" />
+<TDPC name="OTHER LONG S" v-bind="extra_S.OTHERBUTTER" :mirror="is_mirrored" />
 <TDPC name="TET ELEPHANT" v-bind="extra_S.ELPT_TET" :mirror="is_mirrored" /> 
+<TDPC name="KURUMA SHIFTED" v-bind="extra_S.KURUMA_SHIFTED" :mirror="is_mirrored" />
 <TDPC name="LIME" v-bind="extra_S.S2O" :mirror="is_mirrored" />
 <TDPC name="BROKEN SLED" v-bind="extra_S.XSLED" :mirror="is_mirrored" />
-<TDPC name="CUP" v-bind="extra_S.CUP" :mirror="is_mirrored" />
-<TDPC name="ALT CUP" v-bind="extra_S.ALTCUP" :mirror="is_mirrored" />
+<TDPC name="BOWL" v-bind="extra_S.CUP" :mirror="is_mirrored" />
+<TDPC name="ALT BOWL" v-bind="extra_S.ALTCUP" :mirror="is_mirrored" />
 <TDPC name="LOW TSD" v-bind="extra_S.LOWTSD" :mirror="is_mirrored" />
 <TDPC name="INCLINE" v-bind="extra_S.INCLINE" :mirror="is_mirrored" />
 <TDPC name="4 TILE RECOVERY" v-bind="extra_S.FTREC" :mirror="is_mirrored" />
 <TDPC name="VERT LIME" v-bind="extra_S.VLIME" :mirror="is_mirrored" />
-<TDPC name="S-SPIN" v-bind="extra_S.SSPIN" :mirror="is_mirrored" />
+<TDPC name="KEY" v-bind="extra_S.SSPIN" :mirror="is_mirrored" />
+<TDPC name="TETSPC" v-bind="extra_S.TETSPC" :mirror="is_mirrored" />
+<TDPC name="RTXILE SPC" v-bind="extra_S.RTXILE" :mirror="is_mirrored" />
+<TDPC name="FOREST ELEPHANT" v-bind="extra_S.FOREST" :mirror="is_mirrored" />
+<TDPC name="GOD" v-bind="extra_S.GOD" :mirror="is_mirrored" />
 
 
 ## Extra I
@@ -64,7 +75,7 @@ title: DPC
 <TDPC name="FAKE BUTTER" v-bind="extra_I.BUTTER" :mirror="is_mirrored" />
 <TDPC name="OUT-OF-ORDER TKI" v-bind="extra_I.OUT" :mirror="is_mirrored" />
 <TDPC name="GOD" v-bind="extra_I.GOD" :mirror="is_mirrored" />
-<TDPC name="T SPIN" v-bind="extra_I.TSPIN" :mirror="is_mirrored" />
+<TDPC name="T SPIN (HOOK)" v-bind="extra_I.TSPIN" :mirror="is_mirrored" />
 <TDPC name="STICK" v-bind="extra_I.STICK" :mirror="is_mirrored" />
 <TDPC name="PELICAN" v-bind="extra_I.PELICAN" :mirror="is_mirrored" />
 <TDPC name="JLI HOLD O" v-bind="extra_I.JLI" :mirror="is_mirrored" />
@@ -80,11 +91,12 @@ title: DPC
 <TDPC name="MKO" v-bind="extra_T.MKO" :mirror="is_mirrored" />
 <TDPC name="TRIPLE TSPIN 6P" v-bind="extra_T.SIXP" :mirror="is_mirrored" />
 <TDPC name="F SPC" v-bind="extra_T.F" :mirror="is_mirrored" />
-<TDPC name="BALL" v-bind="extra_T.BALL" :mirror="is_mirrored" />
+<TDPC name="BALL SPC" v-bind="extra_T.BALL" :mirror="is_mirrored" />
 <TDPC name="ELEPHANT" v-bind="extra_T.ELEPHANT" :mirror="is_mirrored" />
 <TDPC name="T SPC (HOLD L)" v-bind="extra_T.HOLDL" :mirror="is_mirrored" />
-<TDPC name="ON SIDE" v-bind="extra_T.SIDE1" :mirror="is_mirrored" />
+<TDPC name="ON SIDE 1" v-bind="extra_T.SIDE1" :mirror="is_mirrored" />
 <TDPC name="UPSIDE DOWN DPC" v-bind="extra_T.UPSIDEDOWNDPC" :mirror="is_mirrored" />
+<TDPC name="PLUM" v-bind="extra_T.PLUM" :mirror="is_mirrored" />
 
 
 ## <span class="sr-only">Extra J</span>
@@ -110,6 +122,8 @@ title: DPC
 <TDPC name="OJ and SZ" v-bind="extra_J.OJSZ" :mirror="is_mirrored" />
 <TDPC name="EH-TRIS" v-bind="extra_J.EHTRIS" :mirror="is_mirrored" />
 <TDPC name="CHILL" v-bind="extra_J.CHILL" :mirror="is_mirrored" />
+<TDPC name="FJORD SPC" v-bind="extra_J.FJORD" :mirror="is_mirrored" />
+
 
 
 ## Credits

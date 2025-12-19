@@ -10,6 +10,8 @@ interface FourthSetup {
     build_fumen: string,
     field_fumen: string,
     solutions_fumen: string,
+    scoring?: number[],
+    scoring_details?: string,
 }
 
 interface ThirdSetup {
@@ -38,6 +40,7 @@ const showModal = ref(false);
 const secondSetupsVisibility = ref<Record<string, boolean>>({});
 const thirdSetupsVisibility = ref<Record<string, boolean>>({});
 const fourthSetupsVisibility = ref<Record<string, boolean>>({});
+const fifthSetupsVisibility = ref<Record<string, boolean>>({});
 
 function toggleSecondSetup(name: string) {
     secondSetupsVisibility.value[name] = !secondSetupsVisibility.value[name];
@@ -49,6 +52,10 @@ function toggleThirdSetup(name: string) {
 
 function toggleFourthSetup(name: string) {
     fourthSetupsVisibility.value[name] = !fourthSetupsVisibility.value[name];
+}
+
+function toggleFifthSetup(name: string) {
+    fifthSetupsVisibility.value[name] = !fifthSetupsVisibility.value[name];
 }
 
 function openModalAndExpand() {
@@ -111,12 +118,25 @@ function openModalAndExpand() {
                                     <div v-for="fourth_setup in third_setup.fourth_setups" :key="fourth_setup.name">
                                         <h5>{{ fourth_setup.name }}</h5>
                                         <p v-if="fourth_setup.blurb">{{ fourth_setup.blurb }}</p>
+                                        <div v-if="fourth_setup.scoring" class="scoring-info-compact">
+                                            <span>avg PC score: {{ fourth_setup.scoring[0] }}</span> |
+                                            <span>extra%: {{ fourth_setup.scoring[1] }}%</span> |
+                                            <span>PC Chance: {{ fourth_setup.scoring[2] }}%</span>
+                                        </div>
+                                        <div v-if="fourth_setup.scoring_details">
+                                            <div @click="toggleFifthSetup(fourth_setup.name + '-scoring')" class="toggle-details-button">
+                                                {{ fifthSetupsVisibility[fourth_setup.name + '-scoring'] ? 'scoring details ▲' : 'scoring details ▼' }}
+                                            </div>
+                                            <div v-if="fifthSetupsVisibility[fourth_setup.name + '-scoring']" class="scoring-details-content">
+                                                <pre>{{ fourth_setup.scoring_details }}</pre>
+                                            </div>
+                                        </div>
                                         <TFumenList :fumen="fourth_setup.build_fumen" :height="10" :cell_size="18" :mirror="props.mirror" :display_copy="false"/>
                                         <h5 @click="toggleFourthSetup(fourth_setup.name)" class="toggle-solutions-button">
                                             {{ fourthSetupsVisibility[fourth_setup.name] ? 'BAG 5 ▲' : 'BAG 5 ▼' }}
                                         </h5>
                                         <div v-if="fourthSetupsVisibility[fourth_setup.name]">
-                                            <TFumenList :fumen="fourth_setup.solutions_fumen" :height="6" :cell_size="18" :mirror="props.mirror" :display_copy="false"/>
+                                            <TFumenList :fumen="fourth_setup.solutions_fumen" :height="10" :cell_size="18" :mirror="props.mirror" :display_copy="false"/>
                                             <PCF :initial_field_fumen="fourth_setup.field_fumen" sequence="ITSZOLJ"/>
                                         </div>
                                     </div>
@@ -131,6 +151,39 @@ function openModalAndExpand() {
 </template>
 
 <style scoped>
+.scoring-info-compact {
+    font-size: 0.8em; 
+    color: #666; 
+    margin-top: 2px;
+    margin-bottom: -5px;
+    text-align: left;
+}
+
+.scoring-info-compact span {
+    margin-left: 0px; 
+}
+
+.toggle-details-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--vp-c-brand); 
+}
+
+.toggle-details-button:hover {
+    text-decoration: underline;
+}
+
+.scoring-details-content {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid var(--vp-c-border); 
+    border-radius: 4px;
+    background-color: var(--vp-c-bg-soft); 
+    font-size: 0.9em;
+    white-space: pre-wrap; 
+}
 p {
     font-size: 0.9rem;
     color: var(--vp-c-text-2);

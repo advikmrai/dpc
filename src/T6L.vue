@@ -51,6 +51,12 @@ function toggleSecondSetup(name: string) {
             <div class="second-setups-container">
                 <div v-for="setup in props.second_setups" :key="setup.name" class="second-setup-item">
                 <h5>{{ setup.name }}</h5>
+                <TFumenList
+                    :fumen="setup.build_fumen"
+                    :height="9"
+                    :cell_size="18"
+                    :mirror="props.mirror"
+                />
                 <div v-if="setup.scoring" class="scoring-info-compact">
                     <span>avg PC score: {{ setup.scoring[0] }}</span> |
                     <span>extra%: {{ setup.scoring[1] }}%</span> |

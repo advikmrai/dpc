@@ -1401,7 +1401,7 @@ const ALBATROSSSIX: SIXL = {
 }
 
 const NOOMIN: SIXL = {
-  blurb: "no o minimal",
+  blurb: "no O minimal",
   build_fumen: "v115@9gwhEeBthlwhh0DeBtglwhg0DeR4wwglwhg0CeR4yw?JeAgHDhxhQpglGewhAeglHeQaHeySJeAgH",
   second_setups: [
     {
@@ -1412,7 +1412,40 @@ const NOOMIN: SIXL = {
   ]
 }
 
+const NOSMIN: SIXL = {
+  blurb: "no S minimal",
+  build_fumen: "v115@9gwhywFewhglwwEeRpwhglBtCeg0RpwhhlBtBei0Je?AgH+gySHeQaHeglAewhGeglQpxhOeAgH9gQaiWBezhQpglA?PDeglRawwBeQLBewwAPBewwglwhRLxwQaxSJeAgH",
+  second_setups: [
+    {
+      name: "INTO CACTUS 7TH",
+      build_fumen: "v115@VgwhIewhGeQ4AewhRpEeR4whRpFeQ4D8i0ilC8ywAt?glF8wwBtH8Atg0C8JeAgH",
+      field_fumen: "v115@9gA8IeA8GeA8AeC8EeE8FeA8JeAgH",
+    },
+    {
+      name: "INTO MKO 7TH?",
+      build_fumen: "v115@pgRpg0EeglAeRpi0AeilAeD8R4zhC8R4ywF8BtwwH8?BtC8JeAgH",
+      field_fumen: "v115@RhC8EeA8AeE8AeC8KeAgH"
+    }
+  ]
+}
+
+const NOIMIN: SIXL = {
+  blurb: "no I minimal",
+  build_fumen: "v115@DhBthlh0EeBtglg0RpCeR4wwglg0RpBeR4ywJeAgHD?hxhQpglGewhAeglHeQaHeySJeAgH",
+  second_setups: [
+    {
+      name: "INTO CACTUS 7TH",
+      build_fumen: "v115@egwhAeAtGewhBtEeRpwhAtFeRpwhi0ilF8g0Q4ywF8?R4wwG8glQ4E8JeAgH",
+    },
+    {
+      name: "INTO MKO 7TH",
+      build_fumen: "v115@qgg0EeglRpAei0AeilRpzhBtF8ywBtF8wwR4G8R4E8?JeAgH "
+    }
+  ]
+}
+
+
 export { DPC, extra_O, extra_T, extra_S, extra_Z, extra_J, extra_L, extra_I, mirror_name }
 export { EIGHTL, FONZIE, ALBATROSS, MS2, SINGLEYOU, FLATTOP, HACHISPIN, PWNBYNUMBERS, TRIPLETRIPLE, SATSUKI, JIGSAW}
 export { FOURTEENL, STICKSPIN, BTCANNON, ALBATROSS14, SDPCEXTENDED}
-export { SIXL, TKI_FLAT, ALBATROSSSIX, NOOMIN }
+export { SIXL, TKI_FLAT, ALBATROSSSIX, NOOMIN, NOSMIN, NOIMIN }

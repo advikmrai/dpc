@@ -78,17 +78,20 @@ click a setup for more info
 [train](https://jstris.jezevec10.com/play/mode/2594)
 
 <TDPC name="TKI DPC" v-bind="extra_I.I2L2O" :mirror="is_mirrored" />
-<TDPC name="FAKE BUTTER" v-bind="extra_I.BUTTER" :mirror="is_mirrored" />
 <TDPC name="OUT-OF-ORDER TKI" v-bind="extra_I.OUT" :mirror="is_mirrored" />
+<TDPC name="JLI HOLD O" v-bind="extra_I.JLI" :mirror="is_mirrored" />
 <TDPC name="GOD" v-bind="extra_I.GOD" :mirror="is_mirrored" />
 <TDPC name="T SPIN (HOOK)" v-bind="extra_I.TSPIN" :mirror="is_mirrored" />
+<TDPC name="FAKE BUTTER" v-bind="extra_I.BUTTER" :mirror="is_mirrored" />
 <TDPC name="STICK" v-bind="extra_I.STICK" :mirror="is_mirrored" />
 <TDPC name="PELICAN" v-bind="extra_I.PELICAN" :mirror="is_mirrored" />
-<TDPC name="JLI HOLD O" v-bind="extra_I.JLI" :mirror="is_mirrored" />
-<TDPC name="DECENT VARIANT" v-bind="extra_I.DECENT" :mirror="is_mirrored" />
-<TDPC name="BIG L" v-bind="extra_I.BIGL" :mirror="is_mirrored" />
 <TDPC name="HOLD I" v-bind="extra_I.IHOLDDPC" :mirror="is_mirrored" />
 <TDPC name="HOLD I SPC" v-bind="extra_I.IHOLDSPC" :mirror="is_mirrored" />
+<TDPC name="TWO TILE REC" v-bind="extra_I.TWOTILE1" :mirror="is_mirrored" />
+<TDPC name="DECENT VARIANT" v-bind="extra_I.DECENT" :mirror="is_mirrored" />
+<TDPC name="BIG L" v-bind="extra_I.BIGL" :mirror="is_mirrored" />
+<TDPC name="HOLD LI" v-bind="extra_I.HOLDLI" :mirror="is_mirrored" />
+
 
 ## Extra T
 [train](https://jstris.jezevec10.com/play/mode/2593)
@@ -100,10 +103,11 @@ click a setup for more info
 <TDPC name="BALL SPC" v-bind="extra_T.BALL" :mirror="is_mirrored" />
 <TDPC name="F SPC" v-bind="extra_T.F" :mirror="is_mirrored" />
 <TDPC name="TOWER SPC" v-bind="extra_T.TOWERSPC" :mirror="is_mirrored" />
-<TDPC name="ELEPHANT" v-bind="extra_T.ELEPHANT" :mirror="is_mirrored" />
-<TDPC name="ON SIDE 1" v-bind="extra_T.SIDE1" :mirror="is_mirrored" />
+<TDPC name="FINE ON SIDE" v-bind="extra_T.ONSIDETUFF" :mirror="is_mirrored" />
 <TDPC name="UPSIDE DOWN DPC" v-bind="extra_T.UPSIDEDOWNDPC" :mirror="is_mirrored" />
+<TDPC name="ELEPHANT" v-bind="extra_T.ELEPHANT" :mirror="is_mirrored" />
 <TDPC name="UPSIDE MISDROP" v-bind="extra_T.UPSIDEDOWNMISDROP" :mirror="is_mirrored" />
+<TDPC name="BAD ON SIDE" v-bind="extra_T.SIDE1" :mirror="is_mirrored" />
 <TDPC name="PLUM" v-bind="extra_T.PLUM" :mirror="is_mirrored" />
 <TDPC name="OS LAST TSM" v-bind="extra_T.OSLAST" :mirror="is_mirrored" />
 <TDPC name="JZ LAST TSM" v-bind="extra_T.JZLAST" :mirror="is_mirrored" />
@@ -146,6 +150,7 @@ thanks so much to:
 - sfinder man#2879
 - https://hsterts.github.io/Fumenities/ 
 - http://tetris.johnbeak.cz/
+- https://againloveagain.wixsite.com/tetris/sdpc
 - tetris users
 - many thanks to Enter-tainer https://github.com/Enter-tainer/dpc for the existence of their dpc site at https://dpc.mgt.moe
 

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en',
-  title: 'tetris setups',
+  title: 'tet.run.place',
   description: 'for fun and lolz',
 
   head: [

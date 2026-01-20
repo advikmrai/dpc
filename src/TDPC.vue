@@ -46,7 +46,7 @@ function toggleScoringDetails() {
             <div v-if="props.scoring" class="scoring-info-compact">
                 <span>avg PC score: {{ props.scoring[0] }}</span> |
                 <span>extra%: {{ props.scoring[1] }}%</span> |
-                <span>PC Chance: {{ props.scoring[2] }}%</span>
+                <span>PC Chance: {{ props.scoring[2] }}%</span><span v-if="props.scoring.length > 3"> | cover%: {{ props.scoring[3] }}%</span>
             </div>
             <h2>{{ name }}</h2>
                         <p>{{ blurb }}</p>

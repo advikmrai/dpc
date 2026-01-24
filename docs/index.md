@@ -20,14 +20,18 @@ click a setup for more info
 <TDPC name="TKI SHIFTED" v-bind="extra_O.TKISHIFT" :mirror="is_mirrored" />
 <TDPC name="2L PC into 7th" v-bind="extra_O.TWOL" :mirror="is_mirrored" />
 <TDPC name="BUTTER" v-bind="extra_O.BUTTER" :mirror="is_mirrored" />
+<TDPC name="GOD" v-bind="extra_O.GOD" :mirror="is_mirrored" />
+<TDPC name="RELIABLE SPC" v-bind="extra_O.RELIABLE" :mirror="is_mirrored" />
+<TDPC name="TKI SPC" v-bind="extra_O.TKISPC" :mirror="is_mirrored" />
+<TDPC name="CREVICE SPC" v-bind="extra_O.CREVICE" :mirror="is_mirrored" />
+<TDPC name="SDPC SPC" v-bind="extra_O.SDPCSPC" :mirror="is_mirrored" />
 <TDPC name="TS&TET" v-bind="extra_O.TSTET" :mirror="is_mirrored" />
 <TDPC name="CASTLELIKE" v-bind="extra_O.CASTLELIKE" :mirror="is_mirrored" />
 <TDPC name="HUTCH" v-bind="extra_O.HUTCH" :mirror="is_mirrored" />
 <TDPC name="ALBY" v-bind="extra_O.ALBY" :mirror="is_mirrored" />
-<TDPC name="CREVICE SPC" v-bind="extra_O.CREVICE" :mirror="is_mirrored" />
-<TDPC name="SDPC SPC" v-bind="extra_O.SDPCSPC" :mirror="is_mirrored" />
+<TDPC name="OLD FAITHFUL HORI" v-bind="extra_O.HORIFAITH" :mirror="is_mirrored" />
+<TDPC name="OLD FAITHFUL VERT" v-bind="extra_O.VERTFAITH" :mirror="is_mirrored" />
 <TDPC name="1-TILE FALLBACK" v-bind="extra_O.FALLBACK" :mirror="is_mirrored" />
-<TDPC name="TKI SPC" v-bind="extra_O.TKISPC" :mirror="is_mirrored" />
 <TDPC name="2L FAIL S" v-bind="extra_O.FAILS" :mirror="is_mirrored" />
 <TDPC name="2L FAIL Z" v-bind="extra_O.FAILZ" :mirror="is_mirrored" />
 
@@ -60,7 +64,7 @@ click a setup for more info
 <TDPC name="INCLINE" v-bind="extra_S.INCLINE" :mirror="is_mirrored" />
 <TDPC name="TETSPC" v-bind="extra_S.TETSPC" :mirror="is_mirrored" />
 <TDPC name="GOD" v-bind="extra_S.GOD" :mirror="is_mirrored" />
-<TDPC name="DOG" v-bind="extra_S.DOG" :mirror="is_mirrored" />
+<TDPC name="DOG (SKY BRIDGE)" v-bind="extra_S.DOG" :mirror="is_mirrored" />
 <TDPC name="RTXILE SPC" v-bind="extra_S.RTXILE" :mirror="is_mirrored" />
 <TDPC name="FOREST ELEPHANT" v-bind="extra_S.FOREST" :mirror="is_mirrored" />
 <TDPC name="BOWL" v-bind="extra_S.CUP" :mirror="is_mirrored" />
@@ -87,6 +91,7 @@ click a setup for more info
 <TDPC name="PELICAN" v-bind="extra_I.PELICAN" :mirror="is_mirrored" />
 <TDPC name="HOLD I" v-bind="extra_I.IHOLDDPC" :mirror="is_mirrored" />
 <TDPC name="HOLD I SPC" v-bind="extra_I.IHOLDSPC" :mirror="is_mirrored" />
+<TDPC name="TWIN VALLEYS HORI" v-bind="extra_I.TWINVALLEYSHORI" :mirror="is_mirrored" />
 <TDPC name="TWO TILE REC" v-bind="extra_I.TWOTILE1" :mirror="is_mirrored" />
 <TDPC name="DECENT VARIANT" v-bind="extra_I.DECENT" :mirror="is_mirrored" />
 <TDPC name="BIG L" v-bind="extra_I.BIGL" :mirror="is_mirrored" />
@@ -99,7 +104,7 @@ click a setup for more info
 <TDPC name="UPSIDE DOWN SPC" v-bind="extra_T.UPSIDEDOWN" :mirror="is_mirrored" />
 <TDPC name="MKO" v-bind="extra_T.MKO" :mirror="is_mirrored" />
 <TDPC name="TRIPLE TSPIN 6P" v-bind="extra_T.SIXP" :mirror="is_mirrored" />
-<TDPC name="T SPC (HOLD L)" v-bind="extra_T.HOLDL" :mirror="is_mirrored" />
+<TDPC name="KZL SPC (HOLD L)" v-bind="extra_T.HOLDL" :mirror="is_mirrored" />
 <TDPC name="BALL SPC" v-bind="extra_T.BALL" :mirror="is_mirrored" />
 <TDPC name="F SPC" v-bind="extra_T.F" :mirror="is_mirrored" />
 <TDPC name="TOWER SPC" v-bind="extra_T.TOWERSPC" :mirror="is_mirrored" />
@@ -141,7 +146,8 @@ click a setup for more info
 <TDPC name="FJORD SPC" v-bind="extra_J.FJORD" :mirror="is_mirrored" />
 <TDPC name="SOLE J TKI" v-bind="extra_J.SOLETKI" :mirror="is_mirrored" />
 <TDPC name="BASE J TKI" v-bind="extra_J.BASETKI" :mirror="is_mirrored" />
-
+<TDPC name="STICKSPIN SPC" v-bind="extra_J.STICKSPIN" :mirror="is_mirrored" />
+<TDPC name="SDPC SPC" v-bind="extra_J.SDPC" :mirror="is_mirrored" />
 
 
 ## Credits

@@ -22,10 +22,12 @@ export default defineConfig({
     repo: 'advikmrai/dpc',
     nav: [
       { text: 'DPC', link: '/'},
-      { text: 'PCF', link: '/pcf.html'},
       { text: '6L', link: '/6L.html'},
       { text: '8L', link: '/8L.html'},
       { text: '14L', link: '/14L.html'},
+      { text: '2nd', link: '/2nd.html'},
+      { text: 'PCF', link: '/pcf.html'},
+
     ],
     outline: [2, 3],
     outlineTitle: 'Six seven:',

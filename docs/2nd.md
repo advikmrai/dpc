@@ -4,15 +4,15 @@ title: 2nd
 
 # 2nd PC setups
 
-this page contains my collection of 2nd PC setups
+2nd PC setups
 
 click a setup for more info
 
 ## IJST / ILZT
 
 <T2nd name="100% 4P" v-bind="IJST1" :mirror="is_mirrored" />
-<T2nd name="3P OF ALL TIME" v-bind="IJST2" :mirror="is_mirrored" />
-<T2nd name="TUFF AHH 3P" v-bind="IJST3" :mirror="is_mirrored" />
+<T2nd name="BLITZ TUB 3P" v-bind="IJST2" :mirror="is_mirrored" />
+<T2nd name="CLIFF 3P" v-bind="IJST3" :mirror="is_mirrored" />
 
 
 <script setup>

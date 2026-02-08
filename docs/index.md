@@ -34,6 +34,9 @@ click a setup for more info
 <TDPC name="1-TILE FALLBACK" v-bind="extra_O.FALLBACK" :mirror="is_mirrored" />
 <TDPC name="2L FAIL S" v-bind="extra_O.FAILS" :mirror="is_mirrored" />
 <TDPC name="2L FAIL Z" v-bind="extra_O.FAILZ" :mirror="is_mirrored" />
+<TDPC name="LONDON BRIDGE" v-bind="extra_O.LONDON" :mirror="is_mirrored" />
+<TDPC name="FLAMINGO" v-bind="extra_O.FLAMINGO" :mirror="is_mirrored" />
+<TDPC name="TOWER BRIDGE" v-bind="extra_O.TOWERBRIDGE" :mirror="is_mirrored" />
 
 
 ## <span class="sr-only">Extra S</span>
@@ -96,6 +99,16 @@ click a setup for more info
 <TDPC name="DECENT VARIANT" v-bind="extra_I.DECENT" :mirror="is_mirrored" />
 <TDPC name="BIG L" v-bind="extra_I.BIGL" :mirror="is_mirrored" />
 <TDPC name="HOLD LI" v-bind="extra_I.HOLDLI" :mirror="is_mirrored" />
+<TDPC name="RELIABLE" v-bind="extra_I.RELIABLE" :mirror="is_mirrored" />
+<TDPC name="CLEFT" v-bind="extra_I.CLEFT" :mirror="is_mirrored" />
+<TDPC name="DORMANT GOD" v-bind="extra_I.DORMANTGOD" :mirror="is_mirrored" />
+<TDPC name="REDEEMED" v-bind="extra_I.REDEEMED" :mirror="is_mirrored" />
+<TDPC name="I STICKSPIN" v-bind="extra_I.STICKSPIN" :mirror="is_mirrored" />
+<TDPC name="MAMMOTH" v-bind="extra_I.MAMMOTH" :mirror="is_mirrored" />
+<TDPC name="TSUNAMI" v-bind="extra_I.TSUNAMI" :mirror="is_mirrored" />
+<TDPC name="FLAGPOLE" v-bind="extra_I.FLAGPOLE" :mirror="is_mirrored" />
+<TDPC name="HIDALGO" v-bind="extra_I.HIDALGO" :mirror="is_mirrored" />
+<TDPC name="MECH TSD" v-bind="extra_I.MECH" :mirror="is_mirrored" />
 
 
 ## Extra T
@@ -134,6 +147,8 @@ click a setup for more info
 <TDPC name="THIS STSD" v-bind="extra_J.STSD" :mirror="is_mirrored" />
 <TDPC name="THAT STSD" v-bind="extra_J.STSD2" :mirror="is_mirrored" />
 <TDPC name="HYDRAULIC PRESS SPC" v-bind="extra_J.HYDRAULIC" :mirror="is_mirrored" />
+<TDPC name="HYDRAULIC TSD" v-bind="extra_J.HYDRAULICTSD" :mirror="is_mirrored" />
+
 <TDPC name="DIABOLICAL FIN" v-bind="extra_J.FIN" :mirror="is_mirrored" />
 <TDPC name="BLUE BUTTER" v-bind="extra_J.BLUEBUTTER" :mirror="is_mirrored" />
 <TDPC name="STOOGE" v-bind="extra_J.STOOGE" :mirror="is_mirrored" />
@@ -143,11 +158,15 @@ click a setup for more info
 <TDPC name="BETTER BIG C" v-bind="extra_J.BETTERBIGC" :mirror="is_mirrored" />
 <!-- <TDPC name="EH-TRIS" v-bind="extra_J.EHTRIS" :mirror="is_mirrored" /> -->
 <!-- <TDPC name="CHILL" v-bind="extra_J.CHILL" :mirror="is_mirrored" /> -->
-<TDPC name="FJORD SPC" v-bind="extra_J.FJORD" :mirror="is_mirrored" />
+<TDPC name="FJORD" v-bind="extra_J.FJORD" :mirror="is_mirrored" />
 <TDPC name="SOLE J TKI" v-bind="extra_J.SOLETKI" :mirror="is_mirrored" />
 <TDPC name="BASE J TKI" v-bind="extra_J.BASETKI" :mirror="is_mirrored" />
 <TDPC name="STICKSPIN SPC" v-bind="extra_J.STICKSPIN" :mirror="is_mirrored" />
 <TDPC name="SDPC SPC" v-bind="extra_J.SDPC" :mirror="is_mirrored" />
+<TDPC name="KZL'S STICKSPIN" v-bind="extra_J.KZLSTICK" :mirror="is_mirrored" />
+<TDPC name="TOWER STICKSPIN" v-bind="extra_J.TOWERSTICK" :mirror="is_mirrored" />
+<TDPC name="CITADEL SPC" v-bind="extra_J.CITADEL" :mirror="is_mirrored" />
+
 
 
 ## Credits

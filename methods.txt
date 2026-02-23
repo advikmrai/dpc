@@ -1,0 +1,19 @@
+dfarace@mcdonogh.org
+then you go to YoutuBe,  privacy, google. 
+
+
+
+
+study criteria;
+
+Study Characteristics Include English publications Published from 1990 - 2025 Exclude Non-English publications Review papers Protocol papers Published before 1990 No full text Life-long studies Editorials Population 
+Include N/A Exclude Non-human subjects Intervention / Exposure 
+Include Music and AI Music and ML Music and DL Human response to music Human "playing" of music
+Exclude Just AI/ML/DL Just Music 
+AI music generation 
+AI music composition
+AI music analysis (direct analysis of the music with AI) 
+AI music genre detection 
+Music feature analysis Outcome
+
+Include N/A Exclude No AI/ML/DL data extracted Purely theoretical studies

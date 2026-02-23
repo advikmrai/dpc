@@ -79,6 +79,8 @@ click a setup for more info
 <TDPC name="OS RECOVERY" v-bind="extra_S.OSRECOVERY" :mirror="is_mirrored" />
 <TDPC name="OUT OF ORDER SPC" v-bind="extra_S.OUTSPC" :mirror="is_mirrored" /> 
 <TDPC name="MELON (HOLD L)" v-bind="extra_S.MELON" :mirror="is_mirrored" /> 
+<TDPC name="BIG C" v-bind="extra_S.BIGC" :mirror="is_mirrored" /> 
+
 
 
 ## Extra I
